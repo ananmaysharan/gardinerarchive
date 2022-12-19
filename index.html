@@ -32,7 +32,7 @@
                 style: "mapbox://styles/ananmay/clb46qysm000l14kyvn8q1gjh", // style URL
                 center: [-79.380331532, 43.646497454], // // starting center in [lng, lat]
                 zoom: 13.6,
-                // pitch: 60, // pitch in degrees
+                pitch: 60, // pitch in degrees
                 // bearing: -20, // bearing in degrees
                 maxBounds: bounds // Set the map's geographical boundaries.
             });
@@ -121,8 +121,8 @@
                     'visibility': 'none'
                     },
                 'paint': {
-                    'fill-color': '#0080ff', // blue color fill
-                    'fill-opacity': 0.5
+                    'fill-color': '#409cf7', // blue color fill
+                    'fill-opacity': 0.8
                     },
                 filter: ["all", ["==", "year", 1818]]
                 });
@@ -135,8 +135,8 @@
                     'visibility': 'none'
                     },
                 'paint': {
-                    'fill-color': '#005ab3', // blue color fill
-                    'fill-opacity': 0.5
+                    'fill-color': '#01468a', // blue color fill
+                    'fill-opacity': 0.8
                     },
                 filter: ["all", ["==", "year", 1884]]
                 });
@@ -150,9 +150,23 @@
                     },
                 'paint': {
                     'fill-color': '#00264d', // blue color fill
-                    'fill-opacity': 0.5
+                    'fill-opacity': 0.8
                     },
                 filter: ["all", ["==", "year", 1910]]
+                });
+
+                map.addLayer({
+                'id': '2022',
+                'type': 'fill',
+                'source': 'shoreline_overlay',
+                'layout': {
+                    'visibility': 'none'
+                    },
+                'paint': {
+                    'fill-color': '#001429', // blue color fill
+                    'fill-opacity': 0.8
+                    },
+                filter: ["all", ["==", "year", 2022]]
                 });
 
                 // When a click event occurs on a feature in the places layer, open a popup at the
@@ -256,12 +270,12 @@
                 // MENU
 
                 // If these two layers were not added to the map, abort
-                if (!map.getLayer('1818') || !map.getLayer('1884') || !map.getLayer('1910')) {
+                if (!map.getLayer('1818') || !map.getLayer('1884') || !map.getLayer('1910') || !map.getLayer('2022')) {
                 return;
                 }
                 
                 // Enumerate ids of the layers.
-                const toggleableLayerIds = ['1818', '1884', '1910'];
+                const toggleableLayerIds = ['1818', '1884', '1910', '2022'];
                 
                 // Set up the corresponding toggle button for each layer.
                 for (const id of toggleableLayerIds) {
