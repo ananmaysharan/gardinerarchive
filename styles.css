@@ -34,8 +34,8 @@ padding: 5px;
 font-size: 16px;
 padding-top: 5px;
 padding-bottom: 5px;
-background-color:#fff!important;
-color:#111111;
+background-color:#222!important;
+color:#fff;
 font-family: 'Open Sans', sans-serif;
 border: 1px solid #6ECCB1;
 }
@@ -55,8 +55,8 @@ border: 1px solid #6ECCB1;
 border-radius: 4px;
 font-size: 12px;
 text-align: center;
-color: #111111;
-background: #fff;
+color: #fff;
+background: #222;
 z-index:0;
 font-family: 'Open Sans', sans-serif;
 }
@@ -67,12 +67,12 @@ font-family: 'Open Sans', sans-serif;
 #menu::before {
     content:"Shoreline:";
     font-size: 13px;
-    color: #111;
+    color: #fff;
     padding:10px;
     }
 
 #menu {
-    background: #fff;
+    background: #222;
     position: absolute;
     z-index: 1;
     top: 15px;
@@ -86,9 +86,9 @@ font-family: 'Open Sans', sans-serif;
      
     #menu a {
     font-size: 13px;
-    color: #fff;
-    border: 1px solid #111;
-    background-color: #111;
+    color: #222;
+    border: 1px solid #fff;
+    background-color: #fff;
     border-radius:999em;
     display: inline;
     margin: 4px;
@@ -98,16 +98,16 @@ font-family: 'Open Sans', sans-serif;
     }
      
     #menu a:hover {
-    background-color: #12574B;
-    color: #fff;
+    background-color: #fff;
+    color: #222;
     }
      
     #menu a.active {
-    background-color: #12574B;
-    color: #111;
+    background-color: #222;
+    color: #ffffff;
     }
      
     #menu a.active:hover {
-    background: #022423;
-    color:#fff;
+    background: #fff;
+    color:#222;
     }
