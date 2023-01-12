@@ -61,7 +61,7 @@
 
             map.addControl(new RangeSlider(sliderOptions, 'top-left'));
 
-            // add external geojson source
+            // ADDING SOURCE IMAGES
 
             map.on("load", async () => {
                 
@@ -72,7 +72,7 @@
                 const geojson_data = await geojson_url.json();
 
                 
-                // ADD AS SYMBOL LAYER
+                // ADDING AS SYMBOL LAYER
             
                 const images = geojson_data.features.map(feature => ({
                         url: feature.properties.thumb_url,
@@ -200,68 +200,7 @@
                 map.on('mouseleave', 'places', () => {
                 map.getCanvas().style.cursor = '';
                 });
-               
-                // Adding as markers
-
-                // for (const marker of geojson_data.features) {
-                // // Create a DOM element for each marker.
-                // const el = document.createElement('div');
-                // // const width = marker.properties.iconSize[0];
-                // // const height = marker.properties.iconSize[1];
-                // const thumb_url = marker.properties.thumb_url
-                // el.className = 'marker';
-                // el.style.backgroundImage = `url(${thumb_url})`;
-                // el.style.width = '40px';
-                // el.style.height = '40px';
-                // el.style.backgroundSize = '100%';
-                
-
-                // new mapboxgl.Marker(el)
-                // .setLngLat(marker.geometry.coordinates)
-                // .addTo(map);
-
-                // };
-
-                // OLD SHORELINE LINES
-
-                // map.addSource('shorelines', {
-                // type: 'geojson',
-                // // Use a URL for the value for the `data` property.
-                // data: 'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/main/shorelines.geojson'
-                // });
-                
-                // map.addLayer({
-                // 'id': 'shorelines-layer-1818',
-                // 'type': 'line',
-                // 'source': 'shorelines',
-                // 'paint': {
-                //     'line-color': '#0080ff',
-                //     'line-width': 3
-                // },
-                // filter: ["all", ["==", "year", 1818]]
-                // });
-
-                // map.addLayer({
-                // 'id': 'shorelines-layer-1884',
-                // 'type': 'line',
-                // 'source': 'shorelines',
-                // 'paint': {
-                //     'line-color': '#005ab3',
-                //     'line-width': 3
-                // },
-                // filter: ["all", ["==", "year", 1884]]
-                // });
-
-                // map.addLayer({
-                // 'id': 'shorelines-layer-1910',
-                // 'type': 'line',
-                // 'source': 'shorelines',
-                // 'paint': {
-                //     'line-color': '#00264d',
-                //     'line-width': 3
-                // },
-                // filter: ["all", ["==", "year", 1910]]
-                // });
+            
 
                 // TITLE
 
