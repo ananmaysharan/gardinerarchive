@@ -34,9 +34,9 @@ padding: 5px;
 font-size: 16px;
 padding-top: 5px;
 padding-bottom: 5px;
-background-color:#222!important;
-color:#fff;
-font-family: 'Open Sans', sans-serif;
+background-color:#fff!important;
+color:#111;
+font-family: 'Libre Franklin', sans-serif;
 border: 1px solid #6ECCB1;
 }
 
@@ -50,15 +50,16 @@ position: relative;
 margin: 15px auto;
 word-wrap: anywhere;
 white-space: pre-wrap;
-padding: 25px;
+padding: 16px;
 border: 1px solid #6ECCB1;
 border-radius: 4px;
-font-size: 12px;
+font-size: 24px;
 text-align: center;
-color: #fff;
-background: #222;
+color: #111;
+background: #fff;
 z-index:0;
-font-family: 'Open Sans', sans-serif;
+font-family: 'Libre Franklin', sans-serif;
+font-weight:700;
 }
 
 /* MENU (SHORELINES) */
@@ -80,7 +81,7 @@ font-family: 'Open Sans', sans-serif;
     border-radius: 3px;
     width: 300px;
     border: 1px solid #6ECCB1;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
     padding:25px;
     }
      
