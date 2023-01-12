@@ -67,7 +67,7 @@ font-family: 'Open Sans', sans-serif;
 #menu::before {
     content:"Shoreline:";
     font-size: 13px;
-    color: #fff;
+    color: #111;
     padding:10px;
     }
 
@@ -98,16 +98,16 @@ font-family: 'Open Sans', sans-serif;
     }
      
     #menu a:hover {
-    background-color: #111;
+    background-color: #12574B;
     color: #fff;
     }
      
     #menu a.active {
-    background-color: #fff;
+    background-color: #12574B;
     color: #111;
     }
      
     #menu a.active:hover {
-    background: #111;
+    background: #022423;
     color:#fff;
     }
