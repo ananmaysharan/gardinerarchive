@@ -59,7 +59,6 @@ color: #111;
 background: #fff;
 z-index:0;
 font-family: 'Libre Franklin', sans-serif;
-font-weight:700;
 }
 
 /* MENU (SHORELINES) */
@@ -68,12 +67,13 @@ font-weight:700;
 #menu::before {
     content:"Shoreline:";
     font-size: 13px;
-    color: #fff;
+    color: #111;
     padding:10px;
+    font-family: 'Libre Franklin', sans-serif;
     }
 
 #menu {
-    background: #222;
+    background: #fff;
     position: absolute;
     z-index: 1;
     top: 15px;
@@ -82,14 +82,14 @@ font-weight:700;
     width: 300px;
     border: 1px solid #6ECCB1;
     font-family: 'Libre Franklin', sans-serif;
-    padding:25px;
+    padding:24px;
     }
      
     #menu a {
     font-size: 13px;
-    color: #222;
-    border: 1px solid #fff;
-    background-color: #fff;
+    color: #fff;
+    border: 1px solid #111;
+    background-color: #111;
     border-radius:999em;
     display: inline;
     margin: 4px;
@@ -104,11 +104,11 @@ font-weight:700;
     }
      
     #menu a.active {
-    background-color: #222;
-    color: #ffffff;
+    background-color: #fff;
+    color: #111;
     }
      
     #menu a.active:hover {
-    background: #fff;
-    color:#222;
+    background: #111;
+    color:#fff;
     }
