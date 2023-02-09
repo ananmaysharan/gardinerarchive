@@ -112,6 +112,48 @@
                             'icon-allow-overlap':true,
                             }
                 });
+// past projects
+
+            
+
+                const bway_pastproj_url = await fetch( 'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/Talha/bway_pastproj_data.geojson');
+
+                const bway_pastproj_data = await bway_pastproj_url.json();
+
+    
+                const imagebway = bway_pastproj_data.features.map(feature => ({
+                        url: feature.properties.Thumbnail,
+                        id: feature.properties.ID
+                        }));
+                
+                     Promise.all(
+                    imagebway.map(img => new Promise((resolve, reject) => {
+                    map.loadImage(img.url, function (error, res) {
+                        if (error) throw error;
+                        map.addImage(img.id, res)
+                        resolve();
+                    })
+                }))
+                ).then(console.log("Images Loaded"));
+
+                map.addSource("imagebway", {
+                    type: "geojson",
+                    data: bway_pastproj_data,
+                });
+
+                
+                map.addLayer({
+                    'id': 'imagebway',
+                    'type': "symbol",
+                    'source': 'imagebway',
+                    layout: {
+                        'icon-image': ['get', 'ID'],
+                        'icon-ignore-placement': true,
+                        'icon-size': 0.1,
+                        'icon-allow-overlap':true
+
+                    }
+                }),
                 
                 
                 map.addSource('shoreline_overlay', {
