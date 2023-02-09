@@ -695,7 +695,24 @@
         "See More":"<a href = 'https://www.thebentway.ca/event/pulse-topology/'> Click here for more info </a>"
 
     }
-}]}
+    },
+    {"type":"Feature",
+"geometry":{
+    "type":"Point", "coordinates":[-79.40487742, 43.63777175]},
+"properties":{
+    "filename":"Beacons",
+    "Year":"2022",
+    "URL":"https://bentway.canto.com/direct/image/5ee51icccl7tt667cpv6lqd53c/f9843W5fU0c-84V_73M5OilgsqQ/original?content-type=image%2Fjpeg&name=Beacons+-+Shelly+Zhang.jpg",
+    "Thumbnail":"https://bentway.canto.com/direct/image/5ee51icccl7tt667cpv6lqd53c/hf_QabN8c9cO5L6Ca18_PwM8H8w/m500/800",
+    "Season":"Winter",
+    "Overarching Theme":"None",
+    "Artist": "Shelly Zhang",
+    "ID": "bw44",
+    "Description": "Beacons is a set of glowing gradient beams scattered throughout The Bentway Skate Trail, drawing eyes up the bents and transforming these concrete blocks into mesmerizing and welcoming signals.",
+    "See More":"<a href = 'https://www.thebentway.ca/event/beacons/'> Click here for more info </a>"
+
+}}
+]}
 
     
 
