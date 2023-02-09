@@ -73,7 +73,7 @@
             map.on("load", async () => {
                 
                 const geojson_url = await fetch(
-                    'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/main/images.geojson'
+                    'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/main/combined_images.geojson'
                 );
                 
                 const geojson_data = await geojson_url.json();
