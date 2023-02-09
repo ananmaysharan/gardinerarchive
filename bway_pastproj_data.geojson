@@ -12,7 +12,8 @@
         "Thumbnail": "https://bentway.canto.com/direct/image/jk54bk8cil2u93t4as9r9o9g1l/GDfcfjC7nfHqRIwSyfRz8saEB7w/m500/800",
         "Season": "Spring/Summer",
         "Overarching Theme":"Playing in Public",
-        "Artist":"Daily tous les jours"
+        "Artist":"Daily tous les jours",
+        "ID" : "bw01"
     }
     },
     {"type": "Feature",
@@ -25,7 +26,8 @@
         "Thumbnail": "https://bentway.canto.com/direct/image/ojemr8qqeh1ej1khg54smj3t34/XYELSZ5N7rpHfRSl9vc6fmLASD0/m500/800",
         "Season": "Spring/Summer",
         "Overarching Theme":"Playing in Public",
-        "Artist":"Studio F Minus"
+        "Artist":"Studio F Minus",
+        "ID" : "bw02"
     }
     },
     {"type:": "Feature",
@@ -38,7 +40,8 @@
         "Thumbnail": "https://bentway.canto.com/direct/image/7ip5ai92jd2r100eb200e4r865/E7fW6bHEzfJWTn_5i5DNMKBiEJo/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Playing in Public",
-        "Artist":"Pierre Poussin"
+        "Artist":"Pierre Poussin",
+        "ID" : "bw03"
     }
     },
     {"type": "Feature",
@@ -51,7 +54,8 @@
         "Thumbnail": "https://bentway.canto.com/direct/image/up0rnhikcp2bbacl56aod8471t/T31CVZLAysvdTTFOKmbf_-KbMFo/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Playing in Public",
-        "Artist":"Esmaa Mohamad"
+        "Artist":"Esmaa Mohamad",
+        "ID": "bw04"
     }
     },
     {"type":"Feature",
@@ -64,7 +68,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/0eqrq5l7rh467b6qpn94r41a0r/N0W2vWYwrqf5WyDRmAEfjmNwokQ/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Playing in Public",
-        "Artist":"Assemble"
+        "Artist":"Assemble",
+        "ID" : "bw05"
     }
     },
     {"type":"Feature", 
@@ -77,7 +82,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/8mgthar9q96179l4evh0ahn805/6xlewds9bKzBLQE7KOzSJKr1tsU/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"STREET",
-        "Artist":"Oginaa Mikana Project"
+        "Artist":"Oginaa Mikana Project",
+        "ID" : "bw06"
     }
     },
     {"type":"Feature",
@@ -90,7 +96,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/42pnja4kah7lr7hjtfh6939t7r/pVA3j5j_4rJCpahFPsA2a_8Leow/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"STREET",
-        "Artist":"Hazel Meyer"
+        "Artist":"Hazel Meyer",
+        "ID": "bw07"
     }
     },
     {"type:":"Feature",
@@ -103,7 +110,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/ek7tl7hv5577v8h5nc86gf9o4n/iTO5qs8jHcgVvst2-LtRccDX-X4/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"STREET",
-        "Artist":"Mimi Liem"
+        "Artist":"Mimi Liem",
+        "ID" : "bw08"
     }
     },
     {"type":"Feature",
@@ -116,7 +124,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/r582nrlfbt4tb4kt36e0lbrt3b/jSgGciBgdZqZwN8sBK_D8N8xMzw/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"STREET",
-        "Artist":"Germaine Liu, Mark Zurawinski"
+        "Artist":"Germaine Liu, Mark Zurawinski",
+        "ID" : "bw09"
     }
     },
     {"type:":"Feature",
@@ -129,7 +138,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/nsi9iae8793ir9lhd0ji9hvm3f/3lLavrLYlMSg_khLXmpKfScOUDE/m500/800",
         "Season":"Fall",
         "Overarching Theme":"Confluence",
-        "Artist":"Striped Canary"
+        "Artist":"Striped Canary",
+        "ID" : "bw10"
     }
     },
     {"type":"Feature",
@@ -142,7 +152,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/6u0fqojbq57eb05sc1rph8i41m/A92m6yVaNGVCDCcfCYH7VaNlUSs/m500/800",
         "Season":"Fall",
         "Overarching Theme":"Safe in Public Space",
-        "Artist":"Public Visualization Studio"
+        "Artist":"Public Visualization Studio",
+        "ID": "bw11"
     }
     },
     {"type":"Feature",
@@ -155,7 +166,8 @@
         "Thumbnail": "https://bentway.canto.com/direct/image/lc5pe0h71h1e79nsb5qbba9v0n/8IIY1YiCXgkPNAZOP_eGt3He8-0/m500/800",
         "Season":"Fall",
         "Overarching Theme":"Safe in Public Space",
-        "Artist":"Syrus Marcus Ware"
+        "Artist":"Syrus Marcus Ware",
+        "ID":"bw12"
     }
     },
     {"type":"Feature", 
@@ -168,7 +180,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/9u99t6ndld78lda5ojb9bdc929/YbDfu7CP-DldunxVPdxZ285Yn2s/m500/800",
         "Season":"Fall",
         "Overarching Theme":"Second Nature",
-        "Artist":"Embassy of Imagination"
+        "Artist":"Embassy of Imagination",
+        "ID": "bw13"
     }
     },
     {"type":"Feature",
@@ -181,7 +194,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/m1heabms2p3lh62qov2vu3rm1t/W9qolec2gVEGri3wKFfumIKJER0/m500/800",
         "Season":"Fall",
         "Overarching Theme":"Second Nature",
-        "Artist":"Luke Jerram"
+        "Artist":"Luke Jerram",
+        "ID": "bw14"
     }
     },
     {"type":"Feature",
@@ -194,7 +208,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/8kjshraaml67tb372sdhtck20f/GPFviosWpENMSq-7lHZWYKdrBsY/m500/800",
         "Season":"Fall",
         "Overarching Theme":"Second Nature",
-        "Artist":"Mitchell Akiyama, Brady Peters"
+        "Artist":"Mitchell Akiyama, Brady Peters",
+        "ID": "bw15"
     }
     },
     {"type":"Feature",
@@ -207,7 +222,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/s861p5n73p59pcdkv7fq9gv90s/02dY5JQDv4tq6gdU5eofOcwqPYQ/m500/800",
         "Season":"Fall",
         "Overarching Theme":"Creation:Destruction",
-        "Artist":"Gareth Lichty"
+        "Artist":"Gareth Lichty",
+        "ID":"bw16"
     }
     },
     {"type":"Feature",
@@ -220,7 +236,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/u9kgefn9gl0cjcth7vn0bijc3p/bLpNoXoD2iF-XZgnuCMJTPdNfwg/m500/800",
         "Season":"Fall",
         "Overarching Theme":"Creation:Destruction",
-        "Artist":"Francesca Chudnoff"
+        "Artist":"Francesca Chudnoff",
+        "ID":"bw17"
     }
     },
     {"type":"Feature",
@@ -233,7 +250,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/ushrrbtael29vdtb159oeikq6r/aMOxYbVWakjTSU8_750mqxJk2hc/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Communitas",
-        "Artist":"Monument Labs"
+        "Artist":"Monument Labs",
+        "ID":"bw18"
     }
     },
     {"type":"Feature",
@@ -246,7 +264,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/m0ms872h8t7mf5g947t0fcmr2a/L867YwTlT8Zm6ihKtDFxA13toIE/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Communitas",
-        "Artist":"The Bentway"
+        "Artist":"The Bentway",
+        "ID":"bw19"
     }
     },
     {"type":"Feature",
@@ -259,7 +278,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/9u8jfic9592opcpu4v0oaagr21/Hna4v1ZpTL8CVvbpC8V8H08gNbo/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Communitas",
-        "Artist":"Monument Labs"
+        "Artist":"Monument Labs",
+        "ID":"bw20"
     }
     },
     {"type":"Feature",
@@ -272,7 +292,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/61tnhkdkl17m19bdidcp9cvl6t/F_SH7lZ8kFFreSZ0aQfwvIu_VqQ/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Communitas",
-        "Artist":"Oasis Stakeboard Factory"
+        "Artist":"Oasis Stakeboard Factory",
+        "ID":"bw21"
     }
     },
     {"type":"Feature",
@@ -285,7 +306,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/batlrq0oh97n5a1bmmi5b40o12/s75oT6A2QgI0YmWMiM4td9SV0Jc/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Communitas",
-        "Artist":"Noemie Lafrance"
+        "Artist":"Noemie Lafrance",
+        "ID":"bw22"
     }
     },
     {"type":"Feature",
@@ -298,7 +320,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/dvnjipeilt1pdap88f52didd5o/CQC57zz_AorTA2-GLOcu7xBMDVU/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Communitas",
-        "Artist":"Various Artists"
+        "Artist":"Various Artists",
+        "ID":"bw23"
     }
     },
     {"type":"Feature",
@@ -311,7 +334,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/bns7j7old90iv92n579j16fh1l/qxM8-MZUX_nl2KmMAx3VNcWaLR0/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Communitas",
-        "Artist":"Nadine Stijns"
+        "Artist":"Nadine Stijns",
+        "ID":"bw24"
     }
     },
     {"type":"Feature",
@@ -324,7 +348,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/pcaerdfs652o55r8h3ud2ld50l/4FCvG7_xoFgWKwGdXuv7wHfbdg4/m800/800",
         "Season":"Fall",
         "Overarching Theme":"If, But What If?",
-        "Artist":"Daan Roosegarde"
+        "Artist":"Daan Roosegarde",
+        "ID":"bw25"
     }
     },
     {"type":"Feature",
@@ -337,7 +362,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/uqsk28pik12c3fn9a41f0r2n3i/_JyACa69GduQdO7zj9eMUxzvurI/m500/800",
         "Season":"Fall",
         "Overarching Theme":"If, But What If?",
-        "Artist":"Mani Mazinani, Sanaz Mazinani"
+        "Artist":"Mani Mazinani, Sanaz Mazinani",
+        "ID":"bw26"
     }
     },
     {"type":"Feature",
@@ -350,7 +376,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/8m99lkm53d1pj2mcet3470c71j/67pVyyNkTqWLeN20lvM-8rAm41o/m500/800",
         "Season":"Fall",
         "Overarching Theme":"If, But What If?",
-        "Artist":"Sans Facon"
+        "Artist":"Sans Facon",
+        "ID":"bw27"
     }
     },
     {"type":"Feature",
@@ -363,7 +390,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/d261of8ql10cf323va524fqt55/in5KXL2I-fI7kJJX_ck1jBbe8AQ/m500/800",
         "Season":"Fall",
         "Overarching Theme":"If, But What If?",
-        "Artist":"Sans Facon"
+        "Artist":"Sans Facon",
+        "ID":"bw28"
     }
     },
     {"type":"Feature",
@@ -376,7 +404,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/r36nme4gjl0obeq2c27j7uhd2a/O2DAuV5oe56Ljqdv36hOYcW5Dxo/m500/800",
         "Season":"Fall",
         "Overarching Theme":"If, But What If?",
-        "Artist":"Michael Awad"
+        "Artist":"Michael Awad",
+        "ID":"bw29"
     }
     },
     {"type":"Feature",
@@ -389,7 +418,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/5p2dep9f2p6c736vp48o27ko04/JJSSQBfyf9h9j6w9W0DuwF7MQMk/m320/800",
         "Season":"Fall",
         "Overarching Theme":"If, But What If?",
-        "Artist":"Joe Sasaki"
+        "Artist":"Joe Sasaki",
+        "ID": "bw30"
     }
     },
     {"type":"Feature",
@@ -402,7 +432,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/q9mn5uoi7d6kf7h2k44i8fub39/xP9rd1XFm-d1W9L4G3n9LM2tNFc/m500/800",
         "Season":"Fall",
         "Overarching Theme":"If, But What If?",
-        "Artist":"Steven Beckly"
+        "Artist":"Steven Beckly",
+        "ID" : "bw31"
     }
     },
     {"type":"Feature",
@@ -415,7 +446,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/m9rnjqvg8h60l79h69mupb8u59/oY9wDex_01EooiGzJLo06L38nGQ/m500/800",
         "Season":"Fall",
         "Overarching Theme":"If, But What If?",
-        "Artist":"Wally Dion"
+        "Artist":"Wally Dion",
+        "ID": "bw32"
     }
     },
     {"type":"Feature",
@@ -428,7 +460,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/37mcl15i696dbefutmb8chmd04/E4SMHD0gAAZZDzlGjS5ABxNUZmE/m500/800",
         "Season":"Winter",
         "Overarching Theme":"Constructions of the Everyday",
-        "Artist":"Public Visualization Studio"
+        "Artist":"Public Visualization Studio",
+        "ID": "bw33"
     }
     },
     {"type":"Feature",
@@ -441,7 +474,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/7c1tbs3usd2u1fuc4nvttrdl0j/5ZvmQTeQh9x6_DNmH-0jbJS3sXo/m500/800",
         "Season":"Winter",
         "Overarching Theme":"Constructions of the Everyday",
-        "Artist":"Jennifer Ilett"
+        "Artist":"Jennifer Ilett",
+        "ID": "bw34"
     }
     },
     {"type":"Feature",
@@ -454,7 +488,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/ptubggn6e96pv09lf0ro67hf0s/KEcctq_pXRbQqhwFFyb-PzOcNB8/m500/800",
         "Season":"Winter",
         "Overarching Theme":"Constructions of the Everyday",
-        "Artist":"Janine Miedzik"
+        "Artist":"Janine Miedzik",
+        "ID": "bw35"
     }
     },
     {"type":"Feature",
@@ -467,7 +502,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/io1nvs477h63r2a8qdh7rt2g2u/lwnnDijwR5idOXRAg6hUTo4ZNgs/m240/800",
         "Season":"Winter",
         "Overarching Theme":"Constructions of the Everyday",
-        "Artist":"Jimmy Limit"
+        "Artist":"Jimmy Limit",
+        "ID":"bw36"
     }
     },
     {"type":"Feature",
@@ -480,7 +516,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/ju3kf4lf795v11qj129pln967t/8FXF-3QdMdR69d_2dPGDYWid2gA/m500/800",
         "Season":"Winter",
         "Overarching Theme":"Constructions of the Everyday",
-        "Artist":"Embassy of Imagination, PA System"
+        "Artist":"Embassy of Imagination, PA System",
+        "ID":"bw37"
     }
     },
     {"type":"Feature",
@@ -493,7 +530,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/8henmjus651fv79s0657i5d94f/PSoEukWA_QJvH3fhDIRKJL8XElI/m500/800",
         "Season":"Winter",
         "Overarching Theme":"None",
-        "Artist":"The Bentway"
+        "Artist":"The Bentway",
+        "ID":"bw38"
     }
     },
     {"type":"Feature",
@@ -506,7 +544,8 @@
         "Thumbnail": "https://bentway.canto.com/direct/image/0llq9337k55ule2bvh52grvo58/zrKEoenqMtianu_b7IGMHLq5w_U/m800/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"None",
-        "Artist":"Build for Bokma"
+        "Artist":"Build for Bokma",
+        "ID": "bw39"
     }
     },
     {"type":"Feature",
@@ -519,7 +558,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/qmbu1i1u8t3jdfmjtjldlrg85g/ELA2I9VV0U7aiSqq-6YMK4o4rLQ/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"None",
-        "Artist":"Dana Claxton"
+        "Artist":"Dana Claxton",
+        "ID":"bw40"
     }
     },
     {"type":"Feature",
@@ -532,7 +572,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/eo6j349qfp3tp22llkulroqe7i/DGYyAu9jHCx_uYDF1gZXGoEJjZE/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"None",
-        "Artist":"Build for Bokma"
+        "Artist":"Build for Bokma",
+        "ID":"bw41"
     }
     },
     {"type":"Feature",
@@ -545,7 +586,8 @@
         "Thumbnail": "https://bentway.canto.com/direct/image/ippad3e0bd7dh485crc53vnr6d/9UJ-MIQo8mfECPDR-qx0-u5_iFY/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"None",
-        "Artist":"The Bentway"
+        "Artist":"The Bentway",
+        "ID":"bw42"
     }
     },
     {"type":"Feature",
@@ -558,7 +600,8 @@
         "Thumbnail":"https://bentway.canto.com/direct/image/7bq288f1514etdqvl83rpskb34/A8IFhZNVSj2l9tdHdWaiMCFKlXM/m500/800",
         "Season":"Fall",
         "Overarching Theme":"None",
-        "Artist":"Rafael Lozano-Hemmer"
+        "Artist":"Rafael Lozano-Hemmer",
+        "ID":"bw43"
     }
 }]}
 
