@@ -61,6 +61,59 @@ z-index:0;
 font-family: 'Libre Franklin', sans-serif;
 }
 
+/* MENU (TAGS) */
+
+
+#tagmenu::before {
+    content:"Themes:";
+    font-size: 13px;
+    color: #111;
+    padding:10px;
+    font-family: 'Libre Franklin', sans-serif;
+    }
+
+#tagmenu {
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    right: 10px;
+    border-radius: 3px;
+    width: 300px;
+    border: 1px solid #6ECCB1;
+    font-family: 'Libre Franklin', sans-serif;
+    padding:24px;
+}
+
+#tagmenu a {
+    font-size: 13px;
+    color: #fff;
+    border: 1px solid #111;
+    background-color: #111;
+    border-radius:999em;
+    display: inline;
+    margin: 4px;
+    padding: 4px;
+    text-decoration: none;
+    text-align: center;
+    }
+     
+    #tagmenu a:hover {
+    background-color: #222;
+    color: #fff;
+    }
+     
+    #tagmenu a.active {
+    background-color: #fff;
+    color: #111;
+    }
+     
+    #tagmenu a.active:hover {
+    background: #111;
+    color:#fff;
+    }
+
+
 /* MENU (SHORELINES) */
 
 

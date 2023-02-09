@@ -25,6 +25,7 @@
 </head>
 
 <body>
+    <nav id="tagmenu"></nav>
     <nav id="menu"></nav>
     <div id="map"></div>
     <div id="info"></div>
@@ -330,9 +331,38 @@
 
             }
 
-            const allowedTags = ['transit'];
-            map.setFilter("photos", getTagsFilter(allowedTags));//yeepee!
+            const toggleabletagIds = ['undergardiner', 'transit', 'activism', 'people', 'aerial', 'construction', 'traffic'];
 
+            // Set up the corresponding toggle button for each layer.
+            for (const id of toggleabletagIds) {
+                // Skip layers that already have a button set up.
+                if (document.getElementById(id)) {
+                    continue;
+                }
+
+                // Create a link.
+                const link = document.createElement('a');
+                link.id = id;
+                link.href = '#';
+                link.textContent = id;
+                link.className = 'active';
+
+                // Filter layer when the tag toggle is clicked.
+                link.onclick = function (e) {
+                    const clickedTag = this.textContent;
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    const allowedTags = []
+                    allowedTags.push(clickedTag)
+
+                    map.setFilter("photos", getTagsFilter(allowedTags)); //yeepee!
+                    
+                };
+
+                const layers = document.getElementById('tagmenu');
+                layers.appendChild(link);
+            }
         });
     </script>
 </body>
