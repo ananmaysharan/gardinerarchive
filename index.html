@@ -331,7 +331,7 @@
 
             }
 
-            const toggleabletagIds = ['undergardiner', 'transit', 'activism', 'people', 'aerial', 'construction', 'traffic'];
+            const toggleabletagIds = ['all', 'undergardiner', 'transit', 'activism', 'people', 'aerial', 'construction', 'traffic'];
 
             // Set up the corresponding toggle button for each layer.
             for (const id of toggleabletagIds) {
@@ -353,11 +353,14 @@
                     e.preventDefault();
                     e.stopPropagation();
 
+                    if (clickedTag == 'all') {
+                        const allTags = ['undergardiner', 'transit', 'activism', 'people', 'aerial', 'construction', 'traffic']
+                        map.setFilter("photos", getTagsFilter(allTags)); //yeepee!
+                    } else {
                     const allowedTags = []
                     allowedTags.push(clickedTag)
-
                     map.setFilter("photos", getTagsFilter(allowedTags)); //yeepee!
-                    
+                    }
                 };
 
                 const layers = document.getElementById('tagmenu');
