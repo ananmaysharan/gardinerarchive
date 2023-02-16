@@ -6,15 +6,15 @@
 "geometry":{
     "type": "Point", "coordinates": [-79.40676738, 43.63753972]},
     "properties": {
-        "filename":"Walk Walk Dance",
-        "Year": "2021",
-        "URL": "https://bentway.canto.com/direct/image/jk54bk8cil2u93t4as9r9o9g1l/O5089RnrGSCxZvcW2M36psY6_mI/original?content-type=image%2Fjpeg&name=Walk+Walk+Dance+-+Daily+tous+les+jours.jpg",
-        "Thumbnail": "https://bentway.canto.com/direct/image/jk54bk8cil2u93t4as9r9o9g1l/GDfcfjC7nfHqRIwSyfRz8saEB7w/m500/800",
+        "title":"Walk Walk Dance",
+        "date": "2021",
+        "url": "https://bentway.canto.com/direct/image/jk54bk8cil2u93t4as9r9o9g1l/O5089RnrGSCxZvcW2M36psY6_mI/original?content-type=image%2Fjpeg&name=Walk+Walk+Dance+-+Daily+tous+les+jours.jpg",
+        "thumb_url": "https://bentway.canto.com/direct/image/jk54bk8cil2u93t4as9r9o9g1l/GDfcfjC7nfHqRIwSyfRz8saEB7w/m500/800",
         "Season": "Spring/Summer",
         "Overarching Theme":"Playing in Public",
         "Artist":"Daily tous les jours",
-        "ID" : "bw01",
-        "Description": "Created for and during the pandemic, Walk Walk Dance is a series of music-making lines that explore how participation and interaction can create new spaces for play even amidst physical distancing rules and COVID-19 protocols.",
+        "id" : "bw01",
+        "Description": "Created for and during the pandemic, Walk Walk Dance is a series of music-making lines that explore how participation and interaction can create new spaces for play even amidst physical distancing rules and COVid-19 protocols.",
         "See More": "<a href = 'https://www.thebentway.ca/event/walk-walk-dance-by-daily-tous-les-jours/'> Click here for more info </a>"
     }
     },
@@ -22,14 +22,14 @@
 "geometry":{
     "type": "Point", "coordinates": [-79.40608442, 43.63766693]},
     "properties": {
-        "filename":"Nil Nil",
-        "Year": "2021",
-        "URL":"https://bentway.canto.com/direct/image/ojemr8qqeh1ej1khg54smj3t34/G8P-nzZFCw5wvw4JXrU1NHTyQbw/original?content-type=image%2Fjpeg&name=Nil+Nil+-+Studio+F+Minus.jpg",
-        "Thumbnail": "https://bentway.canto.com/direct/image/ojemr8qqeh1ej1khg54smj3t34/XYELSZ5N7rpHfRSl9vc6fmLASD0/m500/800",
+        "title":"Nil Nil",
+        "date": "2021",
+        "url":"https://bentway.canto.com/direct/image/ojemr8qqeh1ej1khg54smj3t34/G8P-nzZFCw5wvw4JXrU1NHTyQbw/original?content-type=image%2Fjpeg&name=Nil+Nil+-+Studio+F+Minus.jpg",
+        "thumb_url": "https://bentway.canto.com/direct/image/ojemr8qqeh1ej1khg54smj3t34/XYELSZ5N7rpHfRSl9vc6fmLASD0/m500/800",
         "Season": "Spring/Summer",
         "Overarching Theme":"Playing in Public",
         "Artist":"Studio F Minus",
-        "ID" : "bw02",
+        "id" : "bw02",
         "Description": "Nil:Nil is a portrait of play in pandemic times. As our work and play move online, our human interactions become subject to a comprehensive enframing.",
         "See More":"<a href = 'https://www.thebentway.ca/event/nilnil/'> Click here for more info </a>"
     }
@@ -38,14 +38,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.39756732, 43.63788473]},
     "properties": {
-        "filename": "Jax",
-        "Year": "2021",
-        "URL":"https://bentway.canto.com/direct/image/7ip5ai92jd2r100eb200e4r865/Gf0BAY2xLdFA8YLAjGwXhDXhwu8/original?content-type=image%2Fjpeg&name=Jax+-+Pierre+Poussin.jpg",
-        "Thumbnail": "https://bentway.canto.com/direct/image/7ip5ai92jd2r100eb200e4r865/E7fW6bHEzfJWTn_5i5DNMKBiEJo/m500/800",
+        "title": "Jax",
+        "date": "2021",
+        "url":"https://bentway.canto.com/direct/image/7ip5ai92jd2r100eb200e4r865/Gf0BAY2xLdFA8YLAjGwXhDXhwu8/original?content-type=image%2Fjpeg&name=Jax+-+Pierre+Poussin.jpg",
+        "thumb_url": "https://bentway.canto.com/direct/image/7ip5ai92jd2r100eb200e4r865/E7fW6bHEzfJWTn_5i5DNMKBiEJo/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Playing in Public",
         "Artist":"Pierre Poussin",
-        "ID" : "bw03",
+        "id" : "bw03",
         "Description": "Jax by Pierre Poussin reimagines one of the  oldest and most widespread games in the world by amplifying its scale and colour, inviting visitors to see the game anew.",
         "See More":"<a href = 'https://www.thebentway.ca/event/jax-by-pierre-poussin/'> Click here for more info </a>"
 
@@ -56,14 +56,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40641968, 43.63758928]},
     "properties":{
-        "filename":"Double Driblle",
-        "Year":"2021", 
-        "URL":"https://bentway.canto.com/direct/image/up0rnhikcp2bbacl56aod8471t/KzAznNVNcxFadbzy3USZ80PJaOc/original?content-type=image%2Fjpeg&name=Double+Dribble+-+Esmaa+Mohamad.jpg",
-        "Thumbnail": "https://bentway.canto.com/direct/image/up0rnhikcp2bbacl56aod8471t/T31CVZLAysvdTTFOKmbf_-KbMFo/m500/800",
+        "title":"Double Driblle",
+        "date":"2021", 
+        "url":"https://bentway.canto.com/direct/image/up0rnhikcp2bbacl56aod8471t/KzAznNVNcxFadbzy3USZ80PJaOc/original?content-type=image%2Fjpeg&name=Double+Dribble+-+Esmaa+Mohamad.jpg",
+        "thumb_url": "https://bentway.canto.com/direct/image/up0rnhikcp2bbacl56aod8471t/T31CVZLAysvdTTFOKmbf_-KbMFo/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Playing in Public",
         "Artist":"Esmaa Mohamad",
-        "ID": "bw04",
+        "id": "bw04",
         "Description": "Through the illogical use of basketball motifs, Toronto artist Esmaa Mohamoud transforms The Bentway into a surreal basketball court.",
         "See More": "<a href = 'https://www.thebentway.ca/event/double-dribble-by-esmaa-mohamoud/'> Click here for more info </a>"
     }
@@ -72,14 +72,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40628022, 43.63759898]},
     "properties":{
-        "filename":"Big Red",
-        "Year:":"2021",
-        "URL":"https://bentway.canto.com/direct/image/0eqrq5l7rh467b6qpn94r41a0r/j6egFPBqcQ763WSBtODy2ePEJcM/original?content-type=image%2Fjpeg&name=Big+Red+-+Assemble.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/0eqrq5l7rh467b6qpn94r41a0r/N0W2vWYwrqf5WyDRmAEfjmNwokQ/m500/800",
+        "title":"Big Red",
+        "date:":"2021",
+        "url":"https://bentway.canto.com/direct/image/0eqrq5l7rh467b6qpn94r41a0r/j6egFPBqcQ763WSBtODy2ePEJcM/original?content-type=image%2Fjpeg&name=Big+Red+-+Assemble.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/0eqrq5l7rh467b6qpn94r41a0r/N0W2vWYwrqf5WyDRmAEfjmNwokQ/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Playing in Public",
         "Artist":"Assemble",
-        "ID" : "bw05",
+        "id" : "bw05",
         "Description": "Inspired by a now-famous drawing by Bo Bardi, this project interprets and makes real one of the play sculptures from her original illustration, acting as a device to challenge the civic context found at The Bentway.",
         "See More": "<a href = 'https://www.thebentway.ca/event/big-red/'> Click here for more info </a>"
     }
@@ -88,14 +88,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40966428, 43.63748833]},
     "properties":{
-        "filename":"Weweni Bizindan",
-        "Year":"2022",
-        "URL": "https://bentway.canto.com/direct/image/8mgthar9q96179l4evh0ahn805/zLfbENewipQXUg3YUpS96E9DjFQ/original?content-type=image%2Fjpeg&name=Weweni+Bizindan+%28Listen+Carefully%29+-+Ogimaa+Mikana+Project+-+Susan+Blight+%26+Hayden+King.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/8mgthar9q96179l4evh0ahn805/6xlewds9bKzBLQE7KOzSJKr1tsU/m500/800",
+        "title":"Weweni Bizindan",
+        "date":"2022",
+        "url": "https://bentway.canto.com/direct/image/8mgthar9q96179l4evh0ahn805/zLfbENewipQXUg3YUpS96E9DjFQ/original?content-type=image%2Fjpeg&name=Weweni+Bizindan+%28Listen+Carefully%29+-+Ogimaa+Mikana+Project+-+Susan+Blight+%26+Hayden+King.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/8mgthar9q96179l4evh0ahn805/6xlewds9bKzBLQE7KOzSJKr1tsU/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"STREET",
         "Artist":"Oginaa Mikana Project",
-        "ID" : "bw06",
+        "id" : "bw06",
         "Description": "Continuing their practice of re-installing Anishinaabe place-names throughout the roads, highways, trails and paths of Toronto, the Ogimaa Mikana Project (Susan Blight and Hayden King) offers a new dialogue with the street.",
         "See More": "<a href = 'https://www.thebentway.ca/event/weweni-bizindan-listen-carefully-2/'> Click here for more info </a>"
     }
@@ -104,14 +104,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40519527, 43.63762732]},
     "properties":{
-        "filename":"WEEPING CONCRETE",
-        "Year":"2022",
-        "URL":"https://bentway.canto.com/direct/image/42pnja4kah7lr7hjtfh6939t7r/sCfG9u1PQaHdu1x9d6msP7Zptlk/original?content-type=image%2Fjpeg&name=Weeping+Concrete+-+Hazel+Meyer.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/42pnja4kah7lr7hjtfh6939t7r/pVA3j5j_4rJCpahFPsA2a_8Leow/m500/800",
+        "title":"WEEPING CONCRETE",
+        "date":"2022",
+        "url":"https://bentway.canto.com/direct/image/42pnja4kah7lr7hjtfh6939t7r/sCfG9u1PQaHdu1x9d6msP7Zptlk/original?content-type=image%2Fjpeg&name=Weeping+Concrete+-+Hazel+Meyer.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/42pnja4kah7lr7hjtfh6939t7r/pVA3j5j_4rJCpahFPsA2a_8Leow/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"STREET",
         "Artist":"Hazel Meyer",
-        "ID": "bw07",
+        "id": "bw07",
         "Description": "WEEPING CONCRETE is a site-specific project for a trio of performers across two towering scaffolds; asking us to reflect on the streets as we know them and imagine what they might be.",
         "See More": "<a href = 'https://www.thebentway.ca/event/weeping-concrete-3/'> Click here for more info </a>"
     }
@@ -120,14 +120,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40463067, 43.63780670]},
     "properties":{
-        "filename":"Parade",
-        "Year":"2022",
-        "URL":"https://bentway.canto.com/direct/image/ek7tl7hv5577v8h5nc86gf9o4n/1bgPvmBjAcd9hCcFaVgs3pTGbvk/original?content-type=image%2Fjpeg&name=Parade+-+Mimi+Lien.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/ek7tl7hv5577v8h5nc86gf9o4n/iTO5qs8jHcgVvst2-LtRccDX-X4/m500/800",
+        "title":"Parade",
+        "date":"2022",
+        "url":"https://bentway.canto.com/direct/image/ek7tl7hv5577v8h5nc86gf9o4n/1bgPvmBjAcd9hCcFaVgs3pTGbvk/original?content-type=image%2Fjpeg&name=Parade+-+Mimi+Lien.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/ek7tl7hv5577v8h5nc86gf9o4n/iTO5qs8jHcgVvst2-LtRccDX-X4/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"STREET",
         "Artist":"Mimi Liem",
-        "ID" : "bw08",
+        "id" : "bw08",
         "Description": "Part of the delight of being on the street is in not knowing what you will encounter next…  Inspired by the dynamic convergences and events that transpire in our streets, PARADE is a kinetic installation that infuses the Bentway’s skate trail with the vitality of the city and the ever shifting variables of the streetscape",
         "See More": "<a href = 'https://www.thebentway.ca/event/parade-by-mimi-lien/'> Click here for more info </a>"
     }
@@ -136,14 +136,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40463067, 43.63780670]},
     "properties":{
-        "filename":"And With",
-        "Year":"2022",
-        "URL":"https://bentway.canto.com/direct/image/r582nrlfbt4tb4kt36e0lbrt3b/5YUCBhL2QC7zWbY9BhOVujsdjtI/original?content-type=image%2Fjpeg&name=And+With+-+Germaine+Liu+%26+Mark+Zurawinski.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/r582nrlfbt4tb4kt36e0lbrt3b/jSgGciBgdZqZwN8sBK_D8N8xMzw/m500/800",
+        "title":"And With",
+        "date":"2022",
+        "url":"https://bentway.canto.com/direct/image/r582nrlfbt4tb4kt36e0lbrt3b/5YUCBhL2QC7zWbY9BhOVujsdjtI/original?content-type=image%2Fjpeg&name=And+With+-+Germaine+Liu+%26+Mark+Zurawinski.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/r582nrlfbt4tb4kt36e0lbrt3b/jSgGciBgdZqZwN8sBK_D8N8xMzw/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"STREET",
         "Artist":"Germaine Liu, Mark Zurawinski",
-        "ID" : "bw09",
+        "id" : "bw09",
         "Description": "And Walk is a sound walk that invites audiences and passersby to experience the sounds and textures of The Bentway, the streets nearby, and the rumbling urban artery above like never before",
         "See More": "<a href = 'https://www.thebentway.ca/event/and-with/'> Click here for more info </a>"
     }
@@ -152,14 +152,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.41083525, 43.63736280]},
     "properties":{
-        "filename":"Confluence",
-        "Year":"2022", 
-        "URL":"https://bentway.canto.com/direct/image/nsi9iae8793ir9lhd0ji9hvm3f/eLGs2JqtLeiAAYUNgVeZymEfwdg/original?content-type=image%2Fjpeg&name=Confluence+-+Striped+Canary+thumbnail+pic.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/nsi9iae8793ir9lhd0ji9hvm3f/3lLavrLYlMSg_khLXmpKfScOUDE/m500/800",
+        "title":"Confluence",
+        "date":"2022", 
+        "url":"https://bentway.canto.com/direct/image/nsi9iae8793ir9lhd0ji9hvm3f/eLGs2JqtLeiAAYUNgVeZymEfwdg/original?content-type=image%2Fjpeg&name=Confluence+-+Striped+Canary+thumb_url+pic.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/nsi9iae8793ir9lhd0ji9hvm3f/3lLavrLYlMSg_khLXmpKfScOUDE/m500/800",
         "Season":"Fall",
         "Overarching Theme":"Confluence",
         "Artist":"Striped Canary",
-        "ID" : "bw10",
+        "id" : "bw10",
         "Description": "Inspired by the water systems that have shaped Toronto, Confluence invites visitors to flow through an engrossing convergence of natural and human-made forces.",
         "See More": "<a href = https://www.thebentway.ca/event/confluence/'> Click here for more info </a>"
     }
@@ -168,14 +168,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40420517, 43.63775932]},
     "properties":{
-        "filename":"Receipts",
-        "Year":"2020",
-        "URL":"https://bentway.canto.com/direct/image/6u0fqojbq57eb05sc1rph8i41m/L8tmtKI0gO-NzOfbddHlHIZETVA/original?content-type=image%2Fjpeg&name=Receipts+-+Public+Visualization+Studio.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/6u0fqojbq57eb05sc1rph8i41m/A92m6yVaNGVCDCcfCYH7VaNlUSs/m500/800",
+        "title":"Receipts",
+        "date":"2020",
+        "url":"https://bentway.canto.com/direct/image/6u0fqojbq57eb05sc1rph8i41m/L8tmtKI0gO-NzOfbddHlHIZETVA/original?content-type=image%2Fjpeg&name=Receipts+-+Public+Visualization+Studio.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/6u0fqojbq57eb05sc1rph8i41m/A92m6yVaNGVCDCcfCYH7VaNlUSs/m500/800",
         "Season":"Fall",
         "Overarching Theme":"Safe in Public Space",
         "Artist":"Public Visualization Studio",
-        "ID": "bw11",
+        "id": "bw11",
         "Description":"Receipts is a multimodal interface that receives (via voice, video, and/or text), anonymizes, archives, and performs (on the web and in public) the testimony of people that have experienced or witnessed anti-Asian aggression in public spaces.",
         "See More":"<a href = 'https://www.thebentway.ca/event/sips-receipts-2/' Click here for more info </a>"
     }
@@ -184,14 +184,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40501088, 43.63767707]},
     "properties":{
-        "filename":"Radical Love",
-        "Year":"2020",
-        "URL": "https://bentway.canto.com/direct/image/lc5pe0h71h1e79nsb5qbba9v0n/qX0l8yawh8Z39XVlQh-YlK6U7V4/original?content-type=image%2Fjpeg&name=Radical+Love+-+Syrus+Marcus+Ware.jpg",
-        "Thumbnail": "https://bentway.canto.com/direct/image/lc5pe0h71h1e79nsb5qbba9v0n/8IIY1YiCXgkPNAZOP_eGt3He8-0/m500/800",
+        "title":"Radical Love",
+        "date":"2020",
+        "url": "https://bentway.canto.com/direct/image/lc5pe0h71h1e79nsb5qbba9v0n/qX0l8yawh8Z39XVlQh-YlK6U7V4/original?content-type=image%2Fjpeg&name=Radical+Love+-+Syrus+Marcus+Ware.jpg",
+        "thumb_url": "https://bentway.canto.com/direct/image/lc5pe0h71h1e79nsb5qbba9v0n/8IIY1YiCXgkPNAZOP_eGt3He8-0/m500/800",
         "Season":"Fall",
         "Overarching Theme":"Safe in Public Space",
         "Artist":"Syrus Marcus Ware",
-        "ID":"bw12",
+        "id":"bw12",
         "Description": "A multimedia installation that centres Black and Afro-Indigenous Trans women and non-binary people, creating monuments to Trans lives and their survival.",
         "See More":"<a href = 'https://www.thebentway.ca/event/sips-radical-love-2/' Click here for more info </a>"
     }
@@ -200,14 +200,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40712057, 43.63747132]},
     "properties":{
-        "filename":"Sinaaqpagiaqtutt",
-        "Year": "2019",
-        "URL":"https://bentway.canto.com/direct/image/9u99t6ndld78lda5ojb9bdc929/EZUProWcX5lsETwAdDQI0yIQThg/original?content-type=image%2Fjpeg&name=Sinaaqpagiaqtutt+The+Long+Cut.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/9u99t6ndld78lda5ojb9bdc929/YbDfu7CP-DldunxVPdxZ285Yn2s/m500/800",
+        "title":"Sinaaqpagiaqtutt",
+        "date": "2019",
+        "url":"https://bentway.canto.com/direct/image/9u99t6ndld78lda5ojb9bdc929/EZUProWcX5lsETwAdDQI0yIQThg/original?content-type=image%2Fjpeg&name=Sinaaqpagiaqtutt+The+Long+Cut.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/9u99t6ndld78lda5ojb9bdc929/YbDfu7CP-DldunxVPdxZ285Yn2s/m500/800",
         "Season":"Fall",
         "Overarching Theme":"Second Nature",
         "Artist":"Embassy of Imagination",
-        "ID": "bw13",
+        "id": "bw13",
         "Description": "Sinaaqpagiaqtuut/The Long-Cut is a procession that began in Kinngait (Cape Dorset, Nunavut) and continues in Toronto",
         "See More": "<a href = 'https://www.thebentway.ca/event/toronto-biennial-of-art-sinaaqpagiaqtuut-the-long-cut-2/' Click here for more info </a>"
     }
@@ -216,14 +216,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40935168, 43.63753783]},
     "properties":{
-        "filename":"Museum of the Moon",
-        "Year":"2019",
-        "URL":"https://bentway.canto.com/direct/image/m1heabms2p3lh62qov2vu3rm1t/uHkkS9JngQ2-gvVPMm3WUN4USIM/original?content-type=image%2Fjpeg&name=Museum+of+the+Moon+-+Luke+Jerram.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/m1heabms2p3lh62qov2vu3rm1t/W9qolec2gVEGri3wKFfumIKJER0/m500/800",
+        "title":"Museum of the Moon",
+        "date":"2019",
+        "url":"https://bentway.canto.com/direct/image/m1heabms2p3lh62qov2vu3rm1t/uHkkS9JngQ2-gvVPMm3WUN4USIM/original?content-type=image%2Fjpeg&name=Museum+of+the+Moon+-+Luke+Jerram.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/m1heabms2p3lh62qov2vu3rm1t/W9qolec2gVEGri3wKFfumIKJER0/m500/800",
         "Season":"Fall",
         "Overarching Theme":"Second Nature",
         "Artist":"Luke Jerram",
-        "ID": "bw14",
+        "id": "bw14",
         "Description": "The Bentway brings the Moon under the Gardiner with a presentation of Museum of the Moon: a seven-metre wide touring sculptural work by UK artist Luke Jerram, which fuses lunar imagery to bring the surface of the moon to life on earth. ",
         "See More":"<a href = 'https://www.thebentway.ca/event/museum-of-the-moon-2/'> Click here for more info </a>"
     }
@@ -232,14 +232,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40628030, 43.63757118]},
     "properties":{
-        "filename":"Distribution of Sensation",
-        "Year":"2019",
-        "URL":"https://bentway.canto.com/direct/image/8kjshraaml67tb372sdhtck20f/X9NQfkQYvM5MX1LfbE5xGkIrToo/original?content-type=image%2Fjpeg&name=Distribution+of+Sensation+-+Mitchell+Akiyama+%26+Brady+Peters.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/8kjshraaml67tb372sdhtck20f/GPFviosWpENMSq-7lHZWYKdrBsY/m500/800",
+        "title":"Distribution of Sensation",
+        "date":"2019",
+        "url":"https://bentway.canto.com/direct/image/8kjshraaml67tb372sdhtck20f/X9NQfkQYvM5MX1LfbE5xGkIrToo/original?content-type=image%2Fjpeg&name=Distribution+of+Sensation+-+Mitchell+Akiyama+%26+Brady+Peters.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/8kjshraaml67tb372sdhtck20f/GPFviosWpENMSq-7lHZWYKdrBsY/m500/800",
         "Season":"Fall",
         "Overarching Theme":"Second Nature",
         "Artist":"Mitchell Akiyama, Brady Peters",
-        "ID": "bw15",
+        "id": "bw15",
         "Description": "Mimicking the drainage infrastructure of The Bentway (the PVC pipes that carry rainwater down from the Gardiner Expressway) Mitchell Akiyama and Brady Peters have created a series of sonic sculptures that pose as infrastructure, albeit of an unusual sort.",
         "See More": "<a href = 'https://www.thebentway.ca/event/the-distribution-of-sensation/'> Click here for more info </a>"
     }
@@ -248,14 +248,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40547523, 43.63759592]},
     "properties":{
-        "filename":"Hoarding",
-        "Year":"2019",
-        "URL":"https://bentway.canto.com/direct/image/s861p5n73p59pcdkv7fq9gv90s/4cTNezq9ngT5PXEa4v2ttnCKoNo/original?content-type=image%2Fjpeg&name=Hoarding+-+Gareth+Lichty.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/s861p5n73p59pcdkv7fq9gv90s/02dY5JQDv4tq6gdU5eofOcwqPYQ/m500/800",
+        "title":"Hoarding",
+        "date":"2019",
+        "url":"https://bentway.canto.com/direct/image/s861p5n73p59pcdkv7fq9gv90s/4cTNezq9ngT5PXEa4v2ttnCKoNo/original?content-type=image%2Fjpeg&name=Hoarding+-+Gareth+Lichty.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/s861p5n73p59pcdkv7fq9gv90s/02dY5JQDv4tq6gdU5eofOcwqPYQ/m500/800",
         "Season":"Fall",
         "Overarching Theme":"Creation:Destruction",
         "Artist":"Gareth Lichty",
-        "ID":"bw16",
+        "id":"bw16",
         "Description": "In “Hoarding,” hazard tape—a material typically used to keep people away from spaces under construction—will wrap a series of “bents” that hold up the Gardiner Expressway.",
         "See More": "<a href = 'https://www.thebentway.ca/event/nuit-blanche-toronto-creation-destruction-2-2/'> Click here for more info </a>" 
     }
@@ -264,14 +264,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.41003058, 43.63748273]},
     "properties":{
-        "filename":"Halcyon",
-        "Year":"2019",
-        "URL":"https://bentway.canto.com/direct/image/u9kgefn9gl0cjcth7vn0bijc3p/XZdy7BcJvzrEAf7PuQyk_tsLReE/original?content-type=image%2Fjpeg&name=Halcyon+-+Francesca+Chudnoff.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/u9kgefn9gl0cjcth7vn0bijc3p/bLpNoXoD2iF-XZgnuCMJTPdNfwg/m500/800",
+        "title":"Halcyon",
+        "date":"2019",
+        "url":"https://bentway.canto.com/direct/image/u9kgefn9gl0cjcth7vn0bijc3p/XZdy7BcJvzrEAf7PuQyk_tsLReE/original?content-type=image%2Fjpeg&name=Halcyon+-+Francesca+Chudnoff.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/u9kgefn9gl0cjcth7vn0bijc3p/bLpNoXoD2iF-XZgnuCMJTPdNfwg/m500/800",
         "Season":"Fall",
         "Overarching Theme":"Creation:Destruction",
         "Artist":"Francesca Chudnoff",
-        "ID":"bw17",
+        "id":"bw17",
         "Description": "Halcyon is a video and dance performance designed to question the range of ways in which we constantly tune and adjust our self-presentation, both onscreen and in real life.",
         "See More":"<a href = 'https://www.thebentway.ca/event/nuit-blanche-toronto-creation-destruction-2/'> Click here for more info </a>"
     }
@@ -280,14 +280,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40581083, 43.63752912]},
     "properties":{
-        "filename":"Theory X",
-        "Year":"2019",
-        "URL":"https://bentway.canto.com/direct/image/ushrrbtael29vdtb159oeikq6r/yYnhVHBLlDXuXI3GF_Xqk0lrOvw/original?content-type=image%2Fjpeg&name=Theory+X+-+Monuments.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/ushrrbtael29vdtb159oeikq6r/aMOxYbVWakjTSU8_750mqxJk2hc/m500/800",
+        "title":"Theory X",
+        "date":"2019",
+        "url":"https://bentway.canto.com/direct/image/ushrrbtael29vdtb159oeikq6r/yYnhVHBLlDXuXI3GF_Xqk0lrOvw/original?content-type=image%2Fjpeg&name=Theory+X+-+Monuments.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/ushrrbtael29vdtb159oeikq6r/aMOxYbVWakjTSU8_750mqxJk2hc/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Communitas",
         "Artist":"Monument Labs",
-        "ID":"bw18",
+        "id":"bw18",
         "Description": "Together, Monument Lab and The Bentway have posed an open research question: What is your theory of Toronto? We have worked with Lum and Farber to create a list of potential speakers to reflect a widespread critical community.",
         "See More":"<a href = 'https://www.thebentway.ca/event/theory-x-with-monument-lab-2/> Click here for more info </a>"
     }
@@ -296,14 +296,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40863700, 43.63743882]},
     "properties":{
-        "filename":"Block Party",
-        "Year":"2019",
-        "URL":"https://bentway.canto.com/direct/image/m0ms872h8t7mf5g947t0fcmr2a/Be17PB0def8CIJe_IFu92_NQJuM/original?content-type=image%2Fjpeg&name=The+Bentway+Block+Party+of+2019.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/m0ms872h8t7mf5g947t0fcmr2a/L867YwTlT8Zm6ihKtDFxA13toIE/m500/800",
+        "title":"Block Party",
+        "date":"2019",
+        "url":"https://bentway.canto.com/direct/image/m0ms872h8t7mf5g947t0fcmr2a/Be17PB0def8CIJe_IFu92_NQJuM/original?content-type=image%2Fjpeg&name=The+Bentway+Block+Party+of+2019.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/m0ms872h8t7mf5g947t0fcmr2a/L867YwTlT8Zm6ihKtDFxA13toIE/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Communitas",
         "Artist":"The Bentway",
-        "ID":"bw19",
+        "id":"bw19",
         "Description": "A family-friendly day-long celebration",
         "See More": "<a href = 'https://www.thebentway.ca/event/the-bentway-block-party-2-2/'> Click here for more info </a>"
     }
@@ -312,14 +312,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40591812, 43.63752912]},
     "properties":{
-        "filename":"New Monuments for New Cities",
-        "Year":"2019",
-        "URL":"https://bentway.canto.com/direct/image/9u8jfic9592opcpu4v0oaagr21/YhjNQc3hvo8jk6_u6p50U1a2SHw/original?content-type=image%2Fjpeg&name=Monuments+Summit.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/9u8jfic9592opcpu4v0oaagr21/Hna4v1ZpTL8CVvbpC8V8H08gNbo/m500/800",
+        "title":"New Monuments for New Cities",
+        "date":"2019",
+        "url":"https://bentway.canto.com/direct/image/9u8jfic9592opcpu4v0oaagr21/YhjNQc3hvo8jk6_u6p50U1a2SHw/original?content-type=image%2Fjpeg&name=Monuments+Summit.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/9u8jfic9592opcpu4v0oaagr21/Hna4v1ZpTL8CVvbpC8V8H08gNbo/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Communitas",
         "Artist":"Monument Labs",
-        "ID":"bw20",
+        "id":"bw20",
         "Description":"This day-long public event introduced the public to the New Monuments exhibition, the contributing artists from several participating cities, and the issues the exhibition raises.",
         "See More":"<a href = 'https://www.thebentway.ca/event/monuments-summit-2/'> Click here for more info </a>"
     }
@@ -328,14 +328,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40648952, 43.63755567]},
     "properties":{
-        "filename":"Izhininjiiniwag",
-        "Year":"2019",
-        "URL":"https://bentway.canto.com/direct/image/61tnhkdkl17m19bdidcp9cvl6t/Z35pMprD9Ta0jnWWNCzHB6LZJTE/original?content-type=image%2Fjpeg&name=Izhininjiiniwag+-+Oasis+Stakeboard+Factory%2C+Chief+Lady+Bird%2C+Aura+%26+Ev+Pakinewatik.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/61tnhkdkl17m19bdidcp9cvl6t/F_SH7lZ8kFFreSZ0aQfwvIu_VqQ/m500/800",
+        "title":"Izhininjiiniwag",
+        "date":"2019",
+        "url":"https://bentway.canto.com/direct/image/61tnhkdkl17m19bdidcp9cvl6t/Z35pMprD9Ta0jnWWNCzHB6LZJTE/original?content-type=image%2Fjpeg&name=Izhininjiiniwag+-+Oasis+Stakeboard+Factory%2C+Chief+Lady+Bird%2C+Aura+%26+Ev+Pakinewatik.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/61tnhkdkl17m19bdidcp9cvl6t/F_SH7lZ8kFFreSZ0aQfwvIu_VqQ/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Communitas",
         "Artist":"Oasis Stakeboard Factory",
-        "ID":"bw21",
+        "id":"bw21",
         "Description": "Izhininjiiniwag is an amalgamation of skateboard culture, pow wow regalia and photography",
         "See More":"<a href = 'https://www.thebentway.ca/event/izhininjiiniwag-they-move-in-a-certain-way-by-oasis-skateboard-factory-with-chief-lady-bird-aura-last-and-evelyn-pakinewatik/'> Click here for more info </a>"
     }
@@ -344,14 +344,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40585955, 43.63756798]},
     "properties":{
-        "filename":"Derives",
-        "Year":"2019",
-        "URL":"https://bentway.canto.com/direct/image/batlrq0oh97n5a1bmmi5b40o12/QVlAG3Kca_XXv4lCs3y2l-Oku44/original?content-type=image%2Fjpeg&name=Derives+-+Noemie+Lafrance.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/batlrq0oh97n5a1bmmi5b40o12/s75oT6A2QgI0YmWMiM4td9SV0Jc/m500/800",
+        "title":"Derives",
+        "date":"2019",
+        "url":"https://bentway.canto.com/direct/image/batlrq0oh97n5a1bmmi5b40o12/QVlAG3Kca_XXv4lCs3y2l-Oku44/original?content-type=image%2Fjpeg&name=Derives+-+Noemie+Lafrance.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/batlrq0oh97n5a1bmmi5b40o12/s75oT6A2QgI0YmWMiM4td9SV0Jc/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Communitas",
         "Artist":"Noemie Lafrance",
-        "ID":"bw22",
+        "id":"bw22",
         "Description": "Celebrating the repurposed architecture of the Gardiner Expressway via The Bentway, this site-specific performance re-envisions the site as a group navigation, questioning urban infrastructure as forms of political power and social design.",
         "See More":"<a href = 'https://www.thebentway.ca/event/derives-by-noemie-lafrance-june-8-730pm-2/'> Click here for more info </a>"
     }
@@ -360,15 +360,15 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40976755, 43.63748833]},
     "properties":{
-        "filename":"Communal Table",
-        "Year":"2019",
-        "URL":"https://bentway.canto.com/direct/image/dvnjipeilt1pdap88f52didd5o/tp2BpM-fk0SdNJ4SeEhNxIwug2g/original?content-type=image%2Fjpeg&name=Communal+Table+2019.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/dvnjipeilt1pdap88f52didd5o/CQC57zz_AorTA2-GLOcu7xBMDVU/m500/800",
+        "title":"Communal Table",
+        "date":"2019",
+        "url":"https://bentway.canto.com/direct/image/dvnjipeilt1pdap88f52didd5o/tp2BpM-fk0SdNJ4SeEhNxIwug2g/original?content-type=image%2Fjpeg&name=Communal+Table+2019.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/dvnjipeilt1pdap88f52didd5o/CQC57zz_AorTA2-GLOcu7xBMDVU/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Communitas",
         "Artist":"Various Artists",
-        "ID":"bw23",
-        "Description": "Beginning June 2019 and spanning through the year, The Bentway offered weekly communal dining opportunities for neighbours and community members.",
+        "id":"bw23",
+        "Description": "Beginning June 2019 and spanning through the date, The Bentway offered weekly communal dining opportunities for neighbours and community members.",
         "See More":"<a href = 'https://www.thebentway.ca/event/communal-table-2019/'> Click here for more info </a>"
 
     }
@@ -377,14 +377,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40567833, 43.63750193]},
     "properties":{
-        "filename":"A Nation Outside a Nation",
-        "Year":"2019",
-        "URL":"https://bentway.canto.com/direct/image/bns7j7old90iv92n579j16fh1l/lADp8IA6-AB6ivUXBNfkCwq703s/original?content-type=image%2Fjpeg&name=A+Nation+Outside+a+Nation+-+Nadine+Stijns+-+CONTACT+Scotiabank.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/bns7j7old90iv92n579j16fh1l/qxM8-MZUX_nl2KmMAx3VNcWaLR0/m500/800",
+        "title":"A Nation Outside a Nation",
+        "date":"2019",
+        "url":"https://bentway.canto.com/direct/image/bns7j7old90iv92n579j16fh1l/lADp8IA6-AB6ivUXBNfkCwq703s/original?content-type=image%2Fjpeg&name=A+Nation+Outside+a+Nation+-+Nadine+Stijns+-+CONTACT+Scotiabank.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/bns7j7old90iv92n579j16fh1l/qxM8-MZUX_nl2KmMAx3VNcWaLR0/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"Communitas",
         "Artist":"Nadine Stijns",
-        "ID":"bw24",
+        "id":"bw24",
         "Description" :"Dutch artist Nadine Stijns attempts to capture the memories, dreams, and flow of capital and possessions throughout the Filipino diaspora.",
         "See More":"<a href = 'https://www.thebentway.ca/event/nadine-stijns-a-nation-outside-a-nation-with-scotiabank-contact-photography-exhibition/'> Click here for more info </a>"
     }
@@ -393,14 +393,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40606648, 43.63749743]},
     "properties":{
-        "filename":"WATERLICHT",
-        "Year":"2018",
-        "URL":"https://bentway.canto.com/direct/image/pcaerdfs652o55r8h3ud2ld50l/cXf9DBE6nNdci4XzPN9r12ZfR7A/original?content-type=image%2Fjpeg&name=WATERLICHT+-+Daan+Roosegaarde.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/pcaerdfs652o55r8h3ud2ld50l/4FCvG7_xoFgWKwGdXuv7wHfbdg4/m800/800",
+        "title":"WATERLICHT",
+        "date":"2018",
+        "url":"https://bentway.canto.com/direct/image/pcaerdfs652o55r8h3ud2ld50l/cXf9DBE6nNdci4XzPN9r12ZfR7A/original?content-type=image%2Fjpeg&name=WATERLICHT+-+Daan+Roosegaarde.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/pcaerdfs652o55r8h3ud2ld50l/4FCvG7_xoFgWKwGdXuv7wHfbdg4/m800/800",
         "Season":"Fall",
         "Overarching Theme":"If, But What If?",
         "Artist":"Daan Roosegarde",
-        "ID":"bw25",
+        "id":"bw25",
         "Description": "Waterlicht is a dream landscape created through the imaginative use of LEDs, special software, and lenses",
         "See More":"<a href = 'https://www.thebentway.ca/event/waterlicht-2/'> Click here for more info </a>"
 
@@ -410,14 +410,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40592933, 43.63749108]},
     "properties":{
-        "filename":"Shift",
-        "Year":"2018",
-        "URL":"https://bentway.canto.com/direct/image/uqsk28pik12c3fn9a41f0r2n3i/oj2g3ESKx2eKNITjl3iRFUAm3RA/original?content-type=image%2Fjpeg&name=Shift+-+Mani+Mazinani+%26+Sanaz+Mazinani.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/uqsk28pik12c3fn9a41f0r2n3i/_JyACa69GduQdO7zj9eMUxzvurI/m500/800",
+        "title":"Shift",
+        "date":"2018",
+        "url":"https://bentway.canto.com/direct/image/uqsk28pik12c3fn9a41f0r2n3i/oj2g3ESKx2eKNITjl3iRFUAm3RA/original?content-type=image%2Fjpeg&name=Shift+-+Mani+Mazinani+%26+Sanaz+Mazinani.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/uqsk28pik12c3fn9a41f0r2n3i/_JyACa69GduQdO7zj9eMUxzvurI/m500/800",
         "Season":"Fall",
         "Overarching Theme":"If, But What If?",
         "Artist":"Mani Mazinani, Sanaz Mazinani",
-        "ID":"bw26",
+        "id":"bw26",
         "Description": "Located within two, 20-foot shipping containers, Shift takes the form of a large-scale stereo system that engages with both seated audiences and passers-by.",
         "See More":"<a href = 'https://www.thebentway.ca/event/shift-mani-mazinani-and-sanaz-mazinani/'> Click here for more info </a>"
     }
@@ -426,14 +426,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40970003, 43.63699333]},
     "properties":{
-        "filename":"Iconic Site #5",
-        "Year":"2018",
-        "URL":"https://bentway.canto.com/direct/image/8m99lkm53d1pj2mcet3470c71j/VE0wNeh_qrpR_q0z5B2df7NZs_w/original?content-type=image%2Fjpeg&name=Iconic+Site+%235+-+Sans+facon.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/8m99lkm53d1pj2mcet3470c71j/67pVyyNkTqWLeN20lvM-8rAm41o/m500/800",
+        "title":"Iconic Site #5",
+        "date":"2018",
+        "url":"https://bentway.canto.com/direct/image/8m99lkm53d1pj2mcet3470c71j/VE0wNeh_qrpR_q0z5B2df7NZs_w/original?content-type=image%2Fjpeg&name=Iconic+Site+%235+-+Sans+facon.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/8m99lkm53d1pj2mcet3470c71j/67pVyyNkTqWLeN20lvM-8rAm41o/m500/800",
         "Season":"Fall",
         "Overarching Theme":"If, But What If?",
         "Artist":"Sans Facon",
-        "ID":"bw27",
+        "id":"bw27",
         "Description":"Positioned atop a hill at The Bentway and its newly opened Strachan Gate, the project reflects equally on the changing nature of the surrounding communities and the ambitions of The Bentway project itself, which has transformed a significant landscapes into a new shared public space for the growing city",
         "See More":"<a href = 'https://www.thebentway.ca/event/iconic-site-5-sans-facon/'> Click here for more info </a>"
     }
@@ -442,14 +442,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40996732, 43.63749062]},
     "properties":{
-        "filename":"Green Hills Discovery",
-        "Year":"2018",
-        "URL":"https://bentway.canto.com/direct/image/d261of8ql10cf323va524fqt55/H1bzegIq97MMe8oxU9AnHsVeVHo/original?content-type=image%2Fjpeg&name=Green+Hills+Discovery+-+Alex+McLeod.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/d261of8ql10cf323va524fqt55/in5KXL2I-fI7kJJX_ck1jBbe8AQ/m500/800",
+        "title":"Green Hills Discovery",
+        "date":"2018",
+        "url":"https://bentway.canto.com/direct/image/d261of8ql10cf323va524fqt55/H1bzegIq97MMe8oxU9AnHsVeVHo/original?content-type=image%2Fjpeg&name=Green+Hills+Discovery+-+Alex+McLeod.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/d261of8ql10cf323va524fqt55/in5KXL2I-fI7kJJX_ck1jBbe8AQ/m500/800",
         "Season":"Fall",
         "Overarching Theme":"If, But What If?",
         "Artist":"Alex McLeod",
-        "ID":"bw28",
+        "id":"bw28",
         "Description":"In this piece, McLeod melds time as well as space to create a place between two worlds",
         "See More":"<a href = 'https://www.thebentway.ca/event/green-hills-discovery-alex-mcleod/'> Click here for more info </a>"
     }
@@ -458,14 +458,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40628827, 43.63755628]},
     "properties":{
-        "filename":"Gardiner, Lakeshore & Bentway Art Piece",
-        "Year":"2018",
-        "URL":"https://bentway.canto.com/direct/image/r36nme4gjl0obeq2c27j7uhd2a/DuwGpGRVYF3pg9qq2t2JSBJHDXY/original?content-type=image%2Fjpeg&name=Gardiner%2C+Lakeshore+%26+Bentway+Art+Piece+-+Michael+Awad.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/r36nme4gjl0obeq2c27j7uhd2a/O2DAuV5oe56Ljqdv36hOYcW5Dxo/m500/800",
+        "title":"Gardiner, Lakeshore & Bentway Art Piece",
+        "date":"2018",
+        "url":"https://bentway.canto.com/direct/image/r36nme4gjl0obeq2c27j7uhd2a/DuwGpGRVYF3pg9qq2t2JSBJHDXY/original?content-type=image%2Fjpeg&name=Gardiner%2C+Lakeshore+%26+Bentway+Art+Piece+-+Michael+Awad.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/r36nme4gjl0obeq2c27j7uhd2a/O2DAuV5oe56Ljqdv36hOYcW5Dxo/m500/800",
         "Season":"Fall",
         "Overarching Theme":"If, But What If?",
         "Artist":"Michael Awad",
-        "ID":"bw29",
+        "id":"bw29",
         "Description": "Through the lens of artist Michael Awad, the highway is presented in this piece as a continuous datum running through both time and space: a register by which to measure an ever-changing Toronto.",
         "See More":"<a href = 'https://www.thebentway.ca/event/the-gardiner-expressway-lakeshore-boulevard-and-the-bentway-2018-michael-awad/'> Click here for more info </a>"
     }
@@ -474,14 +474,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40496673, 43.63764112]},
     "properties":{
-        "filename":"Every Building from a Defunct Liberty Village Factory, Rotated Vertically",
-        "Year":"2018",
-        "URL": "https://bentway.canto.com/direct/image/5p2dep9f2p6c736vp48o27ko04/tSrLaVXsEwM6sdAeLgvvsa-w2W0/original?content-type=image%2Fjpeg&name=Every+Building+from+a+Defunct+Liberty+Village+Factory%2C+Rotated+Vertically+-+Jon+Sasaki.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/5p2dep9f2p6c736vp48o27ko04/JJSSQBfyf9h9j6w9W0DuwF7MQMk/m320/800",
+        "title":"Every Building from a Defunct Liberty Village Factory, Rotated Vertically",
+        "date":"2018",
+        "url": "https://bentway.canto.com/direct/image/5p2dep9f2p6c736vp48o27ko04/tSrLaVXsEwM6sdAeLgvvsa-w2W0/original?content-type=image%2Fjpeg&name=Every+Building+from+a+Defunct+Liberty+Village+Factory%2C+Rotated+Vertically+-+Jon+Sasaki.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/5p2dep9f2p6c736vp48o27ko04/JJSSQBfyf9h9j6w9W0DuwF7MQMk/m320/800",
         "Season":"Fall",
         "Overarching Theme":"If, But What If?",
         "Artist":"Joe Sasaki",
-        "ID": "bw30",
+        "id": "bw30",
         "Description": "Artist Jon Sasaki reimagines the once mighty John Inglis & Company Factory in its heyday, wherein each of the original buildings has been retraced and modelled in plan view and then rotated into a vertical position.",
         "See More":"<a href = 'https://www.thebentway.ca/event/every-building-from-a-defunct-liberty-village-factory-rotated-vertically-jon-sasaki/'> Click here for more info </a>"
     }
@@ -490,14 +490,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40562040, 43.63754852]},
     "properties":{
-        "filename":"Earthbound",
-        "Year":"2018",
-        "URL":"https://bentway.canto.com/direct/image/q9mn5uoi7d6kf7h2k44i8fub39/kUsQ967Qitx4zVqjAmkvtEliL8Q/original?content-type=image%2Fjpeg&name=Earthbound+-+Steven+Beckly.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/q9mn5uoi7d6kf7h2k44i8fub39/xP9rd1XFm-d1W9L4G3n9LM2tNFc/m500/800",
+        "title":"Earthbound",
+        "date":"2018",
+        "url":"https://bentway.canto.com/direct/image/q9mn5uoi7d6kf7h2k44i8fub39/kUsQ967Qitx4zVqjAmkvtEliL8Q/original?content-type=image%2Fjpeg&name=Earthbound+-+Steven+Beckly.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/q9mn5uoi7d6kf7h2k44i8fub39/xP9rd1XFm-d1W9L4G3n9LM2tNFc/m500/800",
         "Season":"Fall",
         "Overarching Theme":"If, But What If?",
         "Artist":"Steven Beckly",
-        "ID" : "bw31",
+        "id" : "bw31",
         "Description": "Cultivating moments of closeness and intimacy, Steven Beckly curates images within a bunker space which straddles the line between photography and sculpture.",
         "See More":"<a href = 'https://www.thebentway.ca/event/earthbound-steven-beckly/'> Click here for more info </a>"
     }
@@ -506,14 +506,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40629372, 43.63758090]},
     "properties":{
-        "filename":"8 Bit Wampum",
-        "Year":"2018",
-        "URL":"https://bentway.canto.com/direct/image/m9rnjqvg8h60l79h69mupb8u59/9PDymYJwHIvOQI4LNvcAnM0KjjY/original?content-type=image%2Fjpeg&name=8+Bit+Wampum+-+Wally+Dion.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/m9rnjqvg8h60l79h69mupb8u59/oY9wDex_01EooiGzJLo06L38nGQ/m500/800",
+        "title":"8 Bit Wampum",
+        "date":"2018",
+        "url":"https://bentway.canto.com/direct/image/m9rnjqvg8h60l79h69mupb8u59/9PDymYJwHIvOQI4LNvcAnM0KjjY/original?content-type=image%2Fjpeg&name=8+Bit+Wampum+-+Wally+Dion.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/m9rnjqvg8h60l79h69mupb8u59/oY9wDex_01EooiGzJLo06L38nGQ/m500/800",
         "Season":"Fall",
         "Overarching Theme":"If, But What If?",
         "Artist":"Wally Dion",
-        "ID": "bw32",
+        "id": "bw32",
         "Description": "The piece made by artist Wally Dion monumentalizes the traditional wampum belt: stringed shell beads used for commercial, ornamental, ceremonial, and diplomatic purposes, to suit the massive scale of The Bentway site",
         "See More":"<a href = 'https://www.thebentway.ca/event/wampum-belt-wally-dion/'> Click here for more info </a>"
     }
@@ -522,14 +522,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40516710, 43.63773293]},
     "properties":{
-        "filename":"Shadow!",
-        "Year":"2018",
-        "URL":"https://bentway.canto.com/direct/image/37mcl15i696dbefutmb8chmd04/WG2h92ge3m4hEeSXl8rMEDKd7SY/original?content-type=image%2Fjpeg&name=Shadow%21+-+Public+Visualization+Studio.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/37mcl15i696dbefutmb8chmd04/E4SMHD0gAAZZDzlGjS5ABxNUZmE/m500/800",
+        "title":"Shadow!",
+        "date":"2018",
+        "url":"https://bentway.canto.com/direct/image/37mcl15i696dbefutmb8chmd04/WG2h92ge3m4hEeSXl8rMEDKd7SY/original?content-type=image%2Fjpeg&name=Shadow%21+-+Public+Visualization+Studio.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/37mcl15i696dbefutmb8chmd04/E4SMHD0gAAZZDzlGjS5ABxNUZmE/m500/800",
         "Season":"Winter",
         "Overarching Theme":"Constructions of the Everyday",
         "Artist":"Public Visualization Studio",
-        "ID": "bw33",
+        "id": "bw33",
         "Description": "A site specific project for the Bentway skate trail, Shadow! responds to the change of urban form taking place under the Gardiner Expressway",
         "See More":"<a href = 'https://www.thebentway.ca/event/shadow/'> Click here for more info </a>"
     }
@@ -538,14 +538,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40578622, 43.63744142]},
     "properties":{
-        "filename":"Re-Route",
-        "Year":"2018",
-        "URL":"https://bentway.canto.com/direct/image/7c1tbs3usd2u1fuc4nvttrdl0j/Ee81L2TAHdoYj2gWMOX9jJjuQR0/original?content-type=image%2Fjpeg&name=Re-Route+-+Jennifer+Ilett.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/7c1tbs3usd2u1fuc4nvttrdl0j/5ZvmQTeQh9x6_DNmH-0jbJS3sXo/m500/800",
+        "title":"Re-Route",
+        "date":"2018",
+        "url":"https://bentway.canto.com/direct/image/7c1tbs3usd2u1fuc4nvttrdl0j/Ee81L2TAHdoYj2gWMOX9jJjuQR0/original?content-type=image%2Fjpeg&name=Re-Route+-+Jennifer+Ilett.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/7c1tbs3usd2u1fuc4nvttrdl0j/5ZvmQTeQh9x6_DNmH-0jbJS3sXo/m500/800",
         "Season":"Winter",
         "Overarching Theme":"Constructions of the Everyday",
         "Artist":"Jennifer Ilett",
-        "ID": "bw34",
+        "id": "bw34",
         "Description":"Re-Route responds to the Gardiner Expressway as an iconic Toronto artery whose layered history encompasses settlement and expansion: cutting across historic railways that helped build Canada.",
         "See More":"<a href = 'https://www.thebentway.ca/event/re-route/'> Click here for more info </a>"
 
@@ -555,14 +555,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40487742, 43.63777175]},
     "properties":{
-        "filename":"Pro Tem",
-        "Year":"2018",
-        "URL":"https://bentway.canto.com/direct/image/ptubggn6e96pv09lf0ro67hf0s/3-8uR7G30fYV8RVlpZoaTiC6fMs/original?content-type=image%2Fjpeg&name=Pro+Tem+-+Janine+Miedzik.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/ptubggn6e96pv09lf0ro67hf0s/KEcctq_pXRbQqhwFFyb-PzOcNB8/m500/800",
+        "title":"Pro Tem",
+        "date":"2018",
+        "url":"https://bentway.canto.com/direct/image/ptubggn6e96pv09lf0ro67hf0s/3-8uR7G30fYV8RVlpZoaTiC6fMs/original?content-type=image%2Fjpeg&name=Pro+Tem+-+Janine+Miedzik.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/ptubggn6e96pv09lf0ro67hf0s/KEcctq_pXRbQqhwFFyb-PzOcNB8/m500/800",
         "Season":"Winter",
         "Overarching Theme":"Constructions of the Everyday",
         "Artist":"Janine Miedzik",
-        "ID": "bw35",
+        "id": "bw35",
         "Description":"Pro Tem is a series of provisional signage works that mimic construction notices, offering a familiar yet unexpected visual experience within the reimagined space of the Bentway. ",
         "See More":"<a href = 'https://www.thebentway.ca/event/pro-tem-by-janine-miedzik/'> Click here for more info </a>"
     }
@@ -571,14 +571,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40555437, 43.63749595]},
     "properties":{
-        "filename":"Photos for Project in Progress",
-        "Year":"2018",
-        "URL":"https://bentway.canto.com/direct/image/io1nvs477h63r2a8qdh7rt2g2u/JTrwLdLHbqzTb_c4UoiJe8ejp_Y/original?content-type=image%2Fjpeg&name=Photos+for+a+Project+in+Progress+-+Jimmy+Limit.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/io1nvs477h63r2a8qdh7rt2g2u/lwnnDijwR5idOXRAg6hUTo4ZNgs/m240/800",
+        "title":"Photos for Project in Progress",
+        "date":"2018",
+        "url":"https://bentway.canto.com/direct/image/io1nvs477h63r2a8qdh7rt2g2u/JTrwLdLHbqzTb_c4UoiJe8ejp_Y/original?content-type=image%2Fjpeg&name=Photos+for+a+Project+in+Progress+-+Jimmy+Limit.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/io1nvs477h63r2a8qdh7rt2g2u/lwnnDijwR5idOXRAg6hUTo4ZNgs/m240/800",
         "Season":"Winter",
         "Overarching Theme":"Constructions of the Everyday",
         "Artist":"Jimmy Limit",
-        "ID":"bw36",
+        "id":"bw36",
         "Description":"Sourcing artifacts left behind by the construction process such as (name materials), artist Jimmy Limit creates a series of unlikely and highly graphic assemblages, embedding familiar tools and discarded objects with new significance, beauty and humor.",
         "See More":"<a href = 'https://www.thebentway.ca/event/photos-for-a-project-in-progress-by-jimmy-limit/'> Click here for more info </a>"
     }
@@ -587,14 +587,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40422565, 43.63782222]},
     "properties":{
-        "filename":"Future Machines in Kinngait",
-        "Year":"2018",
-        "URL":"https://bentway.canto.com/direct/image/ju3kf4lf795v11qj129pln967t/J1GJtJyXcyTMkZGT2aY2dHRgqc4/original?content-type=image%2Fjpeg&name=Future+Snowmachines+in+Kinngait+-+Janice+Qimirpik%2C+Moe+Kelly%2C+Embassy+of+Imagination+%26+PA+System.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/ju3kf4lf795v11qj129pln967t/8FXF-3QdMdR69d_2dPGDYWid2gA/m500/800",
+        "title":"Future Machines in Kinngait",
+        "date":"2018",
+        "url":"https://bentway.canto.com/direct/image/ju3kf4lf795v11qj129pln967t/J1GJtJyXcyTMkZGT2aY2dHRgqc4/original?content-type=image%2Fjpeg&name=Future+Snowmachines+in+Kinngait+-+Janice+Qimirpik%2C+Moe+Kelly%2C+Embassy+of+Imagination+%26+PA+System.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/ju3kf4lf795v11qj129pln967t/8FXF-3QdMdR69d_2dPGDYWid2gA/m500/800",
         "Season":"Winter",
         "Overarching Theme":"Constructions of the Everyday",
         "Artist":"Embassy of Imagination, PA System",
-        "ID":"bw37",
+        "id":"bw37",
         "Description":"Future Snowmachines in Kinngait is a long-term project that leverages art as a tool for social action",
         "See More":"<a href = 'https://www.thebentway.ca/event/future-snowmachines/'> Click here for more info </a>"
     }
@@ -603,14 +603,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40580278, 43.63769605]},
     "properties":{
-        "filename":"Grand Opening of the Bentway Skate Trail",
-        "Year":"2018",
-        "URL":"https://bentway.canto.com/direct/image/8henmjus651fv79s0657i5d94f/X0SvgIuHQrbtNCofh3wAdJf-Nng/original?content-type=image%2Fjpeg&name=Grand+Opening+of+the+Bentway+%26+the+Skate+Trail.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/8henmjus651fv79s0657i5d94f/PSoEukWA_QJvH3fhDIRKJL8XElI/m500/800",
+        "title":"Grand Opening of the Bentway Skate Trail",
+        "date":"2018",
+        "url":"https://bentway.canto.com/direct/image/8henmjus651fv79s0657i5d94f/X0SvgIuHQrbtNCofh3wAdJf-Nng/original?content-type=image%2Fjpeg&name=Grand+Opening+of+the+Bentway+%26+the+Skate+Trail.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/8henmjus651fv79s0657i5d94f/PSoEukWA_QJvH3fhDIRKJL8XElI/m500/800",
         "Season":"Winter",
         "Overarching Theme":"None",
         "Artist":"The Bentway",
-        "ID":"bw38",
+        "id":"bw38",
         "Description": "On January 6th, 2018, the Bentway Skate Trail officially opened for use!",
         "See More":"<a href = 'https://www.thebentway.ca/event/grand-opening-ribbon-cutting/'> Click here for more info </a>"
     }
@@ -619,14 +619,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40486133, 43.63776982]},
     "properties":{
-        "filename":"Semblance",
-        "Year":"2018",
-        "URL":"https://bentway.canto.com/direct/image/0llq9337k55ule2bvh52grvo58/bQgT1bmP_LbjzNEGsaoBo7tibGU/original?content-type=image%2Fjpeg&name=Semblance+-+Build+for+Bokma.jpg",
-        "Thumbnail": "https://bentway.canto.com/direct/image/0llq9337k55ule2bvh52grvo58/zrKEoenqMtianu_b7IGMHLq5w_U/m800/800",
+        "title":"Semblance",
+        "date":"2018",
+        "url":"https://bentway.canto.com/direct/image/0llq9337k55ule2bvh52grvo58/bQgT1bmP_LbjzNEGsaoBo7tibGU/original?content-type=image%2Fjpeg&name=Semblance+-+Build+for+Bokma.jpg",
+        "thumb_url": "https://bentway.canto.com/direct/image/0llq9337k55ule2bvh52grvo58/zrKEoenqMtianu_b7IGMHLq5w_U/m800/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"None",
         "Artist":"Build for Bokma",
-        "ID": "bw39",
+        "id": "bw39",
         "Description":"Semblance is an art installation and pop-up skate park built in commemoration of Toronto skater Justin Bokma.",
         "See More":"https://www.thebentway.ca/event/semblance-build-for-bokma/"
     }
@@ -635,14 +635,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40556895, 43.63771318]},
     "properties":{
-        "filename":"Forest of Canoes",
-        "Year":"2018",
-        "URL":"https://bentway.canto.com/direct/image/qmbu1i1u8t3jdfmjtjldlrg85g/v-f_I2ACr9mFkEfMDOUwWmZB670/original?content-type=image%2Fjpeg&name=Forest+of+Canoes+-+Dana+Claxton.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/qmbu1i1u8t3jdfmjtjldlrg85g/ELA2I9VV0U7aiSqq-6YMK4o4rLQ/m500/800",
+        "title":"Forest of Canoes",
+        "date":"2018",
+        "url":"https://bentway.canto.com/direct/image/qmbu1i1u8t3jdfmjtjldlrg85g/v-f_I2ACr9mFkEfMDOUwWmZB670/original?content-type=image%2Fjpeg&name=Forest+of+Canoes+-+Dana+Claxton.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/qmbu1i1u8t3jdfmjtjldlrg85g/ELA2I9VV0U7aiSqq-6YMK4o4rLQ/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"None",
         "Artist":"Dana Claxton",
-        "ID":"bw40",
+        "id":"bw40",
         "Description":"In this site-specific installation, co-commissioned with Scotiabank CONTACT Photography Festival, Vancouver-based artist Dana Claxton (Lakota Sioux) considers the iconic role and symbolism of the canoe in Canadian, Metis, and Indigenous histories",
         "See More":"<a href = 'https://www.thebentway.ca/event/a-forest-of-canoes-by-dana-claxton-with-scotiabank-contact-photography-festival/'> Click here for more info </a>"
     }
@@ -651,14 +651,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40506187, 43.63773723]},
     "properties":{
-        "filename":"CITE Summer Celebration - Celebration of Skateboard Arts & Culture",
-        "Year":"2018",
-        "URL": "https://bentway.canto.com/direct/image/eo6j349qfp3tp22llkulroqe7i/CHxydzTv1k9JyzdRLsZsLXHLl1Q/original?content-type=image%2Fjpeg&name=CITE+Summer+Celebration+-+Celebration+of+Skateboard+Arts+and+Culture.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/eo6j349qfp3tp22llkulroqe7i/DGYyAu9jHCx_uYDF1gZXGoEJjZE/m500/800",
+        "title":"CITE Summer Celebration - Celebration of Skateboard Arts & Culture",
+        "date":"2018",
+        "url": "https://bentway.canto.com/direct/image/eo6j349qfp3tp22llkulroqe7i/CHxydzTv1k9JyzdRLsZsLXHLl1Q/original?content-type=image%2Fjpeg&name=CITE+Summer+Celebration+-+Celebration+of+Skateboard+Arts+and+Culture.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/eo6j349qfp3tp22llkulroqe7i/DGYyAu9jHCx_uYDF1gZXGoEJjZE/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"None",
         "Artist":"Build for Bokma",
-        "ID":"bw41",
+        "id":"bw41",
         "Description": "CITE was a summer-long celebration of skateboard arts and culture which ran from on June 30 - August 12. On weekends, it offered a variety of skaeboard based workshops.",
         "See More": "https://www.thebentway.ca/event/cite-a-celebration-of-skateboard-arts-and-culture/"
     }
@@ -667,15 +667,15 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.41003040, 43.63749123]},
     "properties":{
-        "filename":"Strachan Gate Grand Opening Block Party",
-        "Year":"2018",
-        "URL":"https://bentway.canto.com/direct/image/ippad3e0bd7dh485crc53vnr6d/2VhS03TVKl1O9YM3n0l27zT5C14/original?content-type=image%2Fjpeg&name=Bentway+Block+Party+-+Grand+opening+of+Strachan+Gate.jpg",
-        "Thumbnail": "https://bentway.canto.com/direct/image/ippad3e0bd7dh485crc53vnr6d/9UJ-MIQo8mfECPDR-qx0-u5_iFY/m500/800",
+        "title":"Strachan Gate Grand Opening Block Party",
+        "date":"2018",
+        "url":"https://bentway.canto.com/direct/image/ippad3e0bd7dh485crc53vnr6d/2VhS03TVKl1O9YM3n0l27zT5C14/original?content-type=image%2Fjpeg&name=Bentway+Block+Party+-+Grand+opening+of+Strachan+Gate.jpg",
+        "thumb_url": "https://bentway.canto.com/direct/image/ippad3e0bd7dh485crc53vnr6d/9UJ-MIQo8mfECPDR-qx0-u5_iFY/m500/800",
         "Season":"Spring/Summer",
         "Overarching Theme":"None",
         "Artist":"The Bentway",
-        "ID":"bw42",
-        "Description":"60 years in the making, this Block Party marked the initial opening of the Bentway (Phase 1), which opened the Strachan Gate section for public use.",
+        "id":"bw42",
+        "Description":"60 dates in the making, this Block Party marked the initial opening of the Bentway (Phase 1), which opened the Strachan Gate section for public use.",
         "See More":"<a href = 'https://www.thebentway.ca/event/the-bentway-block-party-3/'> Click here for more info </a>"
     }
     },
@@ -683,14 +683,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.41093922, 43.63736217]},
     "properties":{
-        "filename":"Pulse Topology",
-        "Year":"2021",
-        "URL":"https://bentway.canto.com/direct/image/7bq288f1514etdqvl83rpskb34/R9BLm7HgGfsuN2FgWf6uOHjfsnY/original?content-type=image%2Fjpeg&name=Pulse+Topology+-+Rafael+Lozano-Hemmer.jpg",
-        "Thumbnail":"https://bentway.canto.com/direct/image/7bq288f1514etdqvl83rpskb34/A8IFhZNVSj2l9tdHdWaiMCFKlXM/m500/800",
+        "title":"Pulse Topology",
+        "date":"2021",
+        "url":"https://bentway.canto.com/direct/image/7bq288f1514etdqvl83rpskb34/R9BLm7HgGfsuN2FgWf6uOHjfsnY/original?content-type=image%2Fjpeg&name=Pulse+Topology+-+Rafael+Lozano-Hemmer.jpg",
+        "thumb_url":"https://bentway.canto.com/direct/image/7bq288f1514etdqvl83rpskb34/A8IFhZNVSj2l9tdHdWaiMCFKlXM/m500/800",
         "Season":"Fall",
         "Overarching Theme":"None",
         "Artist":"Rafael Lozano-Hemmer",
-        "ID":"bw43",
+        "id":"bw43",
         "Description": "Marking the inaugural collaboration with neighbouring Exhibition Place and the Bentway, Pulse Topology by Rafael Lozano-Hemmers will take over a massive, enclosed storage chamber nestled beneath the Gardiner Expressway, inviting the public to discover a striking, industrial part of the city for the first time.",
         "See More":"<a href = 'https://www.thebentway.ca/event/pulse-topology/'> Click here for more info </a>"
 
@@ -700,14 +700,14 @@
 "geometry":{
     "type":"Point", "coordinates":[-79.40487742, 43.63777175]},
 "properties":{
-    "filename":"Beacons",
-    "Year":"2022",
-    "URL":"https://bentway.canto.com/direct/image/5ee51icccl7tt667cpv6lqd53c/f9843W5fU0c-84V_73M5OilgsqQ/original?content-type=image%2Fjpeg&name=Beacons+-+Shelly+Zhang.jpg",
-    "Thumbnail":"https://bentway.canto.com/direct/image/5ee51icccl7tt667cpv6lqd53c/hf_QabN8c9cO5L6Ca18_PwM8H8w/m500/800",
+    "title":"Beacons",
+    "date":"2022",
+    "url":"https://bentway.canto.com/direct/image/5ee51icccl7tt667cpv6lqd53c/f9843W5fU0c-84V_73M5OilgsqQ/original?content-type=image%2Fjpeg&name=Beacons+-+Shelly+Zhang.jpg",
+    "thumb_url":"https://bentway.canto.com/direct/image/5ee51icccl7tt667cpv6lqd53c/hf_QabN8c9cO5L6Ca18_PwM8H8w/m500/800",
     "Season":"Winter",
     "Overarching Theme":"None",
     "Artist": "Shelly Zhang",
-    "ID": "bw44",
+    "id": "bw44",
     "Description": "Beacons is a set of glowing gradient beams scattered throughout The Bentway Skate Trail, drawing eyes up the bents and transforming these concrete blocks into mesmerizing and welcoming signals.",
     "See More":"<a href = 'https://www.thebentway.ca/event/beacons/'> Click here for more info </a>"
 
