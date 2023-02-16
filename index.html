@@ -73,7 +73,7 @@
             map.on("load", async () => {
                 
                 const geojson_url = await fetch(
-                    'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/main/images.geojson'
+                    'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/Talha/conjoined.geojson'
                 );
                 
                 const geojson_data = await geojson_url.json();
@@ -110,50 +110,51 @@
                             'icon-ignore-placement': true,
                             'icon-size': 0.25,
                             'icon-allow-overlap':true,
+
                             }
                 });
 // past projects
 
             
 
-                const bway_pastproj_url = await fetch( 'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/Talha/bway_pastproj_data.geojson');
+           //     const bway_pastproj_url = await fetch( 'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/Talha/bway_pastproj_data.geojson');
 
-                const bway_pastproj_data = await bway_pastproj_url.json();
+          //      const bway_pastproj_data = await bway_pastproj_url.json();
 
     
-                const imagebway = bway_pastproj_data.features.map(feature => ({
-                        url: feature.properties.thumb_url,
-                        id: feature.properties.id
-                        }));
+              //  const imagebway = bway_pastproj_data.features.map(feature => ({
+               //         url: feature.properties.thumb_url,
+             //           id: feature.properties.id
+               //         }));
+             //   
+             //        Promise.all(
+            //        imagebway.map(img => new Promise((resolve, reject) => {
+            ///        map.loadImage(img.url, function (error, res) {
+           //             if (error) throw error;
+          //              map.addImage(img.id, res)
+          //              resolve();
+          //          })
+         //       }))
+        //        ).then(console.log("Images Loaded"));
+
+      //          map.addSource("imagebway", {
+       //             type: "geojson",
+       //             data: bway_pastproj_data,
+       //         });
+
                 
-                     Promise.all(
-                    imagebway.map(img => new Promise((resolve, reject) => {
-                    map.loadImage(img.url, function (error, res) {
-                        if (error) throw error;
-                        map.addImage(img.id, res)
-                        resolve();
-                    })
-                }))
-                ).then(console.log("Images Loaded"));
+              //  map.addLayer({
+                   // 'id': 'imagebway',
+                   // 'type': "symbol",
+                   // 'source': 'imagebway',
+                   // layout: {
+                   //     'icon-image': ['get', 'id'],
+                   //     'icon-ignore-placement': true,
+                  //      'icon-size': 0.1,
+                  //      'icon-allow-overlap':true
 
-                map.addSource("imagebway", {
-                    type: "geojson",
-                    data: bway_pastproj_data,
-                });
-
-                
-                map.addLayer({
-                    'id': 'imagebway',
-                    'type': "symbol",
-                    'source': 'imagebway',
-                    layout: {
-                        'icon-image': ['get', 'id'],
-                        'icon-ignore-placement': true,
-                        'icon-size': 0.1,
-                        'icon-allow-overlap':true
-
-                    }
-                }),
+                //    }
+               // }),
                 
                 
                 map.addSource('shoreline_overlay', {
@@ -253,6 +254,7 @@
                 const description = e.features[0].properties.title;
                 const year = e.features[0].properties.date.substring(0, 4);
                 const image = e.features[0].properties.url;
+                const text = e.features[0].properties.Description 
                 
                 // Ensure that if the map is zoomed out such that multiple
                 // copies of the feature are visible, the popup appears
@@ -264,16 +266,17 @@
                 new mapboxgl.Popup()
                 .setLngLat(coordinates)
                 .setHTML(description + "<br>" + year + "<img src='" + image + "'" + " class=popupImage " + "/>")
+                .setText(text)
                 .addTo(map);
                 });
                 
                 // Change the cursor to a pointer when the mouse is over the places layer.
-                map.on('mouseenter', 'places', () => {
+                map.on('mouseenter', 'photos', () => {
                 map.getCanvas().style.cursor = 'pointer';
                 });
                 
                 // Change it back to a pointer when it leaves.
-                map.on('mouseleave', 'places', () => {
+                map.on('mouseleave', 'photos', () => {
                 map.getCanvas().style.cursor = '';
                 });
             

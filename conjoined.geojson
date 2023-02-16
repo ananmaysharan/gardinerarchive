@@ -6243,7 +6243,7 @@
         "Overarching Theme":"Playing in Public",
         "Artist":"Daily tous les jours",
         "id" : "bw01",
-        "Description": "Created for and during the pandemic, Walk Walk Dance is a series of music-making lines that explore how participation and interaction can create new spaces for play even amidst physical distancing rules and COVid-19 protocols.",
+        "desc": "Created for and during the pandemic, Walk Walk Dance is a series of music-making lines that explore how participation and interaction can create new spaces for play even amidst physical distancing rules and COVid-19 protocols.",
         "See More": "<a href = 'https://www.thebentway.ca/event/walk-walk-dance-by-daily-tous-les-jours/'> Click here for more info </a>"
     }
     },
@@ -6259,7 +6259,7 @@
         "Overarching Theme":"Playing in Public",
         "Artist":"Studio F Minus",
         "id" : "bw02",
-        "Description": "Nil:Nil is a portrait of play in pandemic times. As our work and play move online, our human interactions become subject to a comprehensive enframing.",
+        "desc": "Nil:Nil is a portrait of play in pandemic times. As our work and play move online, our human interactions become subject to a comprehensive enframing.",
         "See More":"<a href = 'https://www.thebentway.ca/event/nilnil/'> Click here for more info </a>"
     }
     },
@@ -6275,7 +6275,7 @@
         "Overarching Theme":"Playing in Public",
         "Artist":"Pierre Poussin",
         "id" : "bw03",
-        "Description": "Jax by Pierre Poussin reimagines one of the  oldest and most widespread games in the world by amplifying its scale and colour, inviting visitors to see the game anew.",
+        "desc": "Jax by Pierre Poussin reimagines one of the  oldest and most widespread games in the world by amplifying its scale and colour, inviting visitors to see the game anew.",
         "See More":"<a href = 'https://www.thebentway.ca/event/jax-by-pierre-poussin/'> Click here for more info </a>"
 
 
@@ -6293,7 +6293,7 @@
         "Overarching Theme":"Playing in Public",
         "Artist":"Esmaa Mohamad",
         "id": "bw04",
-        "Description": "Through the illogical use of basketball motifs, Toronto artist Esmaa Mohamoud transforms The Bentway into a surreal basketball court.",
+        "desc": "Through the illogical use of basketball motifs, Toronto artist Esmaa Mohamoud transforms The Bentway into a surreal basketball court.",
         "See More": "<a href = 'https://www.thebentway.ca/event/double-dribble-by-esmaa-mohamoud/'> Click here for more info </a>"
     }
     },
@@ -6309,7 +6309,7 @@
         "Overarching Theme":"Playing in Public",
         "Artist":"Assemble",
         "id" : "bw05",
-        "Description": "Inspired by a now-famous drawing by Bo Bardi, this project interprets and makes real one of the play sculptures from her original illustration, acting as a device to challenge the civic context found at The Bentway.",
+        "desc": "Inspired by a now-famous drawing by Bo Bardi, this project interprets and makes real one of the play sculptures from her original illustration, acting as a device to challenge the civic context found at The Bentway.",
         "See More": "<a href = 'https://www.thebentway.ca/event/big-red/'> Click here for more info </a>"
     }
     },
@@ -6325,7 +6325,7 @@
         "Overarching Theme":"STREET",
         "Artist":"Oginaa Mikana Project",
         "id" : "bw06",
-        "Description": "Continuing their practice of re-installing Anishinaabe place-names throughout the roads, highways, trails and paths of Toronto, the Ogimaa Mikana Project (Susan Blight and Hayden King) offers a new dialogue with the street.",
+        "desc": "Continuing their practice of re-installing Anishinaabe place-names throughout the roads, highways, trails and paths of Toronto, the Ogimaa Mikana Project (Susan Blight and Hayden King) offers a new dialogue with the street.",
         "See More": "<a href = 'https://www.thebentway.ca/event/weweni-bizindan-listen-carefully-2/'> Click here for more info </a>"
     }
     },
@@ -6341,7 +6341,7 @@
         "Overarching Theme":"STREET",
         "Artist":"Hazel Meyer",
         "id": "bw07",
-        "Description": "WEEPING CONCRETE is a site-specific project for a trio of performers across two towering scaffolds; asking us to reflect on the streets as we know them and imagine what they might be.",
+        "desc": "WEEPING CONCRETE is a site-specific project for a trio of performers across two towering scaffolds; asking us to reflect on the streets as we know them and imagine what they might be.",
         "See More": "<a href = 'https://www.thebentway.ca/event/weeping-concrete-3/'> Click here for more info </a>"
     }
     },
@@ -6357,7 +6357,7 @@
         "Overarching Theme":"STREET",
         "Artist":"Mimi Liem",
         "id" : "bw08",
-        "Description": "Part of the delight of being on the street is in not knowing what you will encounter next…  Inspired by the dynamic convergences and events that transpire in our streets, PARADE is a kinetic installation that infuses the Bentway’s skate trail with the vitality of the city and the ever shifting variables of the streetscape",
+        "desc": "Part of the delight of being on the street is in not knowing what you will encounter next…  Inspired by the dynamic convergences and events that transpire in our streets, PARADE is a kinetic installation that infuses the Bentway’s skate trail with the vitality of the city and the ever shifting variables of the streetscape",
         "See More": "<a href = 'https://www.thebentway.ca/event/parade-by-mimi-lien/'> Click here for more info </a>"
     }
     },
@@ -6373,7 +6373,7 @@
         "Overarching Theme":"STREET",
         "Artist":"Germaine Liu, Mark Zurawinski",
         "id" : "bw09",
-        "Description": "And Walk is a sound walk that invites audiences and passersby to experience the sounds and textures of The Bentway, the streets nearby, and the rumbling urban artery above like never before",
+        "desc": "And Walk is a sound walk that invites audiences and passersby to experience the sounds and textures of The Bentway, the streets nearby, and the rumbling urban artery above like never before",
         "See More": "<a href = 'https://www.thebentway.ca/event/and-with/'> Click here for more info </a>"
     }
     },
@@ -6389,7 +6389,7 @@
         "Overarching Theme":"Confluence",
         "Artist":"Striped Canary",
         "id" : "bw10",
-        "Description": "Inspired by the water systems that have shaped Toronto, Confluence invites visitors to flow through an engrossing convergence of natural and human-made forces.",
+        "desc": "Inspired by the water systems that have shaped Toronto, Confluence invites visitors to flow through an engrossing convergence of natural and human-made forces.",
         "See More": "<a href = https://www.thebentway.ca/event/confluence/'> Click here for more info </a>"
     }
     },
@@ -6405,7 +6405,7 @@
         "Overarching Theme":"Safe in Public Space",
         "Artist":"Public Visualization Studio",
         "id": "bw11",
-        "Description":"Receipts is a multimodal interface that receives (via voice, video, and/or text), anonymizes, archives, and performs (on the web and in public) the testimony of people that have experienced or witnessed anti-Asian aggression in public spaces.",
+        "desc":"Receipts is a multimodal interface that receives (via voice, video, and/or text), anonymizes, archives, and performs (on the web and in public) the testimony of people that have experienced or witnessed anti-Asian aggression in public spaces.",
         "See More":"<a href = 'https://www.thebentway.ca/event/sips-receipts-2/' Click here for more info </a>"
     }
     },
@@ -6421,7 +6421,7 @@
         "Overarching Theme":"Safe in Public Space",
         "Artist":"Syrus Marcus Ware",
         "id":"bw12",
-        "Description": "A multimedia installation that centres Black and Afro-Indigenous Trans women and non-binary people, creating monuments to Trans lives and their survival.",
+        "desc": "A multimedia installation that centres Black and Afro-Indigenous Trans women and non-binary people, creating monuments to Trans lives and their survival.",
         "See More":"<a href = 'https://www.thebentway.ca/event/sips-radical-love-2/' Click here for more info </a>"
     }
     },
@@ -6437,7 +6437,7 @@
         "Overarching Theme":"Second Nature",
         "Artist":"Embassy of Imagination",
         "id": "bw13",
-        "Description": "Sinaaqpagiaqtuut/The Long-Cut is a procession that began in Kinngait (Cape Dorset, Nunavut) and continues in Toronto",
+        "desc": "Sinaaqpagiaqtuut/The Long-Cut is a procession that began in Kinngait (Cape Dorset, Nunavut) and continues in Toronto",
         "See More": "<a href = 'https://www.thebentway.ca/event/toronto-biennial-of-art-sinaaqpagiaqtuut-the-long-cut-2/' Click here for more info </a>"
     }
     },
@@ -6453,7 +6453,7 @@
         "Overarching Theme":"Second Nature",
         "Artist":"Luke Jerram",
         "id": "bw14",
-        "Description": "The Bentway brings the Moon under the Gardiner with a presentation of Museum of the Moon: a seven-metre wide touring sculptural work by UK artist Luke Jerram, which fuses lunar imagery to bring the surface of the moon to life on earth. ",
+        "desc": "The Bentway brings the Moon under the Gardiner with a presentation of Museum of the Moon: a seven-metre wide touring sculptural work by UK artist Luke Jerram, which fuses lunar imagery to bring the surface of the moon to life on earth. ",
         "See More":"<a href = 'https://www.thebentway.ca/event/museum-of-the-moon-2/'> Click here for more info </a>"
     }
     },
@@ -6469,7 +6469,7 @@
         "Overarching Theme":"Second Nature",
         "Artist":"Mitchell Akiyama, Brady Peters",
         "id": "bw15",
-        "Description": "Mimicking the drainage infrastructure of The Bentway (the PVC pipes that carry rainwater down from the Gardiner Expressway) Mitchell Akiyama and Brady Peters have created a series of sonic sculptures that pose as infrastructure, albeit of an unusual sort.",
+        "desc": "Mimicking the drainage infrastructure of The Bentway (the PVC pipes that carry rainwater down from the Gardiner Expressway) Mitchell Akiyama and Brady Peters have created a series of sonic sculptures that pose as infrastructure, albeit of an unusual sort.",
         "See More": "<a href = 'https://www.thebentway.ca/event/the-distribution-of-sensation/'> Click here for more info </a>"
     }
     },
@@ -6485,7 +6485,7 @@
         "Overarching Theme":"Creation:Destruction",
         "Artist":"Gareth Lichty",
         "id":"bw16",
-        "Description": "In “Hoarding,” hazard tape—a material typically used to keep people away from spaces under construction—will wrap a series of “bents” that hold up the Gardiner Expressway.",
+        "desc": "In “Hoarding,” hazard tape—a material typically used to keep people away from spaces under construction—will wrap a series of “bents” that hold up the Gardiner Expressway.",
         "See More": "<a href = 'https://www.thebentway.ca/event/nuit-blanche-toronto-creation-destruction-2-2/'> Click here for more info </a>" 
     }
     },
@@ -6501,7 +6501,7 @@
         "Overarching Theme":"Creation:Destruction",
         "Artist":"Francesca Chudnoff",
         "id":"bw17",
-        "Description": "Halcyon is a video and dance performance designed to question the range of ways in which we constantly tune and adjust our self-presentation, both onscreen and in real life.",
+        "desc": "Halcyon is a video and dance performance designed to question the range of ways in which we constantly tune and adjust our self-presentation, both onscreen and in real life.",
         "See More":"<a href = 'https://www.thebentway.ca/event/nuit-blanche-toronto-creation-destruction-2/'> Click here for more info </a>"
     }
     },
@@ -6517,7 +6517,7 @@
         "Overarching Theme":"Communitas",
         "Artist":"Monument Labs",
         "id":"bw18",
-        "Description": "Together, Monument Lab and The Bentway have posed an open research question: What is your theory of Toronto? We have worked with Lum and Farber to create a list of potential speakers to reflect a widespread critical community.",
+        "desc": "Together, Monument Lab and The Bentway have posed an open research question: What is your theory of Toronto? We have worked with Lum and Farber to create a list of potential speakers to reflect a widespread critical community.",
         "See More":"<a href = 'https://www.thebentway.ca/event/theory-x-with-monument-lab-2/> Click here for more info </a>"
     }
     },
@@ -6533,7 +6533,7 @@
         "Overarching Theme":"Communitas",
         "Artist":"The Bentway",
         "id":"bw19",
-        "Description": "A family-friendly day-long celebration",
+        "desc": "A family-friendly day-long celebration",
         "See More": "<a href = 'https://www.thebentway.ca/event/the-bentway-block-party-2-2/'> Click here for more info </a>"
     }
     },
@@ -6549,7 +6549,7 @@
         "Overarching Theme":"Communitas",
         "Artist":"Monument Labs",
         "id":"bw20",
-        "Description":"This day-long public event introduced the public to the New Monuments exhibition, the contributing artists from several participating cities, and the issues the exhibition raises.",
+        "desc":"This day-long public event introduced the public to the New Monuments exhibition, the contributing artists from several participating cities, and the issues the exhibition raises.",
         "See More":"<a href = 'https://www.thebentway.ca/event/monuments-summit-2/'> Click here for more info </a>"
     }
     },
@@ -6565,7 +6565,7 @@
         "Overarching Theme":"Communitas",
         "Artist":"Oasis Stakeboard Factory",
         "id":"bw21",
-        "Description": "Izhininjiiniwag is an amalgamation of skateboard culture, pow wow regalia and photography",
+        "desc": "Izhininjiiniwag is an amalgamation of skateboard culture, pow wow regalia and photography",
         "See More":"<a href = 'https://www.thebentway.ca/event/izhininjiiniwag-they-move-in-a-certain-way-by-oasis-skateboard-factory-with-chief-lady-bird-aura-last-and-evelyn-pakinewatik/'> Click here for more info </a>"
     }
     },
@@ -6581,7 +6581,7 @@
         "Overarching Theme":"Communitas",
         "Artist":"Noemie Lafrance",
         "id":"bw22",
-        "Description": "Celebrating the repurposed architecture of the Gardiner Expressway via The Bentway, this site-specific performance re-envisions the site as a group navigation, questioning urban infrastructure as forms of political power and social design.",
+        "desc": "Celebrating the repurposed architecture of the Gardiner Expressway via The Bentway, this site-specific performance re-envisions the site as a group navigation, questioning urban infrastructure as forms of political power and social design.",
         "See More":"<a href = 'https://www.thebentway.ca/event/derives-by-noemie-lafrance-june-8-730pm-2/'> Click here for more info </a>"
     }
     },
@@ -6597,7 +6597,7 @@
         "Overarching Theme":"Communitas",
         "Artist":"Various Artists",
         "id":"bw23",
-        "Description": "Beginning June 2019 and spanning through the date, The Bentway offered weekly communal dining opportunities for neighbours and community members.",
+        "desc": "Beginning June 2019 and spanning through the date, The Bentway offered weekly communal dining opportunities for neighbours and community members.",
         "See More":"<a href = 'https://www.thebentway.ca/event/communal-table-2019/'> Click here for more info </a>"
 
     }
@@ -6614,7 +6614,7 @@
         "Overarching Theme":"Communitas",
         "Artist":"Nadine Stijns",
         "id":"bw24",
-        "Description" :"Dutch artist Nadine Stijns attempts to capture the memories, dreams, and flow of capital and possessions throughout the Filipino diaspora.",
+        "desc" :"Dutch artist Nadine Stijns attempts to capture the memories, dreams, and flow of capital and possessions throughout the Filipino diaspora.",
         "See More":"<a href = 'https://www.thebentway.ca/event/nadine-stijns-a-nation-outside-a-nation-with-scotiabank-contact-photography-exhibition/'> Click here for more info </a>"
     }
     },
@@ -6630,7 +6630,7 @@
         "Overarching Theme":"If, But What If?",
         "Artist":"Daan Roosegarde",
         "id":"bw25",
-        "Description": "Waterlicht is a dream landscape created through the imaginative use of LEDs, special software, and lenses",
+        "desc": "Waterlicht is a dream landscape created through the imaginative use of LEDs, special software, and lenses",
         "See More":"<a href = 'https://www.thebentway.ca/event/waterlicht-2/'> Click here for more info </a>"
 
     }
@@ -6647,7 +6647,7 @@
         "Overarching Theme":"If, But What If?",
         "Artist":"Mani Mazinani, Sanaz Mazinani",
         "id":"bw26",
-        "Description": "Located within two, 20-foot shipping containers, Shift takes the form of a large-scale stereo system that engages with both seated audiences and passers-by.",
+        "desc": "Located within two, 20-foot shipping containers, Shift takes the form of a large-scale stereo system that engages with both seated audiences and passers-by.",
         "See More":"<a href = 'https://www.thebentway.ca/event/shift-mani-mazinani-and-sanaz-mazinani/'> Click here for more info </a>"
     }
     },
@@ -6663,7 +6663,7 @@
         "Overarching Theme":"If, But What If?",
         "Artist":"Sans Facon",
         "id":"bw27",
-        "Description":"Positioned atop a hill at The Bentway and its newly opened Strachan Gate, the project reflects equally on the changing nature of the surrounding communities and the ambitions of The Bentway project itself, which has transformed a significant landscapes into a new shared public space for the growing city",
+        "desc":"Positioned atop a hill at The Bentway and its newly opened Strachan Gate, the project reflects equally on the changing nature of the surrounding communities and the ambitions of The Bentway project itself, which has transformed a significant landscapes into a new shared public space for the growing city",
         "See More":"<a href = 'https://www.thebentway.ca/event/iconic-site-5-sans-facon/'> Click here for more info </a>"
     }
     },
@@ -6679,7 +6679,7 @@
         "Overarching Theme":"If, But What If?",
         "Artist":"Alex McLeod",
         "id":"bw28",
-        "Description":"In this piece, McLeod melds time as well as space to create a place between two worlds",
+        "desc":"In this piece, McLeod melds time as well as space to create a place between two worlds",
         "See More":"<a href = 'https://www.thebentway.ca/event/green-hills-discovery-alex-mcleod/'> Click here for more info </a>"
     }
     },
@@ -6695,7 +6695,7 @@
         "Overarching Theme":"If, But What If?",
         "Artist":"Michael Awad",
         "id":"bw29",
-        "Description": "Through the lens of artist Michael Awad, the highway is presented in this piece as a continuous datum running through both time and space: a register by which to measure an ever-changing Toronto.",
+        "desc": "Through the lens of artist Michael Awad, the highway is presented in this piece as a continuous datum running through both time and space: a register by which to measure an ever-changing Toronto.",
         "See More":"<a href = 'https://www.thebentway.ca/event/the-gardiner-expressway-lakeshore-boulevard-and-the-bentway-2018-michael-awad/'> Click here for more info </a>"
     }
     },
@@ -6711,7 +6711,7 @@
         "Overarching Theme":"If, But What If?",
         "Artist":"Joe Sasaki",
         "id": "bw30",
-        "Description": "Artist Jon Sasaki reimagines the once mighty John Inglis & Company Factory in its heyday, wherein each of the original buildings has been retraced and modelled in plan view and then rotated into a vertical position.",
+        "desc": "Artist Jon Sasaki reimagines the once mighty John Inglis & Company Factory in its heyday, wherein each of the original buildings has been retraced and modelled in plan view and then rotated into a vertical position.",
         "See More":"<a href = 'https://www.thebentway.ca/event/every-building-from-a-defunct-liberty-village-factory-rotated-vertically-jon-sasaki/'> Click here for more info </a>"
     }
     },
@@ -6727,7 +6727,7 @@
         "Overarching Theme":"If, But What If?",
         "Artist":"Steven Beckly",
         "id" : "bw31",
-        "Description": "Cultivating moments of closeness and intimacy, Steven Beckly curates images within a bunker space which straddles the line between photography and sculpture.",
+        "desc": "Cultivating moments of closeness and intimacy, Steven Beckly curates images within a bunker space which straddles the line between photography and sculpture.",
         "See More":"<a href = 'https://www.thebentway.ca/event/earthbound-steven-beckly/'> Click here for more info </a>"
     }
     },
@@ -6743,7 +6743,7 @@
         "Overarching Theme":"If, But What If?",
         "Artist":"Wally Dion",
         "id": "bw32",
-        "Description": "The piece made by artist Wally Dion monumentalizes the traditional wampum belt: stringed shell beads used for commercial, ornamental, ceremonial, and diplomatic purposes, to suit the massive scale of The Bentway site",
+        "desc": "The piece made by artist Wally Dion monumentalizes the traditional wampum belt: stringed shell beads used for commercial, ornamental, ceremonial, and diplomatic purposes, to suit the massive scale of The Bentway site",
         "See More":"<a href = 'https://www.thebentway.ca/event/wampum-belt-wally-dion/'> Click here for more info </a>"
     }
     },
@@ -6759,7 +6759,7 @@
         "Overarching Theme":"Constructions of the Everyday",
         "Artist":"Public Visualization Studio",
         "id": "bw33",
-        "Description": "A site specific project for the Bentway skate trail, Shadow! responds to the change of urban form taking place under the Gardiner Expressway",
+        "desc": "A site specific project for the Bentway skate trail, Shadow! responds to the change of urban form taking place under the Gardiner Expressway",
         "See More":"<a href = 'https://www.thebentway.ca/event/shadow/'> Click here for more info </a>"
     }
     },
@@ -6775,7 +6775,7 @@
         "Overarching Theme":"Constructions of the Everyday",
         "Artist":"Jennifer Ilett",
         "id": "bw34",
-        "Description":"Re-Route responds to the Gardiner Expressway as an iconic Toronto artery whose layered history encompasses settlement and expansion: cutting across historic railways that helped build Canada.",
+        "desc":"Re-Route responds to the Gardiner Expressway as an iconic Toronto artery whose layered history encompasses settlement and expansion: cutting across historic railways that helped build Canada.",
         "See More":"<a href = 'https://www.thebentway.ca/event/re-route/'> Click here for more info </a>"
 
     }
@@ -6792,7 +6792,7 @@
         "Overarching Theme":"Constructions of the Everyday",
         "Artist":"Janine Miedzik",
         "id": "bw35",
-        "Description":"Pro Tem is a series of provisional signage works that mimic construction notices, offering a familiar yet unexpected visual experience within the reimagined space of the Bentway. ",
+        "desc":"Pro Tem is a series of provisional signage works that mimic construction notices, offering a familiar yet unexpected visual experience within the reimagined space of the Bentway. ",
         "See More":"<a href = 'https://www.thebentway.ca/event/pro-tem-by-janine-miedzik/'> Click here for more info </a>"
     }
     },
@@ -6808,7 +6808,7 @@
         "Overarching Theme":"Constructions of the Everyday",
         "Artist":"Jimmy Limit",
         "id":"bw36",
-        "Description":"Sourcing artifacts left behind by the construction process such as (name materials), artist Jimmy Limit creates a series of unlikely and highly graphic assemblages, embedding familiar tools and discarded objects with new significance, beauty and humor.",
+        "desc":"Sourcing artifacts left behind by the construction process such as (name materials), artist Jimmy Limit creates a series of unlikely and highly graphic assemblages, embedding familiar tools and discarded objects with new significance, beauty and humor.",
         "See More":"<a href = 'https://www.thebentway.ca/event/photos-for-a-project-in-progress-by-jimmy-limit/'> Click here for more info </a>"
     }
     },
@@ -6824,7 +6824,7 @@
         "Overarching Theme":"Constructions of the Everyday",
         "Artist":"Embassy of Imagination, PA System",
         "id":"bw37",
-        "Description":"Future Snowmachines in Kinngait is a long-term project that leverages art as a tool for social action",
+        "desc":"Future Snowmachines in Kinngait is a long-term project that leverages art as a tool for social action",
         "See More":"<a href = 'https://www.thebentway.ca/event/future-snowmachines/'> Click here for more info </a>"
     }
     },
@@ -6840,7 +6840,7 @@
         "Overarching Theme":"None",
         "Artist":"The Bentway",
         "id":"bw38",
-        "Description": "On January 6th, 2018, the Bentway Skate Trail officially opened for use!",
+        "desc": "On January 6th, 2018, the Bentway Skate Trail officially opened for use!",
         "See More":"<a href = 'https://www.thebentway.ca/event/grand-opening-ribbon-cutting/'> Click here for more info </a>"
     }
     },
@@ -6856,7 +6856,7 @@
         "Overarching Theme":"None",
         "Artist":"Build for Bokma",
         "id": "bw39",
-        "Description":"Semblance is an art installation and pop-up skate park built in commemoration of Toronto skater Justin Bokma.",
+        "desc":"Semblance is an art installation and pop-up skate park built in commemoration of Toronto skater Justin Bokma.",
         "See More":"https://www.thebentway.ca/event/semblance-build-for-bokma/"
     }
     },
@@ -6872,7 +6872,7 @@
         "Overarching Theme":"None",
         "Artist":"Dana Claxton",
         "id":"bw40",
-        "Description":"In this site-specific installation, co-commissioned with Scotiabank CONTACT Photography Festival, Vancouver-based artist Dana Claxton (Lakota Sioux) considers the iconic role and symbolism of the canoe in Canadian, Metis, and Indigenous histories",
+        "desc":"In this site-specific installation, co-commissioned with Scotiabank CONTACT Photography Festival, Vancouver-based artist Dana Claxton (Lakota Sioux) considers the iconic role and symbolism of the canoe in Canadian, Metis, and Indigenous histories",
         "See More":"<a href = 'https://www.thebentway.ca/event/a-forest-of-canoes-by-dana-claxton-with-scotiabank-contact-photography-festival/'> Click here for more info </a>"
     }
     },
@@ -6888,7 +6888,7 @@
         "Overarching Theme":"None",
         "Artist":"Build for Bokma",
         "id":"bw41",
-        "Description": "CITE was a summer-long celebration of skateboard arts and culture which ran from on June 30 - August 12. On weekends, it offered a variety of skaeboard based workshops.",
+        "desc": "CITE was a summer-long celebration of skateboard arts and culture which ran from on June 30 - August 12. On weekends, it offered a variety of skaeboard based workshops.",
         "See More": "https://www.thebentway.ca/event/cite-a-celebration-of-skateboard-arts-and-culture/"
     }
     },
@@ -6904,7 +6904,7 @@
         "Overarching Theme":"None",
         "Artist":"The Bentway",
         "id":"bw42",
-        "Description":"60 dates in the making, this Block Party marked the initial opening of the Bentway (Phase 1), which opened the Strachan Gate section for public use.",
+        "desc":"60 dates in the making, this Block Party marked the initial opening of the Bentway (Phase 1), which opened the Strachan Gate section for public use.",
         "See More":"<a href = 'https://www.thebentway.ca/event/the-bentway-block-party-3/'> Click here for more info </a>"
     }
     },
@@ -6920,7 +6920,7 @@
         "Overarching Theme":"None",
         "Artist":"Rafael Lozano-Hemmer",
         "id":"bw43",
-        "Description": "Marking the inaugural collaboration with neighbouring Exhibition Place and the Bentway, Pulse Topology by Rafael Lozano-Hemmers will take over a massive, enclosed storage chamber nestled beneath the Gardiner Expressway, inviting the public to discover a striking, industrial part of the city for the first time.",
+        "desc": "Marking the inaugural collaboration with neighbouring Exhibition Place and the Bentway, Pulse Topology by Rafael Lozano-Hemmers will take over a massive, enclosed storage chamber nestled beneath the Gardiner Expressway, inviting the public to discover a striking, industrial part of the city for the first time.",
         "See More":"<a href = 'https://www.thebentway.ca/event/pulse-topology/'> Click here for more info </a>"
 
     }
@@ -6937,7 +6937,7 @@
     "Overarching Theme":"None",
     "Artist": "Shelly Zhang",
     "id": "bw44",
-    "Description": "Beacons is a set of glowing gradient beams scattered throughout The Bentway Skate Trail, drawing eyes up the bents and transforming these concrete blocks into mesmerizing and welcoming signals.",
+    "desc": "Beacons is a set of glowing gradient beams scattered throughout The Bentway Skate Trail, drawing eyes up the bents and transforming these concrete blocks into mesmerizing and welcoming signals.",
     "See More":"<a href = 'https://www.thebentway.ca/event/beacons/'> Click here for more info </a>"
 
 }}
