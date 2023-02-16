@@ -254,7 +254,7 @@
                 const description = e.features[0].properties.title;
                 const year = e.features[0].properties.date.substring(0, 4);
                 const image = e.features[0].properties.url;
-                const text = e.features[0].properties.Description 
+                const text = e.features[0].properties.desc 
                 
                 // Ensure that if the map is zoomed out such that multiple
                 // copies of the feature are visible, the popup appears
@@ -265,8 +265,7 @@
                 
                 new mapboxgl.Popup()
                 .setLngLat(coordinates)
-                .setHTML(description + "<br>" + year + "<img src='" + image + "'" + " class=popupImage " + "/>")
-                .setText(text)
+                .setHTML(description + "<br>" + year + "<img src='" + image + text + " class=popupImage " + "/>")
                 .addTo(map);
                 });
                 
