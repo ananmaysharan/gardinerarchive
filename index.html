@@ -122,8 +122,8 @@
 
     
                 const imagebway = bway_pastproj_data.features.map(feature => ({
-                        url: feature.properties.Thumbnail,
-                        id: feature.properties.ID
+                        url: feature.properties.thumb_url,
+                        id: feature.properties.id
                         }));
                 
                      Promise.all(
@@ -147,7 +147,7 @@
                     'type': "symbol",
                     'source': 'imagebway',
                     layout: {
-                        'icon-image': ['get', 'ID'],
+                        'icon-image': ['get', 'id'],
                         'icon-ignore-placement': true,
                         'icon-size': 0.1,
                         'icon-allow-overlap':true
@@ -240,66 +240,21 @@
 
                 // When a click event occurs on a feature in the places layer, open a popup at the
                 // location of the feature, with description HTML from its properties.
-<<<<<<< Updated upstream
                 map.on('click', 'photos', (e) => {
                 // Copy coordinates array.
                 const coordinates = e.features[0].geometry.coordinates.slice();
                 const description = e.features[0].properties.title;
                 const year = e.features[0].properties.date.substring(0, 4);
                 const image = e.features[0].properties.url;
-=======
-
-                map.getStyle().layers
-
-                map.on('click', 'photos', (e) => {
-                // Copy coordinates array.
-                const coordinates = e.feature[0].geometry.coordinates.slice();
-                const description = e.feature[0].properties.title;
-                const year = e.feature[0].properties.date.substring(0, 4);
-                const image = e.feature[0].properties.url;
->>>>>>> Stashed changes
                 
                 // Ensure that if the map is zoomed out such that multiple
                 // copies of the feature are visible, the popup appears
                 // over the copy being pointed to.
                 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                 coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-<<<<<<< Updated upstream
-=======
                 }
                 
                 new mapboxgl.Popup()
-                .setLngLat(coordinates)
-                .setHTML(description + "<br>" + year + "<img src='" + image + "'" + " class=popupImage " + "/>")
-                .addTo(map);
-                });
-                
-                // Change the cursor to a pointer when the mouse is over the places layer.
-                map.on('mouseenter', 'photos', () => {
-                map.getCanvas().style.cursor = 'pointer';
-                });
-                
-                // Change it back to a pointer when it leaves.
-                map.on('mouseleave', 'photos', () => {
-                map.getCanvas().style.cursor = '';
-                });
-            
-// for bentway pictures
-
-                map.on('click', 'imagebway', (b) => {
-                    const coord = b.feature[0].geometry.coordinates.slice();
-                    const name = b.feature[0].properties.filename;
-                    const yr = b.feature[0].properties.Year;
-                    const pic = b.feature[0].properties.Thumbnail;
-                    const desc = b.feature[0].properties.Description
-                
-                while (Math.abs(b.lngLat.lng - coordinates[0]) > 180){
-                    coordinates[0] += b.lngLat.lng > coordinates[0] ? 360 : -360;
->>>>>>> Stashed changes
-                }
-                
-                new mapboxgl.Popup()
-<<<<<<< Updated upstream
                 .setLngLat(coordinates)
                 .setHTML(description + "<br>" + year + "<img src='" + image + "'" + " class=popupImage " + "/>")
                 .addTo(map);
@@ -307,36 +262,17 @@
                 
                 // Change the cursor to a pointer when the mouse is over the places layer.
                 map.on('mouseenter', 'places', () => {
-=======
-                .setLngLat(coord)
-                .setHTML(name)
-                .addTo(map);
-             });
-
-             map.on('mouseenter', 'imagebway', () => {
->>>>>>> Stashed changes
                 map.getCanvas().style.cursor = 'pointer';
                 });
                 
                 // Change it back to a pointer when it leaves.
-<<<<<<< Updated upstream
                 map.on('mouseleave', 'places', () => {
                 map.getCanvas().style.cursor = '';
                 });
             
-=======
-                map.on('mouseleave', 'imagebway', () => {
-                map.getCanvas().style.cursor = '';
-                });
->>>>>>> Stashed changes
 
                 // TITLE
 
-<<<<<<< Updated upstream
-=======
-                // TITLE
-
->>>>>>> Stashed changes
                 document.getElementById('info').innerHTML = `
                 <svg width="360px" height="82px" viewBox="0 0 360 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <title>maplogo</title>
