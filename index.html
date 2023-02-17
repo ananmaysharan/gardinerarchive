@@ -108,10 +108,9 @@
                     layout: {
                             'icon-image': ['get','id'], // reference the image
                             'icon-ignore-placement': true,
-                            'icon-size': 0.25,
-                            'icon-allow-overlap':true,
-
-                            }
+                            'icon-size': 0.1,
+                            'icon-allow-overlap':false,
+                            },
                 });
 // past projects
 
@@ -254,7 +253,7 @@
                 const description = e.features[0].properties.title;
                 const year = e.features[0].properties.date.substring(0, 4);
                 const image = e.features[0].properties.url;
-                const text = e.features[0].properties.desc 
+                let text = e.features[0].properties.desc; 
                 
                 // Ensure that if the map is zoomed out such that multiple
                 // copies of the feature are visible, the popup appears
@@ -265,8 +264,9 @@
                 
                 new mapboxgl.Popup()
                 .setLngLat(coordinates)
-                .setHTML(description + "<br>" + year + "<img src='" + image + text + " class=popupImage " + "/>")
+                .setHTML("<h1>"+ description + "</h1>" + "<br>" + "<img src='" + image + "'" + " class=popupImage " + "/>" + text + "<br>" + year)
                 .addTo(map);
+                filter : ['!has', text]
                 });
                 
                 // Change the cursor to a pointer when the mouse is over the places layer.
