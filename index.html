@@ -1,51 +1,55 @@
 <html>
-    <head>
-        <!-- Mapbox -->
-        <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
-        <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet" />
 
-        <link rel="stylesheet" href="styles.css" />
+<head>
+    <!-- Mapbox -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet" />
 
-        <!-- Font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">
-        <style> @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap'); </style>
+    <link rel="stylesheet" href="styles.css" />
 
-        
-        <!-- Slider -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.min.css" />
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.min.js'></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap');
+    </style>
 
-        <!-- Moment.js -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
-    </head>
 
-    <body>
-        <nav id="menu"></nav>
-        <div id="map"></div>
-        <div id="info"></div>
-        <script src="rangeSlider.js"></script>
-        <script>
-            mapboxgl.accessToken = "pk.eyJ1IjoiYW5hbm1heSIsImEiOiJjbDk0azVhbWMwMmNzM3dyNWpraW5pYXo3In0.ABTXYKit9qNDRvSBlFcalA";
-            const bounds = [
+    <!-- Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.min.css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.min.js'></script>
+
+    <!-- Moment.js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+</head>
+
+<body>
+    <nav id="menu"></nav>
+    <div id="map"></div>
+    <div id="info"></div>
+    <script src="rangeSlider.js"></script>
+    <script>
+        mapboxgl.accessToken = "pk.eyJ1IjoiYW5hbm1heSIsImEiOiJjbDk0azVhbWMwMmNzM3dyNWpraW5pYXo3In0.ABTXYKit9qNDRvSBlFcalA";
+        const bounds = [
             [-79.432709, 43.628221], // Southwest coordinates
             [-79.341908, 43.700811] // Northeast coordinates
-            ];
-            // create map
-            const map = new mapboxgl.Map({
-                container: "map", // container ID
-                // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-                style: "mapbox://styles/ananmay/clb46qysm000l14kyvn8q1gjh", // style URL
-                center: [-79.380331532, 43.646497454], // // starting center in [lng, lat]
-                zoom: 13.6,
-                // pitch: 60, // pitch in degrees
-                // bearing: -20, // bearing in degrees
-                maxBounds: bounds // Set the map's geographical boundaries.
-            });
+        ];
+        // create map
+        const map = new mapboxgl.Map({
+            container: "map", // container ID
+            // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+            style: "mapbox://styles/ananmay/clb46qysm000l14kyvn8q1gjh", // style URL
+            center: [-79.380331532, 43.646497454], // // starting center in [lng, lat]
+            zoom: 13.6,
+            // pitch: 60, // pitch in degrees
+            // bearing: -20, // bearing in degrees
+            maxBounds: bounds // Set the map's geographical boundaries.
+        });
 
-            
-                    
+
+
+
         // SLIDER
 
         const sliderOptions = {
@@ -63,30 +67,35 @@
             propertyType: 'iso8601',
             rangeDescriptionFormat: 'shortDate',
             descriptionPrefix: 'Date:',
-            dontFilterOnLoad:true
-            }
+            dontFilterOnLoad: true
+        }
 
-            map.addControl(new RangeSlider(sliderOptions, 'top-left'));
+        map.addControl(new RangeSlider(sliderOptions, 'top-left'));
 
-            // ADDING SOURCE IMAGES
 
-            map.on("load", async () => {
-                
-                const geojson_url = await fetch(
-                    'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/Talha/conjoined.geojson'
-                );
-                
-                const geojson_data = await geojson_url.json();
+        // filters 
+        const filterGroup = document.getElementById('filter-group');
 
-                
-                // ADDING AS SYMBOL LAYER
-            
-                const images = geojson_data.features.map(feature => ({
-                        url: feature.properties.thumb_url,
-                        id: feature.properties.id
-                        }));
-                
-                Promise.all(
+
+        // ADDING SOURCE IMAGES
+
+        map.on("load", async () => {
+
+            const geojson_url = await fetch(
+                'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/Talha/conjoined.geojson'
+            );
+
+            const geojson_data = await geojson_url.json();
+
+
+            // ADDING AS SYMBOL LAYER
+
+            const images = geojson_data.features.map(feature => ({
+                url: feature.properties.thumb_url,
+                id: feature.properties.id
+            }));
+
+            Promise.all(
                 images.map(img => new Promise((resolve, reject) => {
                     map.loadImage(img.url, function (error, res) {
                         if (error) throw error;
@@ -94,197 +103,194 @@
                         resolve();
                     })
                 }))
-                ).then(console.log("Images Loaded"));
+            ).then(console.log("Images Loaded"));
 
-                map.addSource("photos", {
-                    type: "geojson",
-                    data: geojson_data,
-                });
+            map.addSource("photos", {
+                type: "geojson",
+                data: geojson_data,
+            });
+            map.addLayer({
+                id: "photos",
+                type: "symbol",
+                source: "photos",
+                layout: {
+                    'icon-image': ['get', 'id'], // reference the image
+                    'icon-ignore-placement': true,
+                    'icon-size': 0.1,
+                    'icon-allow-overlap': false,
+                },
+            });
+            // past projects
 
-                map.addLayer({
-                    id: "photos",
-                    type: "symbol",
-                    source: "photos",
-                    layout: {
-                            'icon-image': ['get','id'], // reference the image
-                            'icon-ignore-placement': true,
-                            'icon-size': 0.1,
-                            'icon-allow-overlap':false,
-                            },
-                });
-// past projects
 
-            
 
-           //     const bway_pastproj_url = await fetch( 'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/Talha/bway_pastproj_data.geojson');
+            //     const bway_pastproj_url = await fetch( 'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/Talha/bway_pastproj_data.geojson');
 
-          //      const bway_pastproj_data = await bway_pastproj_url.json();
+            //      const bway_pastproj_data = await bway_pastproj_url.json();
 
-    
-              //  const imagebway = bway_pastproj_data.features.map(feature => ({
-               //         url: feature.properties.thumb_url,
-             //           id: feature.properties.id
-               //         }));
-             //   
-             //        Promise.all(
+
+            //  const imagebway = bway_pastproj_data.features.map(feature => ({
+            //         url: feature.properties.thumb_url,
+            //           id: feature.properties.id
+            //         }));
+            //   
+            //        Promise.all(
             //        imagebway.map(img => new Promise((resolve, reject) => {
             ///        map.loadImage(img.url, function (error, res) {
-           //             if (error) throw error;
-          //              map.addImage(img.id, res)
-          //              resolve();
-          //          })
-         //       }))
-        //        ).then(console.log("Images Loaded"));
+            //             if (error) throw error;
+            //              map.addImage(img.id, res)
+            //              resolve();
+            //          })
+            //       }))
+            //        ).then(console.log("Images Loaded"));
 
-      //          map.addSource("imagebway", {
-       //             type: "geojson",
-       //             data: bway_pastproj_data,
-       //         });
+            //          map.addSource("imagebway", {
+            //             type: "geojson",
+            //             data: bway_pastproj_data,
+            //         });
 
-                
-              //  map.addLayer({
-                   // 'id': 'imagebway',
-                   // 'type': "symbol",
-                   // 'source': 'imagebway',
-                   // layout: {
-                   //     'icon-image': ['get', 'id'],
-                   //     'icon-ignore-placement': true,
-                  //      'icon-size': 0.1,
-                  //      'icon-allow-overlap':true
 
-                //    }
-               // }),
-                
-                
-                map.addSource('shoreline_overlay', {
+            //  map.addLayer({
+            // 'id': 'imagebway',
+            // 'type': "symbol",
+            // 'source': 'imagebway',
+            // layout: {
+            //     'icon-image': ['get', 'id'],
+            //     'icon-ignore-placement': true,
+            //      'icon-size': 0.1,
+            //      'icon-allow-overlap':true
+
+            //    }
+            // }),
+
+
+            map.addSource('shoreline_overlay', {
                 type: 'geojson',
                 // Use a URL for the value for the `data` property.
                 data: 'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/main/shorelines_polygons.geojson'
-                });
+            });
 
-                map.addLayer({
+            map.addLayer({
                 'id': '1818',
                 'type': 'fill',
                 'source': 'shoreline_overlay',
                 'layout': {
                     'visibility': 'none'
-                    },
+                },
                 'paint': {
                     'fill-color': '#409cf7', // blue color fill
                     'fill-opacity': 0.8
-                    },
+                },
                 filter: ["all", ["==", "year", 1818]]
-                });
+            });
 
-                map.addLayer({
+            map.addLayer({
                 'id': '1884',
                 'type': 'fill',
                 'source': 'shoreline_overlay',
                 'layout': {
                     'visibility': 'none'
-                    },
+                },
                 'paint': {
                     'fill-color': '#01468a', // blue color fill
                     'fill-opacity': 0.8
-                    },
+                },
                 filter: ["all", ["==", "year", 1884]]
-                });
+            });
 
-                map.addLayer({
+            map.addLayer({
                 'id': '1910',
                 'type': 'fill',
                 'source': 'shoreline_overlay',
                 'layout': {
                     'visibility': 'none'
-                    },
+                },
                 'paint': {
                     'fill-color': '#00264d', // blue color fill
                     'fill-opacity': 0.8
-                    },
+                },
                 filter: ["all", ["==", "year", 1910]]
-                });
+            });
 
-                map.addLayer({
+            map.addLayer({
                 'id': '2022',
                 'type': 'fill',
                 'source': 'shoreline_overlay',
                 'layout': {
                     'visibility': 'none'
-                    },
+                },
                 'paint': {
                     'fill-color': '#001429', // blue color fill
                     'fill-opacity': 0.8
-                    },
+                },
                 filter: ["all", ["==", "year", 2022]]
-                });
+            });
 
 
 
 
-               // const everything = map.queryRenderedFeatures({layers: ['imagebway'] ['photos']});
 
 
+            // INDIGENOUS TERRITORIES
 
-                // INDIGENOUS TERRITORIES
+            // map.addSource('native-land', {
+            //     type: 'vector',
+            //     url: 'mapbox://nativeland.cjh3mywgg04aaahpidhgio50e-9ctzy'
+            //     });
 
-                // map.addSource('native-land', {
-                //     type: 'vector',
-                //     url: 'mapbox://nativeland.cjh3mywgg04aaahpidhgio50e-9ctzy'
-                //     });
+            // map.addLayer(
+            //     {
+            //         'id': 'native-land-data',
+            //         'type': 'fill',
+            //         'source': 'native-land',
+            //         'source-layer': 'nativelands-src',
+            //         // 'paint': {
+            //         //    'line-color': '#ff69b4',
+            //         //    'line-width': 1
+            //         //}
+            //     },
+            // );
 
-                // map.addLayer(
-                //     {
-                //         'id': 'native-land-data',
-                //         'type': 'fill',
-                //         'source': 'native-land',
-                //         'source-layer': 'nativelands-src',
-                //         // 'paint': {
-                //         //    'line-color': '#ff69b4',
-                //         //    'line-width': 1
-                //         //}
-                //     },
-                // );
-
-                // When a click event occurs on a feature in the places layer, open a popup at the
-                // location of the feature, with description HTML from its properties.
-                map.on('click', 'photos', (e) => {
+            // When a click event occurs on a feature in the places layer, open a popup at the
+            // location of the feature, with description HTML from its properties.
+            map.on('click', 'photos', (e) => {
                 // Copy coordinates array.
                 const coordinates = e.features[0].geometry.coordinates.slice();
                 const description = e.features[0].properties.title;
                 const year = e.features[0].properties.date.substring(0, 4);
                 const image = e.features[0].properties.url;
-                let text = e.features[0].properties.desc; 
+                let text = e.features[0].properties.desc;
                 const exlink = e.features[0].properties.seemore;
-                
+
                 // Ensure that if the map is zoomed out such that multiple
                 // copies of the feature are visible, the popup appears
                 // over the copy being pointed to.
                 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-                coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
                 }
-                
+
                 new mapboxgl.Popup()
-                .setLngLat(coordinates)
-                .setHTML("<h1>"+ description + "</h1>" + "<br>" + "<img src='" + image + "'" + " class=popupImage " + "/>" + "<br>" + text + "<br>" + year + "<br>" + exlink)
-                .addTo(map);
-                filter : ['!has', text]
-                });
-                
-                // Change the cursor to a pointer when the mouse is over the places layer.
-                map.on('mouseenter', 'photos', () => {
+                    .setLngLat(coordinates)
+                    .setHTML("<h1>" + description + "</h1>" + "<br>" + "<img src='" + image + "'" + " class=popupImage " + "/>" + "<br>" + text + "<br>" + year + "<br>" + exlink)
+                    .addTo(map);
+                filter: ['!has', text]
+            });
+
+            // Change the cursor to a pointer when the mouse is over the places layer.
+            map.on('mouseenter', 'photos', () => {
                 map.getCanvas().style.cursor = 'pointer';
-                });
-                
-                // Change it back to a pointer when it leaves.
-                map.on('mouseleave', 'photos', () => {
+            });
+
+            // Change it back to a pointer when it leaves.
+            map.on('mouseleave', 'photos', () => {
                 map.getCanvas().style.cursor = '';
-                });
-            
+            });
 
-            
-                // TITLE
 
-                document.getElementById('info').innerHTML = `
+
+            // TITLE
+
+            document.getElementById('info').innerHTML = `
                 <svg width="360px" height="82px" viewBox="0 0 360 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <title>maplogo</title>
                         <g id="maplogo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -316,59 +322,63 @@
                     </g>
                 </svg>`
 
-                // MENU
+            // MENU
 
-                // If these two layers were not added to the map, abort
-                if (!map.getLayer('1818') || !map.getLayer('1884') || !map.getLayer('1910') || !map.getLayer('2022')) {
+            // If these two layers were not added to the map, abort
+            if (!map.getLayer('1818') || !map.getLayer('1884') || !map.getLayer('1910') || !map.getLayer('2022')) {
                 return;
-                }
-                
-                // Enumerate ids of the layers.
-                const toggleableLayerIds = ['1818', '1884', '1910', '2022'];
-                
-                // Set up the corresponding toggle button for each layer.
-                for (const id of toggleableLayerIds) {
+            }
+
+            // Enumerate ids of the layers.
+            const toggleableLayerIds = ['1818', '1884', '1910', '2022'];
+
+            // Set up the corresponding toggle button for each layer.
+            for (const id of toggleableLayerIds) {
                 // Skip layers that already have a button set up.
                 if (document.getElementById(id)) {
-                continue;
+                    continue;
                 }
-                
+
                 // Create a link.
                 const link = document.createElement('a');
                 link.id = id;
                 link.href = '#';
                 link.textContent = id;
                 link.className = 'active';
-                
+
                 // Show or hide layer when the toggle is clicked.
                 link.onclick = function (e) {
-                const clickedLayer = this.textContent;
-                e.preventDefault();
-                e.stopPropagation();
-                
-                const visibility = map.getLayoutProperty(
-                clickedLayer,
-                'visibility'
-                );
-                
-                // Toggle layer visibility by changing the layout object's visibility property.
-                if (visibility === 'none') {
-                map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-                this.className = '';
-                } else {
-                this.className = 'active';
-                map.setLayoutProperty(
-                clickedLayer,
-                'visibility',
-                'none'
-                );
-                }
+                    const clickedLayer = this.textContent;
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    const visibility = map.getLayoutProperty(
+                        clickedLayer,
+                        'visibility'
+                    );
+
+                    // Toggle layer visibility by changing the layout object's visibility property.
+                    if (visibility === 'none') {
+                        map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+                        this.className = '';
+                    } else {
+                        this.className = 'active';
+                        map.setLayoutProperty(
+                            clickedLayer,
+                            'visibility',
+                            'none'
+                        );
+                    }
                 };
-                
+
                 const layers = document.getElementById('menu');
                 layers.appendChild(link);
-                }
-                });
-        </script>
-    </body>
+            }
+        });
+
+
+
+    </script>
+</body>
+
 </html>
