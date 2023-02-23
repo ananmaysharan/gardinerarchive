@@ -8053,8 +8053,8 @@
         "date": "1969/01/01",
         "url": "https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/main/image/s1465_fl0526_it0001.jpg",
         "thumb_url": "https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/main/thumbnail_images/s1465_fl0526_it0001.png",
-        "desc": " ",
-        "seemore": " "
+        "desc": "",
+        "seemore": ""
       }
     },
     {
@@ -9399,7 +9399,7 @@
         "Artist": "Rafael Lozano-Hemmer",
         "id": "bw43",
         "desc": "Marking the inaugural collaboration with neighbouring Exhibition Place and the Bentway, Pulse Topology by Rafael Lozano-Hemmers will take over a massive, enclosed storage chamber nestled beneath the Gardiner Expressway, inviting the public to discover a striking, industrial part of the city for the first time.",
-        "seemore": "<a href = 'https://www.thebentway.ca/event/pulse-topology/'> Click here for more info </a>"
+        "seemore": ""
       }
     },
     {
