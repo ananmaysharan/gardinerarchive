@@ -75,14 +75,14 @@ font-family: 'Libre Franklin', sans-serif;
 #tagmenu {
     background: #fff;
     position: absolute;
+    display:flex;
+    flex-direction: column;
     z-index: 1;
-    top: 150px;
     right: 10px;
     border-radius: 3px;
-    width: 300px;
     border: 1px solid #6ECCB1;
     font-family: 'Libre Franklin', sans-serif;
-    padding:24px;
+    padding:12px;
 }
 
 #tagmenu a {
@@ -128,14 +128,15 @@ font-family: 'Libre Franklin', sans-serif;
 #menu {
     background: #fff;
     position: absolute;
+    display:flex;
+    flex-direction: column;
     z-index: 1;
-    top: 15px;
     right: 10px;
+    top:330px;
     border-radius: 3px;
-    width: 300px;
     border: 1px solid #6ECCB1;
     font-family: 'Libre Franklin', sans-serif;
-    padding:24px;
+    padding:12px;
     }
      
     #menu a {
