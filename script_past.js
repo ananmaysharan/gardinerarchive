@@ -16,6 +16,8 @@ const map = new mapboxgl.Map({
     maxBounds: bounds // Set the map's geographical boundaries.
 });
 
+// PAST MAP
+
 // slider
 
 const sliderOptions = {
@@ -45,7 +47,6 @@ map.on("load", async () => {
     );
 
     const geojson_data = await geojson_url.json();
-
 
     // adding images
 
@@ -154,8 +155,8 @@ map.on("load", async () => {
         filter: ["all", ["==", "year", 2022]]
     });
 
-   // adding indigenous territories
-    
+    // adding indigenous territories
+
     //  adding popup
 
     // When a click event occurs on a feature in the places layer, open a popup at the
@@ -302,7 +303,7 @@ map.on("load", async () => {
         'aerial': 'Aerial',
         'construction': 'Construction',
         'traffic': 'Traffic'
-      };
+    };
 
     // Set up the corresponding toggle button for each layer.
     for (const id of toggleabletagIds) {
@@ -327,13 +328,23 @@ map.on("load", async () => {
             if (clickedTag == 'all') {
                 map.setFilter("photos", null); //yeepee!
             } else {
-            const allowedTags = []
-            allowedTags.push(clickedTag)
-            map.setFilter("photos", getTagsFilter(allowedTags)); //yeepee!
+                const allowedTags = []
+                allowedTags.push(clickedTag)
+                map.setFilter("photos", getTagsFilter(allowedTags)); //yeepee!
             }
         };
 
         const layers = document.getElementById('tagmenu');
         layers.appendChild(link);
     }
+
+
+// PRESENT MAP
+
+
+
 });
+
+
+
+
