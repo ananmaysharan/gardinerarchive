@@ -45,7 +45,7 @@
             zoom: 13.6,
             // pitch: 60, // pitch in degrees
             // bearing: -20, // bearing in degrees
-           // maxBounds: bounds // Set the map's geographical boundaries.
+            // maxBounds: bounds // Set the map's geographical boundaries.
         });
 
 
@@ -227,7 +227,7 @@
                 filter: ["all", ["==", "year", 2022]]
             });
 
-            map.addSource('territory', { 
+            map.addSource('territory', {
                 type: 'geojson',
                 data: 'https://raw.githubusercontent.com/TalhaMV/gardinerarchive/Talha/mississaugaterritory.geojson'
             });
@@ -236,11 +236,11 @@
                 'id': 'missterritory',
                 'type': 'fill',
                 'source': 'territory',
-                'paint':{
+                'paint': {
                     'fill-color': '#FF8C00',
                     'fill-opacity': 0.5
                 }
-                }
+            }
             );
 
 
@@ -391,11 +391,28 @@
             }
         });
 
+        const start = {
+            center: [-79.380331532, 43.646497454], // // starting center in [lng, lat]
+            zoom: 13.6,
+        };
+
+        const end = {
+            center: [-79.380331532, 43.646497454],
+            zoom: 7,
+        };
+
+        let isAtStart = true;
+
         document.getElementById('fly').addEventListener('click', () => {
             // Fly to a random location
+            const target = isAtStart ? end : start;
+            isAtStart = !isAtStart;
+
+
             map.flyTo({
-                center: [-79.380331532, 43.646497454], //NE coordinates\
-                zoom: 7,
+                ...target,
+                center: [-79.380331532, 43.646497454], //NE coordinates
+                duration: 1000,
                 essential: true // this animation is considered essential with respect to prefers-reduced-motion
             });
         });
