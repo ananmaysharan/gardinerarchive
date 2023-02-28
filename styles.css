@@ -112,3 +112,20 @@ body {
     background: #111;
     color: #fff;
 }
+
+#fly {
+    display: block;
+    position: absolute;
+    margin: 0px auto;
+    width: 50%;
+    height: 40px;
+    bottom: 20px;
+    right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background: #ee8a65;
+    }
