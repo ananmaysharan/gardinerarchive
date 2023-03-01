@@ -404,7 +404,7 @@ map.addLayer({
 
         new mapboxgl.Popup()
             .setLngLat(coordinates)
-            .setHTML(title + "<br>" + artist + "<br>" + season + " " + year + "<img src='" + image + "'" + " class=popupImage " + "/>" + description)
+            .setHTML(title + artist + season + year + "<img src='" + image + "'" + " class=popupImage " + "/>" + description)
             .addTo(map);
     });
 
