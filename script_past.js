@@ -387,24 +387,24 @@ map.addLayer({
     // location of the feature, with description HTML from its properties.
     map.on('click', 'bentway_photos', (e) => {
         // Copy coordinates array.
-        const coordinates = e.features[0].geometry.coordinates.slice();
-        const title = e.features[0].properties.title;
-        const year = e.features[0].properties.date;
-        const season = e.features[0].properties.season;
-        const artist = e.features[0].properties.artist;
-        const description = e.features[0].properties.description;
-        const image = e.features[0].properties.url;
+        const b_coordinates = e.features[0].geometry.coordinates.slice();
+        const b_title = e.features[0].properties.title;
+        const b_year = e.features[0].properties.date;
+        const b_season = e.features[0].properties.season;
+        const b_artist = e.features[0].properties.artist;
+        const b_description = e.features[0].properties.description;
+        const b_image = e.features[0].properties.url;
 
         // Ensure that if the map is zoomed out such that multiple
         // copies of the feature are visible, the popup appears
         // over the copy being pointed to.
-        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        while (Math.abs(e.lngLat.lng - b_coordinates[0]) > 180) {
+            b_coordinates[0] += e.lngLat.lng > b_coordinates[0] ? 360 : -360;
         }
 
         new mapboxgl.Popup()
-            .setLngLat(coordinates)
-            .setHTML(title + artist + season + year + "<img src='" + image + "'" + " class=popupImage " + "/>" + description)
+            .setLngLat(b_coordinates)
+            .setHTML(b_title + "<br>" + b_artist + "<br>" + b_season + " " + b_year + "<br>" +  "<img src='" + b_image + "'" + " class=popupImage " + "/>" + "<br>" + b_description)
             .addTo(map);
     });
 
