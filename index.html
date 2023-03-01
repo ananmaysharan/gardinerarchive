@@ -227,7 +227,7 @@
                 filter: ["all", ["==", "year", 2022]]
             });
 
-/// Adding Indigenous Territories
+            /// Adding Indigenous Territories
 
 
             map.addSource('territory', {
@@ -239,8 +239,9 @@
                 'id': 'Anishinabewaki',
                 'type': 'fill',
                 'source': 'territory',
-                'layout':{
-                    'visibility': 'none'},
+                'layout': {
+                    'visibility': 'none'
+                },
                 'paint': {
                     'fill-color': '#FF8C00',
                     'fill-opacity': 0.2
@@ -250,14 +251,15 @@
             );
 
             map.addLayer({
-                'id':'Wendake-Nionwentsïo',
+                'id': 'Wendake-Nionwentsïo',
                 'type': 'fill',
                 'source': 'territory',
-                'layout':{
-                    'visibility': 'none'},
+                'layout': {
+                    'visibility': 'none'
+                },
                 'paint': {
                     'fill-color': '#FFE4E1',
-                    'fill-opacity':0.2
+                    'fill-opacity': 0.2
                 },
                 filter: ["all", ["==", "ID", 35914]]
             });
@@ -265,10 +267,11 @@
             map.addLayer({
                 'id': 'Haudenosaunee',
                 'type': 'fill',
-                'source':'territory',
-                'layout':{
-                    'visibility': 'none'},
-                'paint': { 
+                'source': 'territory',
+                'layout': {
+                    'visibility': 'none'
+                },
+                'paint': {
                     'fill-color': '#663399',
                     'fill-opacity': 0.2
                 },
@@ -279,8 +282,9 @@
                 'id': 'Petun',
                 'type': 'fill',
                 'source': 'territory',
-                'layout':{
-                    'visibility': 'none'},
+                'layout': {
+                    'visibility': 'none'
+                },
                 'paint': {
                     'fill-color': '#FF6347',
                     'fill-opacity': 0.2
@@ -291,9 +295,10 @@
             map.addLayer({
                 'id': 'Attiwonderonk (Neutral)',
                 'type': 'fill',
-                'source':'territory',
-                'layout':{
-                    'visibility': 'none'},
+                'source': 'territory',
+                'layout': {
+                    'visibility': 'none'
+                },
                 'paint': {
                     'fill-color': '#40E0D0',
                     'fill-opacity': 0.2
@@ -305,9 +310,10 @@
                 'id': 'Mississaugas of the Credit',
                 'type': 'fill',
                 'source': 'territory',
-                'layout':{
-                    'visibility': 'none'},
-                'paint':{
+                'layout': {
+                    'visibility': 'none'
+                },
+                'paint': {
                     'fill-color': '#87CEFA',
                     'fill-opacity': 0.2
                 },
@@ -460,8 +466,12 @@
 
                 const layers = document.getElementById('menu');
                 layers.appendChild(link);
-            }
-        });
+
+
+        //trying to make territories pop on click
+        const toggleterritory = ['Anishinabewaki', 'Wendake-Nionwentsïo', 'Haudenosaunee', 'Petun', 'Mississaugas of the Credit'];
+
+       }});
 
         const start = {
             center: [-79.380331532, 43.646497454], // // starting center in [lng, lat]
@@ -473,10 +483,11 @@
             zoom: 7,
         };
 
+
         let isAtStart = true;
 
         document.getElementById('fly').addEventListener('click', () => {
-            // Fly to a random location
+            // Zoom out to show Indigenous Territories
             const target = isAtStart ? end : start;
             isAtStart = !isAtStart;
 
@@ -488,7 +499,6 @@
                 essential: true // this animation is considered essential with respect to prefers-reduced-motion
             });
         });
-
 
 
     </script>
