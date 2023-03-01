@@ -43,7 +43,7 @@ map.addControl(new RangeSlider(sliderOptions, 'top-left'));
 map.on("load", async () => {
 
     const geojson_url = await fetch(
-        'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/main/combined_images.geojson'
+        'https://ananmaysharan.github.io/gardinerarchive/combined_images.geojson'
     );
 
     const geojson_data = await geojson_url.json();
@@ -164,7 +164,7 @@ map.on("load", async () => {
     map.on('click', 'photos', (e) => {
         // Copy coordinates array.
         const coordinates = e.features[0].geometry.coordinates.slice();
-        const description = e.features[0].properties.title;
+        const title = e.features[0].properties.title;
         const year = e.features[0].properties.date.substring(0, 4);
         const image = e.features[0].properties.url;
 
@@ -177,7 +177,7 @@ map.on("load", async () => {
 
         new mapboxgl.Popup()
             .setLngLat(coordinates)
-            .setHTML(description + "<br>" + year + "<img src='" + image + "'" + " class=popupImage " + "/>")
+            .setHTML(title + "<br>" + year + "<img src='" + image + "'" + " class=popupImage " + "/>")
             .addTo(map);
     });
 
@@ -341,7 +341,72 @@ map.on("load", async () => {
 
 // PRESENT MAP
 
+const bentway_geojson_url = await fetch(
+    'https://ananmaysharan.github.io/gardinerarchive/bentway_projects.geojson'
+);
 
+const bentway_geojson_data = await bentway_geojson_url.json();
+
+// adding images
+
+const bentway_images = bentway_geojson_data.features.map(feature => ({
+    url: feature.properties.thumb_url,
+    id: feature.properties.id
+}));
+
+Promise.all(
+    bentway_images.map(img => new Promise((resolve, reject) => {
+        map.loadImage(img.url, function (error, res) {
+            if (error) throw error;
+            map.addImage(img.id, res)
+            resolve();
+        })
+    }))
+).then(console.log("Bentway Images Loaded"));
+
+map.addSource("bentway_photos", {
+    type: "geojson",
+    data: bentway_geojson_data,
+});
+
+map.addLayer({
+    id: "bentway_photos",
+    type: "symbol",
+    source: "bentway_photos",
+    layout: {
+        'icon-image': ['get', 'id'], // reference the image
+        'icon-ignore-placement': true,
+        'icon-size': 0.25,
+        'icon-allow-overlap': true,
+    }
+});
+
+//  adding popup
+
+    // When a click event occurs on a feature in the places layer, open a popup at the
+    // location of the feature, with description HTML from its properties.
+    map.on('click', 'bentway_photos', (e) => {
+        // Copy coordinates array.
+        const coordinates = e.features[0].geometry.coordinates.slice();
+        const title = e.features[0].properties.title;
+        const year = e.features[0].properties.date;
+        const season = e.features[0].properties.season;
+        const artist = e.features[0].properties.artist;
+        const description = e.features[0].properties.description;
+        const image = e.features[0].properties.url;
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+            .setLngLat(coordinates)
+            .setHTML(title + "<br>" + artist + "<br>" + season + " " + year + "<img src='" + image + "'" + " class=popupImage " + "/>" + description)
+            .addTo(map);
+    });
 
 });
 
