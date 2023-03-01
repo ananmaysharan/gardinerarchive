@@ -227,21 +227,81 @@
                 filter: ["all", ["==", "year", 2022]]
             });
 
+/// Adding Indigenous Territories
+
+
             map.addSource('territory', {
                 type: 'geojson',
                 data: 'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/Talha/territories.geojson'
             });
 
             map.addLayer({
-                'id': '5aa1caa27e95cf9e074131549effee43',
+                'id': 'Anishinabewaki',
                 'type': 'fill',
                 'source': 'territory',
                 'paint': {
                     'fill-color': '#FF8C00',
-                    'fill-opacity': 0.5
-                }
+                    'fill-opacity': 0.2
+                },
+                filter: ["all", ["==", "ID", 36372]]
             }
             );
+
+            map.addLayer({
+                'id':'Wendake-Nionwentsïo',
+                'type': 'fill',
+                'source': 'territory',
+                'paint': {
+                    'fill-color': '#FFE4E1',
+                    'fill-opacity':0.2
+                },
+                filter: ["all", ["==", "ID", 35914]]
+            });
+
+            map.addLayer({
+                'id': 'Haudenosaunee',
+                'type': 'fill',
+                'source':'territory',
+                'paint': { 
+                    'fill-color': '#663399',
+                    'fill-opacity': 0.2
+                },
+                filter: ["all", ["==", "ID", 35819]]
+            });
+
+            map.addLayer({
+                'id': 'Petun',
+                'type': 'fill',
+                'source': 'territory',
+                'paint': {
+                    'fill-color': '#FF6347',
+                    'fill-opacity': 0.2
+                },
+                filter: ["all", ["==", "ID", 33900]]
+            });
+
+            map.addLayer({
+                'id': 'Attiwonderonk (Neutral)',
+                'type': 'fill',
+                'source':'territory',
+                'paint': {
+                    'fill-color': '#40E0D0',
+                    'fill-opacity': 0.2
+                },
+                filter: ["all", ["==", "ID", 33899]]
+            });
+
+            map.addLayer({
+                'id': 'Mississaugas of the Credit',
+                'type': 'fill',
+                'source': 'territory',
+                'paint':{
+                    'fill-color': '#87CEFA',
+                    'fill-opacity': 0.2
+                },
+                filter: ["all", ["==", "ID", 33632]]
+
+            })
 
 
 
