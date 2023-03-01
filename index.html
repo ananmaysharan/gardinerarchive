@@ -28,7 +28,7 @@
     <nav id="menu"></nav>
     <div id="map"></div>
     <div id="info"></div>
-    <button id="fly">Indigenous Territories</button>
+    <button id="fly">Click to see the Indigenous lands we reside on</button>
     <script src="rangeSlider.js"></script>
     <script>
         mapboxgl.accessToken = "pk.eyJ1IjoiYW5hbm1heSIsImEiOiJjbDk0azVhbWMwMmNzM3dyNWpraW5pYXo3In0.ABTXYKit9qNDRvSBlFcalA";
@@ -303,14 +303,32 @@
                 'source': 'territory',
                 'maxzoom': 7.1,
                 'layout': {
-                    'text-field': ['get', 'id']},
+                    'text-field': ['get', 'id']
+                },
                 'paint': {
                     'fill-color': '#87CEFA',
                     'fill-opacity': 0.2
                 },
                 filter: ["all", ["==", "ID", 33632]]
 
-            })
+            });
+
+            map.addLayer({
+                'id': 'terrlabels',
+                'type': 'symbol',
+                'source': 'territory',
+                'layout': {
+                    'icon-image': 'custom-marker',
+                    // get the title name from the source's "title" property
+                    'text-field': ['get', 'Slug'],
+                    'text-font': [
+                        'Open Sans Semibold',
+                        'Arial Unicode MS Bold'
+                    ],
+                    'text-offset': [0, 1.25],
+                    'text-anchor': 'top'
+                }
+            });
 
 
 
