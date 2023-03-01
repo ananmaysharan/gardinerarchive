@@ -1,19 +1,19 @@
 mapboxgl.accessToken = "pk.eyJ1IjoiYW5hbm1heSIsImEiOiJjbDk0azVhbWMwMmNzM3dyNWpraW5pYXo3In0.ABTXYKit9qNDRvSBlFcalA";
 
 const bounds = [
-    [-79.432709, 43.628221], // Southwest coordinates (long, lat)
-    [-79.341808, 43.700911] // Northeast coordinates (long, lat)
+    [-79.432709, 43.615221], // Southwest coordinates (long, lat)
+    [-79.301808, 43.900911] // Northeast coordinates (long, lat)
 ];
 
 // create map
 const map = new mapboxgl.Map({
     container: "map", // container ID
     style: "mapbox://styles/ananmay/clb46qysm000l14kyvn8q1gjh", // style URL
-    center: [-79.380331532, 43.646497454], // // starting center in [lng, lat]
+    center: [-79.38633, 43.64015], // starting center in [lng, lat]
     zoom: 13,
     // pitch: 60, // pitch in degrees
     // bearing: -20, // bearing in degrees
-    maxBounds: bounds // Set the map's geographical boundaries.
+    // maxBounds: bounds // Set the map's geographical boundaries.
 });
 
 // PAST MAP
@@ -248,7 +248,7 @@ map.on("load", async () => {
         link.id = id;
         link.href = '#';
         link.textContent = id;
-        link.className = 'active';
+        link.className = '';
 
         // Show or hide layer when the toggle is clicked.
         link.onclick = function (e) {
@@ -264,9 +264,9 @@ map.on("load", async () => {
             // Toggle layer visibility by changing the layout object's visibility property.
             if (visibility === 'none') {
                 map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-                this.className = '';
-            } else {
                 this.className = 'active';
+            } else {
+                this.className = '';
                 map.setLayoutProperty(
                     clickedLayer,
                     'visibility',

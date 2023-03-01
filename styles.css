@@ -141,9 +141,9 @@ font-family: 'Libre Franklin', sans-serif;
      
     #menu a {
     font-size: 13px;
-    color: #fff;
+    color: #111;
     border: 1px solid #111;
-    background-color: #111;
+    background-color: #fff;
     border-radius:999em;
     display: inline;
     margin: 4px;
@@ -152,17 +152,17 @@ font-family: 'Libre Franklin', sans-serif;
     text-align: center;
     }
      
-    #menu a:hover {
+    /* #menu a:hover {
     background-color: #222;
     color: #fff;
     }
-     
+      */
     #menu a.active {
-    background-color: #fff;
-    color: #111;
+    background-color: #111;
+    color: #fff;
     }
      
-    #menu a.active:hover {
+    /* #menu a.active:hover {
     background: #111;
     color:#fff;
-    }
+    } */
