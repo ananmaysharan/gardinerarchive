@@ -28,7 +28,7 @@
     <nav id="menu"></nav>
     <div id="map"></div>
     <div id="info"></div>
-    <button id="fly">territory</button>
+    <button id="fly">Indigenous Territories</button>
     <script src="rangeSlider.js"></script>
     <script>
         mapboxgl.accessToken = "pk.eyJ1IjoiYW5hbm1heSIsImEiOiJjbDk0azVhbWMwMmNzM3dyNWpraW5pYXo3In0.ABTXYKit9qNDRvSBlFcalA";
@@ -114,7 +114,7 @@
                 id: "photos",
                 type: "symbol",
                 source: "photos",
-                minzoom: 13.5,
+                minzoom: 13,
                 layout: {
                     'icon-image': ['get', 'id'], // reference the image
                     'icon-ignore-placement': true,
@@ -240,7 +240,7 @@
                 'id': 'Anishinabewaki',
                 'type': 'fill',
                 'source': 'territory',
-                'maxzoom':7.1,
+                'maxzoom': 7.1,
                 'paint': {
                     'fill-color': '#FF8C00',
                     'fill-opacity': 0.2
@@ -253,7 +253,7 @@
                 'id': 'Wendake-Nionwentsïo',
                 'type': 'fill',
                 'source': 'territory',
-                'maxzoom':7.1,
+                'maxzoom': 7.1,
                 'paint': {
                     'fill-color': '#FFE4E1',
                     'fill-opacity': 0.2
@@ -265,7 +265,7 @@
                 'id': 'Haudenosaunee',
                 'type': 'fill',
                 'source': 'territory',
-                'maxzoom':7.1,
+                'maxzoom': 7.1,
                 'paint': {
                     'fill-color': '#663399',
                     'fill-opacity': 0.2
@@ -277,7 +277,7 @@
                 'id': 'Petun',
                 'type': 'fill',
                 'source': 'territory',
-                'maxzoom':7.1,
+                'maxzoom': 7.1,
                 'paint': {
                     'fill-color': '#FF6347',
                     'fill-opacity': 0.2
@@ -289,7 +289,7 @@
                 'id': 'Attiwonderonk (Neutral)',
                 'type': 'fill',
                 'source': 'territory',
-                'maxzoom':7.1,
+                'maxzoom': 7.1,
                 'paint': {
                     'fill-color': '#40E0D0',
                     'fill-opacity': 0.2
@@ -301,7 +301,9 @@
                 'id': 'Mississaugas of the Credit',
                 'type': 'fill',
                 'source': 'territory',
-                'maxzoom':7.1,
+                'maxzoom': 7.1,
+                'layout': {
+                    'text-field': ['get', 'id']},
                 'paint': {
                     'fill-color': '#87CEFA',
                     'fill-opacity': 0.2
@@ -457,26 +459,28 @@
                 layers.appendChild(link);
 
 
-        //trying to make territories pop on click
-        const toggleterritory = ['Anishinabewaki', 'Wendake-Nionwentsïo', 'Haudenosaunee', 'Petun', 'Mississaugas of the Credit'];
+                //trying to make territories pop on click
+                const toggleterritory = ['Anishinabewaki', 'Wendake-Nionwentsïo', 'Haudenosaunee', 'Petun', 'Mississaugas of the Credit'];
 
 
-        map.addSource('route', {'type': 'vector',
-            'url': 'mapbox://ananmay.b449yns1'
-            });
-            map.addLayer(
-                {
-                'id': '1',
-                'name':'Gardiner Expressway',
-                'type': 'line',
-                'maxzoom':7.1,
-                'source':'route',
-                'source-layer': 'gardinerroute84-9zktwf',
-                'layout': {'line-join': 'round','line-cap': 'round' },
-                'paint': {'line-color': '#ff69b4','line-width': 10}
-                },
-            );
-       }});
+                map.addSource('route', {
+                    'type': 'vector',
+                    'url': 'mapbox://ananmay.b449yns1'
+                });
+                map.addLayer(
+                    {
+                        'id': '1',
+                        'name': 'Gardiner Expressway',
+                        'type': 'line',
+                        'maxzoom': 7.1,
+                        'source': 'route',
+                        'source-layer': 'gardinerroute84-9zktwf',
+                        'layout': { 'line-join': 'round', 'line-cap': 'round' },
+                        'paint': { 'line-color': '#ff69b4', 'line-width': 10 }
+                    },
+                );
+            }
+        });
 
         const start = {
             center: [-79.380331532, 43.646497454], // // starting center in [lng, lat]
