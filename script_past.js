@@ -94,10 +94,18 @@ map.on("load", async () => {
 
     // adding shorelines
 
+    const shoreline_geojson_url = await fetch(
+        'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/main/shorelines_polygons.geojson'
+    );
+
+    const shoreline_geojson_data = await shoreline_geojson_url.json();
+
     map.addSource('shoreline_overlay', {
         type: 'geojson',
-        data: 'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/main/shorelines_polygons.geojson'
+        data: shoreline_geojson_data,
     });
+
+    
 
     map.addLayer({
         'id': '1818',
@@ -155,7 +163,9 @@ map.on("load", async () => {
         filter: ["all", ["==", "year", 2022]]
     });
 
-    // adding indigenous territories
+
+
+    // adding indigenous territories / testing zone
 
     //  adding popup
 
@@ -233,8 +243,31 @@ map.on("load", async () => {
         return;
     }
 
+      // const shorelineIdToZoomExtent = {
+    //     '1818': 'All',
+    //     '1884': 'Under Gardiner',
+    //     '1910': 'Transit',
+    //     '2022': 'People',
+    // };
+
     // Enumerate ids of the layers.
     const toggleableLayerIds = ['1818', '1884', '1910', '2022'];
+
+  
+    function zoomToLayerExtent(layerId) {
+        const source = map.getSource('shoreline_overlay');
+        const layerFeatures = source._data.features.filter(f => f.properties.year === Number(layerId));
+        const bbox = turf.bbox({
+            type: 'FeatureCollection',
+            features: layerFeatures,
+          });
+    
+        const bounds = [
+            [bbox[0], bbox[3]-0.01],
+            [bbox[2], bbox[3]-0.01]
+        ];
+        map.fitBounds(bounds);
+    }
 
     // Set up the corresponding toggle button for each layer.
     for (const id of toggleableLayerIds) {
@@ -265,6 +298,11 @@ map.on("load", async () => {
             if (visibility === 'none') {
                 map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
                 this.className = 'active';
+
+                if (clickedLayer != '2022') {
+                zoomToLayerExtent(clickedLayer);
+                }
+
             } else {
                 this.className = '';
                 map.setLayoutProperty(
