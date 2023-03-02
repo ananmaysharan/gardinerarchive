@@ -132,16 +132,16 @@ border: 1px solid #6ECCB1;
 display: table;
 position: relative;
 margin: 15px auto;
-margin-bottom: 0px;
+margin-bottom: -15px;
 word-wrap: anywhere;
 white-space: pre-wrap;
-padding: 16px;
-border: 1px solid #6ECCB1;
+padding: 12px;
 border-radius: 4px;
 font-size: 24px;
 text-align: center;
 color: #111;
-background: #fff;
+/* border: 1px solid #6ECCB1; */
+/* background: #fff; */
 z-index:0;
 font-family: 'Libre Franklin', sans-serif;
 }
@@ -222,6 +222,7 @@ font-family: 'Libre Franklin', sans-serif;
     border: 1px solid #6ECCB1;
     font-family: 'Libre Franklin', sans-serif;
     padding:12px;
+    min-width: 110px;
     }
      
     #menu a {

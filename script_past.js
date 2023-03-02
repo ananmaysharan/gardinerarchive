@@ -350,7 +350,7 @@ map.on("load", async () => {
     // adding title/logo
 
     document.getElementById('info').innerHTML = `
-    <svg width="330px" height="22px" viewBox="0 0 330 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="375px" height="24px" viewBox="0 0 330 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>freecodeformat</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="freecodeformat" fill="#6ECCB1" fill-rule="nonzero">
