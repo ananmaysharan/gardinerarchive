@@ -69,17 +69,17 @@ map.on("load", async () => {
 
     Promise.all(
         images.map(img => new Promise((resolve, reject) => {
-          map.loadImage(img.url, (error, res) => {
-            if (error) {
-              console.log(error);
-              reject(error);
-            } else {
-              map.addImage(img.id, res);
-              resolve();
-            }
-          });
+            map.loadImage(img.url, (error, res) => {
+                if (error) {
+                    console.log(error);
+                    reject(error);
+                } else {
+                    map.addImage(img.id, res);
+                    resolve();
+                }
+            });
         }))
-      ).then(() => console.log("Images Loaded"));
+    ).then(() => console.log("Images Loaded"));
 
     map.addSource("photos", {
         type: "geojson",
@@ -90,6 +90,7 @@ map.on("load", async () => {
         id: "photos",
         type: "symbol",
         source: "photos",
+        minzoom: 11,
         layout: {
             'icon-image': ['get', 'id'], // reference the image
             'icon-ignore-placement': true,
@@ -112,17 +113,16 @@ map.on("load", async () => {
     // adding shorelines
 
     const shoreline_geojson_url = await fetch(
-        'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/main/shorelines_polygons.geojson'
+        'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/main/shorelines.geojson'
     );
 
     const shoreline_geojson_data = await shoreline_geojson_url.json();
 
-    map.addSource('shoreline_overlay', {
-        type: 'geojson',
-        data: shoreline_geojson_data,
-    });
 
-    
+    map.addSource('shoreline_overlay', {
+        'type': 'vector',
+        'url': 'mapbox://ananmay.2wsktomu'
+    });
 
     map.addLayer({
         'id': '1818',
@@ -135,6 +135,7 @@ map.on("load", async () => {
             'fill-color': '#409cf7', // blue color fill
             'fill-opacity': 0.8
         },
+        'source-layer': 'shorelines_polygons-2znheh',
         filter: ["all", ["==", "year", 1818]]
     });
 
@@ -149,6 +150,7 @@ map.on("load", async () => {
             'fill-color': '#01468a', // blue color fill
             'fill-opacity': 0.8
         },
+        'source-layer': 'shorelines_polygons-2znheh',
         filter: ["all", ["==", "year", 1884]]
     });
 
@@ -163,6 +165,7 @@ map.on("load", async () => {
             'fill-color': '#00264d', // blue color fill
             'fill-opacity': 0.8
         },
+        'source-layer': 'shorelines_polygons-2znheh',
         filter: ["all", ["==", "year", 1910]]
     });
 
@@ -177,35 +180,138 @@ map.on("load", async () => {
             'fill-color': '#001429', // blue color fill
             'fill-opacity': 0.8
         },
+        'source-layer': 'shorelines_polygons-2znheh',
         filter: ["all", ["==", "year", 2022]]
     });
 
+    // adding Indigenous Territories
+
+    map.addSource('territory', {
+        'type': 'vector',
+        'url': 'mapbox://talhav.1sok3t7w'
+    });
+
+    // adding each territory by layer
 
 
-    // adding indigenous territories
+    map.addLayer({
+        'id': 'Anishinabewaki',
+        'type': 'fill',
+        'source': 'territory',
+        'maxzoom': 11,
+        'paint': {
+            'fill-color': '#FF8C00',
+            'fill-opacity': 0.2
+        },
+        'source-layer': 'territories-ctiw2m',
+        filter: ["all", ["==", "ID", 36372]]
+    }
+    );
 
-    map.addSource('native-land', {
+    map.addLayer({
+        'id': 'Wendake-Nionwentsïo',
+        'type': 'fill',
+        'source': 'territory',
+        'maxzoom': 11,
+        'paint': {
+            'fill-color': '#FFE4E1',
+            'fill-opacity': 0.2
+        },
+        'source-layer': 'territories-ctiw2m',
+        filter: ["all", ["==", "ID", 35914]]
+    });
+
+    map.addLayer({
+        'id': 'Haudenosaunee',
+        'type': 'fill',
+        'source': 'territory',
+        'maxzoom': 11,
+        'paint': {
+            'fill-color': '#663399',
+            'fill-opacity': 0.2
+        },
+        'source-layer': 'territories-ctiw2m',
+        filter: ["all", ["==", "ID", 35819]]
+    });
+
+    map.addLayer({
+        'id': 'Petun',
+        'type': 'fill',
+        'source': 'territory',
+        'maxzoom': 11,
+        'paint': {
+            'fill-color': '#FF6347',
+            'fill-opacity': 0.2
+        },
+        'source-layer': 'territories-ctiw2m',
+        filter: ["all", ["==", "ID", 33900]]
+    });
+
+    map.addLayer({
+        'id': 'Attiwonderonk (Neutral)',
+        'type': 'fill',
+        'source': 'territory',
+        'maxzoom': 11,
+        'paint': {
+            'fill-color': '#40E0D0',
+            'fill-opacity': 0.2
+        },
+        'source-layer': 'territories-ctiw2m',
+        filter: ["all", ["==", "ID", 33899]]
+    });
+
+    map.addLayer({
+        'id': 'Mississaugas of the Credit',
+        'type': 'fill',
+        'source': 'territory',
+        'maxzoom': 11,
+        'paint': {
+            'fill-color': '#87CEFA',
+            'fill-opacity': 0.3
+        },
+        'source-layer': 'territories-ctiw2m',
+        filter: ["all", ["==", "ID", 33632]]
+
+    });
+
+    // adding labels
+
+    map.addSource('territory-labels', {
         type: 'vector',
-        // Use any Mapbox-hosted tileset using its tileset id.
-        // Learn more about where to find a tileset id:
-        // https://docs.mapbox.com/help/glossary/tileset-id/
-        url: 'mapbox://nativeland.cjh3mywgg04aaahpidhgio50e-9ctzy'
-        });
+        url: 'mapbox://talhav.34dmv2iv'
+    });
 
-        map.addLayer({
-            'id': 'polynative',
-            'type': 'fill',
-            'source': 'native-land',
-            'source-layer': 'territories',
-            'paint': {
-                'fill-color': '#FF8C00',
-                'fill-opacity': 0.2
-            },
+    map.addLayer({
+
+        'id': 'centroids',
+        'type': 'circle',
+        'source': 'territory-labels',
+        'source-layer': 'territorycentroid-bkit1i',
+        'layout': {
+            'visibility': 'none'
         }
-        );
-
-
+    });
     
+    map.addLayer({
+        'id': 'territory-labels',
+        'type': 'symbol',
+        'source': 'territory-labels',
+        'maxzoom': 11,
+        'source-layer': 'territorycentroid-bkit1i',
+        'layout': {
+            'icon-image': 'custom-marker',
+            // get the title name from the source's "title" property
+            'text-field': ['get', 'Name'],
+            'text-font': [
+                'Open Sans Semibold',
+                'Arial Unicode MS Bold',
+            ],
+            'text-offset': [0, 1.25],
+            'text-anchor': 'center',
+        },
+    });
+
+
     //  adding popup
 
     // When a click event occurs on a feature in the places layer, open a popup at the
@@ -260,31 +366,23 @@ map.on("load", async () => {
     if (!map.getLayer('1818') || !map.getLayer('1884') || !map.getLayer('1910') || !map.getLayer('2022')) {
         return;
     }
-
-      // const shorelineIdToZoomExtent = {
-    //     '1818': 'All',
-    //     '1884': 'Under Gardiner',
-    //     '1910': 'Transit',
-    //     '2022': 'People',
-    // };
-
     // Enumerate ids of the layers.
     const toggleableLayerIds = ['1818', '1884', '1910', '2022'];
 
-  
+
     function zoomToLayerExtent(layerId) {
-        const source = map.getSource('shoreline_overlay');
-        const layerFeatures = source._data.features.filter(f => f.properties.year === Number(layerId));
+        //const source = map.getSource('shoreline_overlay');
+        const layerFeatures = shoreline_geojson_data.features.filter(f => f.properties.year === Number(layerId));
         const bbox = turf.bbox({
             type: 'FeatureCollection',
             features: layerFeatures,
-          });
-    
+        });
+
         const bounds = [
-            [bbox[0], bbox[3]-0.01],
-            [bbox[2], bbox[3]-0.01]
+            [bbox[0], bbox[1]],
+            [bbox[2], bbox[3]]
         ];
-        map.fitBounds(bounds);
+        map.fitBounds(bounds, { padding: { top: 0, bottom: 0, left: 0, right: 150 } });
     }
 
     // Set up the corresponding toggle button for each layer.
@@ -318,7 +416,7 @@ map.on("load", async () => {
                 this.className = 'active';
 
                 if (clickedLayer != '2022') {
-                zoomToLayerExtent(clickedLayer);
+                    zoomToLayerExtent(clickedLayer);
                 }
 
             } else {
@@ -395,50 +493,7 @@ map.on("load", async () => {
     }
 
 
-// PRESENT MAP
-
-const bentway_geojson_url = await fetch(
-    'https://ananmaysharan.github.io/gardinerarchive/bentway_projects.geojson'
-);
-
-const bentway_geojson_data = await bentway_geojson_url.json();
-
-// adding images
-
-const bentway_images = bentway_geojson_data.features.map(feature => ({
-    url: feature.properties.thumb_url,
-    id: feature.properties.id
-}));
-
-Promise.all(
-    bentway_images.map(img => new Promise((resolve, reject) => {
-        map.loadImage(img.url, function (error, res) {
-            if (error) throw error;
-            map.addImage(img.id, res)
-            resolve();
-        })
-    }))
-).then(console.log("Bentway Images Loaded"));
-
-map.addSource("bentway_photos", {
-    type: "geojson",
-    data: bentway_geojson_data,
-});
-
-map.addLayer({
-    id: "bentway_photos",
-    type: "symbol",
-    source: "bentway_photos",
-    layout: {
-        'icon-image': ['get', 'id'], // reference the image
-        'icon-ignore-placement': true,
-        'icon-size': 0.25,
-        'icon-allow-overlap': true,
-        'visibility':'none',
-    }
-
-    
-});
+    // PRESENT MAP
 
     map.addSource('route', {
         'type': 'vector',
@@ -455,18 +510,60 @@ map.addLayer({
             'layout': {
                 'line-join': 'round',
                 'line-cap': 'round',
-                'visibility': 'none'
+                'visibility': 'visible'
             },
             'paint': {
                 'line-color': '#dbf2eb',
                 'line-width': 3,
                 'line-opacity': 0.6
-                }
-              });
+            },
+        }, 'photos'
+    );
 
+    const bentway_geojson_url = await fetch(
+        'https://ananmaysharan.github.io/gardinerarchive/bentway_projects.geojson'
+    );
 
+    const bentway_geojson_data = await bentway_geojson_url.json();
 
-//  adding popup
+    // adding images
+
+    const bentway_images = bentway_geojson_data.features.map(feature => ({
+        url: feature.properties.thumb_url,
+        id: feature.properties.id
+    }));
+
+    Promise.all(
+        bentway_images.map(img => new Promise((resolve, reject) => {
+            map.loadImage(img.url, function (error, res) {
+                if (error) throw error;
+                map.addImage(img.id, res)
+                resolve();
+            })
+        }))
+    ).then(console.log("Bentway Images Loaded"));
+
+    map.addSource("bentway_photos", {
+        type: "geojson",
+        data: bentway_geojson_data,
+    });
+
+    map.addLayer({
+        id: "bentway_photos",
+        type: "symbol",
+        source: "bentway_photos",
+        minzoom: 11,
+        layout: {
+            'icon-image': ['get', 'id'], // reference the image
+            'icon-ignore-placement': true,
+            'icon-size': 0.25,
+            'icon-allow-overlap': true,
+            'visibility': 'none',
+        }
+
+    });
+
+    //  adding popup
 
     // When a click event occurs on a feature in the places layer, open a popup at the
     // location of the feature, with description HTML from its properties.
@@ -489,40 +586,37 @@ map.addLayer({
 
         new mapboxgl.Popup()
             .setLngLat(b_coordinates)
-            .setHTML(b_title + "<br>" + b_artist + "<br>" + b_season + " " + b_year + "<br>" +  "<img src='" + b_image + "'" + " class=popupImage " + "/>" + "<br>" + b_description)
+            .setHTML(b_title + "<br>" + b_artist + "<br>" + b_season + " " + b_year + "<br>" + "<img src='" + b_image + "'" + " class=popupImage " + "/>" + "<br>" + b_description)
             .addTo(map);
     });
 
 
 
-// TESTING ZONE
+    // TESTING ZONE
 
-// Get the radio button elements
-const radios = document.querySelectorAll('[name="tabs"]');
+    // Get the radio button elements
+    const radios = document.querySelectorAll('[name="tabs"]');
 
-// Add event listener to the radio buttons
-radios.forEach(function(radio) {
-  radio.addEventListener('click', function() {
-    if (radio.id === 'radio-1' && radio.checked) {
-        map.setLayoutProperty('bentway_photos', 'visibility', 'none'); // bw photos
-        map.setLayoutProperty('photos', 'visibility', 'visible'); // archival photos
-        map.setLayoutProperty('gardiner', 'visibility', 'none'); // archival
-        document.getElementById('tagmenu').style.display = 'flex';
-        document.getElementById('menu').style.display = 'flex';
-        // map.addControl(control)
-    } else if (radio.id === 'radio-2' && radio.checked) {
-        map.setLayoutProperty('bentway_photos', 'visibility', 'visible'); // bw
-        map.setLayoutProperty('photos', 'visibility', 'none'); // archival photos
-        map.setLayoutProperty('gardiner', 'visibility', 'visible'); // archival
-        document.getElementById('tagmenu').style.display = 'none';
-        document.getElementById('menu').style.display = 'none';
-        // map.removeControl(control)
-    } else if (radio.id === 'radio-3' && radio.checked) {
-        map.setLayoutProperty('bentway_photos', 'visibility', 'none'); // bw
-        map.setLayoutProperty('photos', 'visibility', 'none'); // archival
-    }
-  });
-});
-
+    // Add event listener to the radio buttons
+    radios.forEach(function (radio) {
+        radio.addEventListener('click', function () {
+            if (radio.id === 'radio-1' && radio.checked) {
+                map.setLayoutProperty('bentway_photos', 'visibility', 'none'); // bw photos
+                map.setLayoutProperty('photos', 'visibility', 'visible'); // archival photos
+                document.getElementById('tagmenu').style.display = 'flex';
+                document.getElementById('menu').style.display = 'flex';
+                // map.addControl(control)
+            } else if (radio.id === 'radio-2' && radio.checked) {
+                map.setLayoutProperty('bentway_photos', 'visibility', 'visible'); // bw
+                map.setLayoutProperty('photos', 'visibility', 'none'); // archival photos
+                document.getElementById('tagmenu').style.display = 'none';
+                document.getElementById('menu').style.display = 'none';
+                // map.removeControl(control)
+            } else if (radio.id === 'radio-3' && radio.checked) {
+                map.setLayoutProperty('bentway_photos', 'visibility', 'none'); // bw
+                map.setLayoutProperty('photos', 'visibility', 'none'); // archival
+            }
+        });
+    });
 });
 
