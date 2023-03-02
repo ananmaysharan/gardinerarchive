@@ -460,10 +460,9 @@ map.addLayer({
             'paint': {
                 'line-color': '#dbf2eb',
                 'line-width': 3,
-                'line-opacity': 0.5,
-            }
-        },
-    );
+                'line-opacity': 0.6
+                }
+              });
 
 
 
