@@ -37,10 +37,10 @@ const sliderOptions = {
     descriptionPrefix: 'Date:',
     dontFilterOnLoad: true
 }
-
 const control = new RangeSlider(sliderOptions, 'top-left')
 
 map.addControl(control);
+
 
 map.on("load", async () => {
 
@@ -520,6 +520,31 @@ map.on("load", async () => {
         }, 'photos'
     );
 
+    map.addSource('bentway-route', {
+        'type': 'vector',
+        'url': 'mapbox://ananmay.60i50t9k'
+    });
+
+    map.addLayer(
+        {
+            'id': 'bentway',
+            'name': 'The Bentway',
+            'type': 'line',
+            'source': 'bentway-route',
+            'source-layer': 'bentway_route-8lrltj',
+            'layout': {
+                'line-join': 'round',
+                'line-cap': 'round',
+                'visibility': 'none'
+            },
+            'paint': {
+                'line-color': '#fdd100',
+                'line-width': 10,
+                'line-opacity': 0.6
+            },
+        }
+    );
+
     const bentway_geojson_url = await fetch(
         'https://ananmaysharan.github.io/gardinerarchive/bentway_projects.geojson'
     );
@@ -591,6 +616,34 @@ map.on("load", async () => {
     });
 
 
+    // INDIGENOUS TERRITORIES ZOOMING
+    const start = {
+        center: [-79.380331532, 43.646497454], // // starting center in [lng, lat]
+        zoom: 13.6,
+    };
+
+    const end = {
+        center: [-79.380331532, 43.646497454],
+        zoom: 7,
+    };
+
+
+    let isAtStart = true;
+
+    document.getElementById('fly').addEventListener('click', () => {
+        // Zoom out to show Indigenous Territories
+        const target = isAtStart ? end : start;
+        isAtStart = !isAtStart;
+
+
+        map.flyTo({
+            ...target,
+            center: [-79.380331532, 43.646497454], //NE coordinates
+            duration: 1000,
+            essential: true // this animation is considered essential with respect to prefers-reduced-motion
+        });
+    });
+
 
     // TESTING ZONE
 
@@ -605,13 +658,14 @@ map.on("load", async () => {
                 map.setLayoutProperty('photos', 'visibility', 'visible'); // archival photos
                 document.getElementById('tagmenu').style.display = 'flex';
                 document.getElementById('menu').style.display = 'flex';
-                // map.addControl(control)
+
             } else if (radio.id === 'radio-2' && radio.checked) {
                 map.setLayoutProperty('bentway_photos', 'visibility', 'visible'); // bw
                 map.setLayoutProperty('photos', 'visibility', 'none'); // archival photos
+                map.setLayoutProperty('bentway', 'visibility', 'visible'); // bentway
                 document.getElementById('tagmenu').style.display = 'none';
                 document.getElementById('menu').style.display = 'none';
-                // map.removeControl(control)
+
             } else if (radio.id === 'radio-3' && radio.checked) {
                 map.setLayoutProperty('bentway_photos', 'visibility', 'none'); // bw
                 map.setLayoutProperty('photos', 'visibility', 'none'); // archival
@@ -619,4 +673,6 @@ map.on("load", async () => {
         });
     });
 });
+
+
 

@@ -252,4 +252,26 @@ font-family: 'Libre Franklin', sans-serif;
     color:#fff;
     } */
 
+    /*INDIGENOUS BUTTON*/
 
+    #fly {
+    display: flex;
+    position: absolute;
+    right:10px;
+    bottom:25px;
+    margin: 0px auto;
+    padding: 12px;
+    border-radius: 999em;
+    border:none;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background-color: #6ECCB1;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    }
+
+    #fly:hover {
+        background-color: #12574b;
+    }
