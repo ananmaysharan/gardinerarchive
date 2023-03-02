@@ -325,15 +325,27 @@
             });
 
             // this source is only used for the territory labels, the tileset is how the polygons actually upload
-            map.addSource('territorya', {
+            map.addSource('territoryc', {
                 type: 'geojson',
-                data: 'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/Talha/territories.geojson'
+                data: 'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/Talha/territorycentroid.geojson'
             });
+            map.addLayer({
 
+                'id': 'centroids',
+                'type': 'circle',
+                'source': 'territoryc',
+                'layout': {
+                    'visibility': 'none'
+                },
+                'paint': {
+                    'circle-radius': 10,
+                    'circle-color': 'red'
+                }
+            });
             map.addLayer({
                 'id': 'terrlabels',
                 'type': 'symbol',
-                'source': 'territorya',
+                'source': 'territoryc',
                 'maxzoom': 8.1,
                 'layout': {
                     'icon-image': 'custom-marker',
