@@ -291,7 +291,7 @@ map.on("load", async () => {
             'visibility': 'none'
         }
     });
-    
+
     map.addLayer({
         'id': 'territory-labels',
         'type': 'symbol',
@@ -586,7 +586,7 @@ map.on("load", async () => {
 
         new mapboxgl.Popup()
             .setLngLat(b_coordinates)
-            .setHTML(b_title + "<br>" + b_artist + "<br>" + b_season + " " + b_year + "<br>" + "<img src='" + b_image + "'" + " class=popupImage " + "/>" + "<br>" + b_description)
+            .setHTML("<h3>" + b_title + "</h3>" + b_artist + "<br>" + b_season + " " + b_year + "<br>" + "<img src='" + b_image + "'" + " class=popupImage " + "/>" + "<br>" + b_description)
             .addTo(map);
     });
 
