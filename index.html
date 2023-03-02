@@ -228,13 +228,21 @@
                 filter: ["all", ["==", "year", 2022]]
             });
 
-            /// Adding Indigenous Territories
 
+
+            // Adding Indigenous Territories
 
             map.addSource('territory', {
-                type: 'geojson',
-                data: 'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/Talha/territories.geojson'
+
+                'type': 'vector',
+
+                'url': 'mapbox://talhav.1sok3t7w'
+
             });
+
+
+            // adding each territory by layer
+
 
             map.addLayer({
                 'id': 'Anishinabewaki',
@@ -245,6 +253,7 @@
                     'fill-color': '#FF8C00',
                     'fill-opacity': 0.2
                 },
+                'source-layer': 'territories-ctiw2m',
                 filter: ["all", ["==", "ID", 36372]]
             }
             );
@@ -258,6 +267,7 @@
                     'fill-color': '#FFE4E1',
                     'fill-opacity': 0.2
                 },
+                'source-layer': 'territories-ctiw2m',
                 filter: ["all", ["==", "ID", 35914]]
             });
 
@@ -270,6 +280,7 @@
                     'fill-color': '#663399',
                     'fill-opacity': 0.2
                 },
+                'source-layer': 'territories-ctiw2m',
                 filter: ["all", ["==", "ID", 35819]]
             });
 
@@ -282,6 +293,7 @@
                     'fill-color': '#FF6347',
                     'fill-opacity': 0.2
                 },
+                'source-layer': 'territories-ctiw2m',
                 filter: ["all", ["==", "ID", 33900]]
             });
 
@@ -294,6 +306,7 @@
                     'fill-color': '#40E0D0',
                     'fill-opacity': 0.2
                 },
+                'source-layer': 'territories-ctiw2m',
                 filter: ["all", ["==", "ID", 33899]]
             });
 
@@ -306,14 +319,21 @@
                     'fill-color': '#87CEFA',
                     'fill-opacity': 0.3
                 },
+                'source-layer': 'territories-ctiw2m',
                 filter: ["all", ["==", "ID", 33632]]
 
+            });
+
+            // this source is only used for the territory labels, the tileset is how the polygons actually upload
+            map.addSource('territorya', {
+                type: 'geojson',
+                data: 'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/Talha/territories.geojson'
             });
 
             map.addLayer({
                 'id': 'terrlabels',
                 'type': 'symbol',
-                'source': 'territory',
+                'source': 'territorya',
                 'maxzoom': 8.1,
                 'layout': {
                     'icon-image': 'custom-marker',
@@ -325,6 +345,7 @@
                     ],
                     'text-offset': [0, 1.25],
                     'text-anchor': 'center',
+                    // 'source-layer': 'territories-ctiw2m',
                 },
             });
 
