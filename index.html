@@ -362,69 +362,118 @@
                 },
             });
 
+            const portlandpic = 'https://bentway.canto.com/direct/image/tflonla89p30l4h2kf630f3j6h/kKVLhum_EUnIyZyQnjg3VlBQJOQ/m240/800'
 
 
+            map.addSource('portlands', {
+                type: 'vector',
+                url: 'mapbox://talhav.8ahximto'
+            });
 
-            // INDIGENOUS TERRITORIES
+            map.addLayer({
+                'id': "pland",
+                'type': 'circle',
+                'source': 'portlands',
+                'source-layer': 'portlands_point-60d9pb',
+                'paint': {
 
-            // map.addSource('native-land', {
-            //     type: 'vector',
-            //     url: 'mapbox://nativeland.cjh3mywgg04aaahpidhgio50e-9ctzy'
-            //     });
-
-            // map.addLayer(
-            //     {
-            //         'id': 'native-land-data',
-            //         'type': 'fill',
-            //         'source': 'native-land',
-            //         'source-layer': 'nativelands-src',
-            //         // 'paint': {
-            //         //    'line-color': '#ff69b4',
-            //         //    'line-width': 1
-            //         //}
-            //     },
-            // );
-
-            // When a click event occurs on a feature in the places layer, open a popup at the
-            // location of the feature, with description HTML from its properties.
-            map.on('click', 'photos', (e) => {
-                // Copy coordinates array.
-                const coordinates = e.features[0].geometry.coordinates.slice();
-                const description = e.features[0].properties.title;
-                const year = e.features[0].properties.date.substring(0, 4);
-                const image = e.features[0].properties.url;
-                let text = e.features[0].properties.desc;
-                const exlink = e.features[0].properties.seemore;
-
-                // Ensure that if the map is zoomed out such that multiple
-                // copies of the feature are visible, the popup appears
-                // over the copy being pointed to.
-                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                    'circle-radius': 10,
+                    'circle-color': 'red'
+                },
+                'layout': { 
+                    'visibility': 'none'
                 }
 
-                new mapboxgl.Popup()
-                    .setLngLat(coordinates)
-                    .setHTML("<h1>" + description + "</h1>" + "<br>" + "<img src='" + image + "'" + " class=popupImage " + "/>" + "<br>" + text + "<br>" + year + "<br>" + exlink)
-                    .addTo(map);
-                filter: ['!has', text]
-            });
 
-            // Change the cursor to a pointer when the mouse is over the places layer.
-            map.on('mouseenter', 'photos', () => {
-                map.getCanvas().style.cursor = 'pointer';
-            });
-
-            // Change it back to a pointer when it leaves.
-            map.on('mouseleave', 'photos', () => {
-                map.getCanvas().style.cursor = '';
             });
 
 
+            map.loadImage(
+                'https://bentway.canto.com/direct/image/tflonla89p30l4h2kf630f3j6h/4XOEpeWdTeCfHneBfx-ne1fXcO8/original?content-type=image%2Fpng&name=Portlands.png',
+                (error, image) => {
+                    if (error) throw error;
+                    map.addImage('picon', image)});
 
-            // TITLE
+                    map.addLayer({
+                        'id': 'portlandicon',
+                        'type': 'symbol',
+                        'source': 'portlands',
+                        'source-layer': 'portlands_point-60d9pb',
+                        'layout': {
+                            'icon-image': 'picon',
+                            'icon-size': 0.2
+                        }
+                    });
 
-            document.getElementById('info').innerHTML = `
+
+
+
+
+                    // INDIGENOUS TERRITORIES
+
+                    // map.addSource('native-land', {
+                    //     type: 'vector',
+                    //     url: 'mapbox://nativeland.cjh3mywgg04aaahpidhgio50e-9ctzy'
+                    //     });
+
+                    // map.addLayer(
+                    //     {
+                    //         'id': 'native-land-data',
+                    //         'type': 'fill',
+                    //         'source': 'native-land',
+                    //         'source-layer': 'nativelands-src',
+                    //         // 'paint': {
+                    //         //    'line-color': '#ff69b4',
+                    //         //    'line-width': 1
+                    //         //}
+                    //     },
+                    // );
+
+                    // When a click event occurs on a feature in the places layer, open a popup at the
+                    // location of the feature, with description HTML from its properties.
+                    map.on('click', 'photos', (e) => {
+                        // Copy coordinates array.
+                        const coordinates = e.features[0].geometry.coordinates.slice();
+                        const description = e.features[0].properties.title;
+                        const year = e.features[0].properties.date.substring(0, 4);
+                        const image = e.features[0].properties.url;
+                        let text = e.features[0].properties.desc;
+                        const exlink = e.features[0].properties.seemore;
+
+                        // Ensure that if the map is zoomed out such that multiple
+                        // copies of the feature are visible, the popup appears
+                        // over the copy being pointed to.
+                        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                        }
+
+                        new mapboxgl.Popup()
+                            .setLngLat(coordinates)
+                            .setHTML("<h1> " + description + "</h1>" + "<br>" + "<img src='" + image + "'" + " class=popupImage " + "/>" + "<br>" + text + "<br>" + year + "<br>" + exlink)
+                            .addTo(map);
+                        filter: ['!has', text]
+                    });
+                    
+
+
+
+
+                    
+                    // Change the cursor to a pointer when the mouse is over the places layer.
+                    map.on('mouseenter', 'photos', () => {
+                        map.getCanvas().style.cursor = 'pointer';
+                    });
+
+                    // Change it back to a pointer when it leaves.
+                    map.on('mouseleave', 'photos', () => {
+                        map.getCanvas().style.cursor = '';
+                    });
+
+
+
+                    // TITLE
+
+                    document.getElementById('info').innerHTML = `
                 <svg width="360px" height="82px" viewBox="0 0 360 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <title>maplogo</title>
                         <g id="maplogo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -456,108 +505,108 @@
                     </g>
                 </svg>`
 
-            // MENU
+                    // MENU
 
-            // If these two layers were not added to the map, abort
-            if (!map.getLayer('1818') || !map.getLayer('1884') || !map.getLayer('1910') || !map.getLayer('2022')) {
-                return;
-            }
+                    // If these two layers were not added to the map, abort
+                    if (!map.getLayer('1818') || !map.getLayer('1884') || !map.getLayer('1910') || !map.getLayer('2022')) {
+                        return;
+                    }
 
-            // Enumerate ids of the layers.
-            const toggleableLayerIds = ['1818', '1884', '1910', '2022'];
+                    // Enumerate ids of the layers.
+                    const toggleableLayerIds = ['1818', '1884', '1910', '2022'];
 
-            // Set up the corresponding toggle button for each layer.
-            for (const id of toggleableLayerIds) {
-                // Skip layers that already have a button set up.
-                if (document.getElementById(id)) {
-                    continue;
-                }
+                    // Set up the corresponding toggle button for each layer.
+                    for (const id of toggleableLayerIds) {
+                        // Skip layers that already have a button set up.
+                        if (document.getElementById(id)) {
+                            continue;
+                        }
 
-                // Create a link.
-                const link = document.createElement('a');
-                link.id = id;
-                link.href = '#';
-                link.textContent = id;
-                link.className = 'active';
+                        // Create a link.
+                        const link = document.createElement('a');
+                        link.id = id;
+                        link.href = '#';
+                        link.textContent = id;
+                        link.className = 'active';
 
-                // Show or hide layer when the toggle is clicked.
-                link.onclick = function (e) {
-                    const clickedLayer = this.textContent;
-                    e.preventDefault();
-                    e.stopPropagation();
+                        // Show or hide layer when the toggle is clicked.
+                        link.onclick = function (e) {
+                            const clickedLayer = this.textContent;
+                            e.preventDefault();
+                            e.stopPropagation();
 
-                    const visibility = map.getLayoutProperty(
-                        clickedLayer,
-                        'visibility'
-                    );
+                            const visibility = map.getLayoutProperty(
+                                clickedLayer,
+                                'visibility'
+                            );
 
-                    // Toggle layer visibility by changing the layout object's visibility property.
-                    if (visibility === 'none') {
-                        map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-                        this.className = '';
-                    } else {
-                        this.className = 'active';
-                        map.setLayoutProperty(
-                            clickedLayer,
-                            'visibility',
-                            'none'
+                            // Toggle layer visibility by changing the layout object's visibility property.
+                            if (visibility === 'none') {
+                                map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+                                this.className = '';
+                            } else {
+                                this.className = 'active';
+                                map.setLayoutProperty(
+                                    clickedLayer,
+                                    'visibility',
+                                    'none'
+                                );
+                            }
+                        };
+
+                        const layers = document.getElementById('menu');
+                        layers.appendChild(link);
+
+
+                        //trying to make territories pop on click
+                        const toggleterritory = ['Anishinabewaki', 'Wendake-Nionwentsïo', 'Haudenosaunee', 'Petun', 'Mississaugas of the Credit'];
+
+
+                        map.addSource('route', {
+                            'type': 'vector',
+                            'url': 'mapbox://ananmay.b449yns1'
+                        });
+                        map.addLayer(
+                            {
+                                'id': '1',
+                                'name': 'Gardiner Expressway',
+                                'type': 'line',
+                                'maxzoom': 7.1,
+                                'source': 'route',
+                                'source-layer': 'gardinerroute84-9zktwf',
+                                'layout': { 'line-join': 'round', 'line-cap': 'round' },
+                                'paint': { 'line-color': '#FFFF00', 'line-width': 2 }
+                            },
                         );
                     }
-                };
-
-                const layers = document.getElementById('menu');
-                layers.appendChild(link);
-
-
-                //trying to make territories pop on click
-                const toggleterritory = ['Anishinabewaki', 'Wendake-Nionwentsïo', 'Haudenosaunee', 'Petun', 'Mississaugas of the Credit'];
-
-
-                map.addSource('route', {
-                    'type': 'vector',
-                    'url': 'mapbox://ananmay.b449yns1'
                 });
-                map.addLayer(
-                    {
-                        'id': '1',
-                        'name': 'Gardiner Expressway',
-                        'type': 'line',
-                        'maxzoom': 7.1,
-                        'source': 'route',
-                        'source-layer': 'gardinerroute84-9zktwf',
-                        'layout': { 'line-join': 'round', 'line-cap': 'round' },
-                        'paint': { 'line-color': '#FFFF00', 'line-width': 2 }
-                    },
-                );
-            }
-        });
 
-        const start = {
-            center: [-79.380331532, 43.646497454], // // starting center in [lng, lat]
-            zoom: 13.6,
-        };
+            const start = {
+                center: [-79.380331532, 43.646497454], // // starting center in [lng, lat]
+                zoom: 13.6,
+            };
 
-        const end = {
-            center: [-79.380331532, 43.646497454],
-            zoom: 7,
-        };
+            const end = {
+                center: [-79.380331532, 43.646497454],
+                zoom: 7,
+            };
 
 
-        let isAtStart = true;
+            let isAtStart = true;
 
-        document.getElementById('fly').addEventListener('click', () => {
-            // Zoom out to show Indigenous Territories
-            const target = isAtStart ? end : start;
-            isAtStart = !isAtStart;
+            document.getElementById('fly').addEventListener('click', () => {
+                // Zoom out to show Indigenous Territories
+                const target = isAtStart ? end : start;
+                isAtStart = !isAtStart;
 
 
-            map.flyTo({
-                ...target,
-                center: [-79.380331532, 43.646497454], //NE coordinates
-                duration: 1000,
-                essential: true // this animation is considered essential with respect to prefers-reduced-motion
+                map.flyTo({
+                    ...target,
+                    center: [-79.380331532, 43.646497454], //NE coordinates
+                    duration: 1000,
+                    essential: true // this animation is considered essential with respect to prefers-reduced-motion
+                });
             });
-        });
 
 
     </script>
