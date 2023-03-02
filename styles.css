@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 #map {
@@ -9,6 +10,89 @@ body {
     bottom: 0;
     width: 100%;
 }
+
+
+/* PAST PRESENT FUTURE TABS */
+
+:root {
+    --primary-color: #2fa18d;
+    --secondary-color: #dbf2eb;
+  }
+  
+  .container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .tabs {
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #6ECCB1;
+    padding: 0.75rem;
+    border-radius: 99px;
+    transform: scale(0.6);
+  }
+
+  .tabs * {
+    z-index: 2;
+  }
+  
+  input[type=radio] {
+    display: none;
+  }
+  
+  .tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    width: 200px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: color 0.15s ease-in;
+  }
+  
+  input[type=radio]:checked + label {
+    color: var(--primary-color);
+  }
+  input[type=radio]:checked + label > .notification {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  input[id=radio-1]:checked ~ .glider {
+    transform: translateX(0);
+  }
+  
+  input[id=radio-2]:checked ~ .glider {
+    transform: translateX(100%);
+  }
+  
+  input[id=radio-3]:checked ~ .glider {
+    transform: translateX(200%);
+  }
+  
+  .glider {
+    position: absolute;
+    display: flex;
+    height: 54px;
+    width: 200px;
+    background-color: var(--secondary-color);
+    z-index: 1;
+    border-radius: 99px;
+    transition: 0.25s ease-out;
+  }
+  
+  @media (max-width: 700px) {
+    .tabs {
+      transform: scale(0.4);
+    }
+  }
 
 /* POPUP */
 
@@ -48,6 +132,7 @@ border: 1px solid #6ECCB1;
 display: table;
 position: relative;
 margin: 15px auto;
+margin-bottom: 0px;
 word-wrap: anywhere;
 white-space: pre-wrap;
 padding: 16px;
@@ -166,3 +251,5 @@ font-family: 'Libre Franklin', sans-serif;
     background: #111;
     color:#fff;
     } */
+
+

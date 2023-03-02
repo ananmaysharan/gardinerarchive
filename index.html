@@ -28,10 +28,23 @@
 </head>
 
 <body>
-    <nav id="tagmenu"></nav>
-    <nav id="menu"></nav>
+    <div class="past-menus">
+        <nav id="tagmenu"></nav>
+        <nav id="menu"></nav>
+    </div>
     <div id="map"></div>
     <div id="info"></div>
+    <div class="container">
+        <div class="tabs">
+            <input type="radio" id="radio-1" name="tabs" checked />
+            <label class="tab" for="radio-1">Past</label>
+            <input type="radio" id="radio-2" name="tabs" />
+            <label class="tab" for="radio-2">Present</label>
+            <input type="radio" id="radio-3" name="tabs" />
+            <label class="tab" for="radio-3"> Future</label>
+            <span class="glider"></span>
+        </div>
+    </div>
     <script src="rangeSlider.js"></script>
     <script src="script_past.js"></script>
 </body>
