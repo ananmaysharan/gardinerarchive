@@ -8,7 +8,7 @@ const bounds = [
 // create map
 const map = new mapboxgl.Map({
     container: "map", // container ID
-    style: "mapbox://styles/ananmay/clb46qysm000l14kyvn8q1gjh", // style URL
+    style: "mapbox://styles/ananmay/clb46qysm000l14kyvn8q1gjh", // style URL 
     center: [-79.38633, 43.64015], // starting center in [lng, lat]
     zoom: 13,
     // pitch: 60, // pitch in degrees
