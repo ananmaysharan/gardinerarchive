@@ -20,7 +20,7 @@ const map = new mapboxgl.Map({
 
 // adding title/logo
 
-    document.getElementById('info').innerHTML = `
+document.getElementById('info').innerHTML = `
     <svg width="375px" height="24px" viewBox="0 0 330 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>logo</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -269,7 +269,7 @@ map.on("load", async () => {
             if (visibility === 'none') {
                 map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
                 this.className = 'active';
-                    zoomToLayerExtentShoreline(clickedLayer);
+                zoomToLayerExtentShoreline(clickedLayer);
 
             } else {
                 this.className = '';
@@ -448,25 +448,25 @@ map.on("load", async () => {
                 // add a smooth transition effect to
                 // the buildings as the user zooms in.
                 'fill-extrusion-height': //['get', 'height'],
-                [
-                    'interpolate',
-                    ['linear'],
-                    ['zoom'],
-                    13,
-                    0,
-                    13.05,
-                    ['get', 'height']
-                ],
+                    [
+                        'interpolate',
+                        ['linear'],
+                        ['zoom'],
+                        13,
+                        0,
+                        13.05,
+                        ['get', 'height']
+                    ],
                 'fill-extrusion-base': //['get', 'min_height'],
-                [
-                    'interpolate',
-                    ['linear'],
-                    ['zoom'],
-                    13,
-                    0,
-                    13.05,
-                    ['get', 'min_height']
-                ],
+                    [
+                        'interpolate',
+                        ['linear'],
+                        ['zoom'],
+                        13,
+                        0,
+                        13.05,
+                        ['get', 'min_height']
+                    ],
                 'fill-extrusion-opacity': 0.6
             }
         },
@@ -556,7 +556,7 @@ map.on("load", async () => {
         'bentway': 'The Bentway',
         'green-spaces': 'Green Spaces',
         'add-3d-buildings': 'Buildings',
-        '2022':'Shoreline'
+        '2022': 'Shoreline'
     };
 
 
@@ -718,7 +718,7 @@ map.on("load", async () => {
                     },
                     'properties': {
                         'title': 'Ontario Line Exhibhition Station',
-                        'description':"<p>Exhibition Station serves one of the most popular destinations for sports, concerts and trade shows in the country, not to mention family attractions like the CNE. The Ontario Line station at Exhibition will create a connection to the GO Transit rail network and bring the subway system closer to many homes and businesses in the growing and vibrant Liberty Village community.</p>"
+                        'description': "<p>The Ontario Line station at Exhibition will create a connection to the GO Transit rail network and bring the subway system closer to many homes and businesses in the growing and vibrant Liberty Village community. Exhibition Station serves one of the most popular destinations for sports, concerts and trade shows in the country, not to mention family attractions like the CNE.</p>"
                     }
                 }
             ]
@@ -731,43 +731,43 @@ map.on("load", async () => {
         'source': 'exhibition-station',
         'layout': {
             'icon-image': 'pulsing-dot',
-            'visibility':'none'
+            'visibility': 'none'
         }
-        });
-    
+    });
+
     // popup
 
     // Create a popup, but don't add it to the map yet.
-const future_popup = new mapboxgl.Popup({
-    closeButton: false,
-    closeOnClick: false
+    const future_popup = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
     });
-     
-    map.on('mouseenter', 'exhibition-station', (e) => {
-    // Change the cursor style as a UI indicator.
-    map.getCanvas().style.cursor = 'pointer';
-     
-    // Copy coordinates array.
-    const coordinates = e.features[0].geometry.coordinates.slice();
-    const description = e.features[0].properties.description;
-    const title = e.features[0].properties.title;
 
-     
-    // Ensure that if the map is zoomed out such that multiple
-    // copies of the feature are visible, the popup appears
-    // over the copy being pointed to.
-    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-    }
-     
-    // Populate the popup and set its coordinates
-    // based on the feature found.
-    future_popup.setLngLat(coordinates).setHTML("<b>" + title + "</b>" + "<br>" + description).addTo(map);
+    map.on('mouseenter', 'exhibition-station', (e) => {
+        // Change the cursor style as a UI indicator.
+        map.getCanvas().style.cursor = 'pointer';
+
+        // Copy coordinates array.
+        const coordinates = e.features[0].geometry.coordinates.slice();
+        const description = e.features[0].properties.description;
+        const title = e.features[0].properties.title;
+
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        // Populate the popup and set its coordinates
+        // based on the feature found.
+        future_popup.setLngLat(coordinates).setHTML("<b>" + title + "</b>" + "<br>" + description).addTo(map);
     });
-     
+
     map.on('mouseleave', 'exhibition-station', () => {
-    map.getCanvas().style.cursor = '';
-    future_popup.remove();
+        map.getCanvas().style.cursor = '';
+        future_popup.remove();
     });
 
     const ontarioline_geojson_url = await fetch(
@@ -798,7 +798,7 @@ const future_popup = new mapboxgl.Popup({
                 'line-width': 5,
                 'line-opacity': 0.6
             },
-        },'exhibition-station'
+        }, 'exhibition-station'
     );
 
 
@@ -823,6 +823,8 @@ const future_popup = new mapboxgl.Popup({
                 document.getElementById('present-menu').style.display = 'none';
                 document.getElementById('legend').style.display = 'none';
                 document.getElementById('future-legend').style.display = 'none';
+                document.getElementById('future-action').style.display = 'none';
+
 
 
 
@@ -838,6 +840,8 @@ const future_popup = new mapboxgl.Popup({
                 document.getElementById('menu').style.display = 'none';
                 document.getElementById('legend').style.display = 'flex';
                 document.getElementById('future-legend').style.display = 'none';
+                document.getElementById('future-action').style.display = 'none';
+
 
 
 
@@ -851,6 +855,8 @@ const future_popup = new mapboxgl.Popup({
                 document.getElementById('menu').style.display = 'none';
                 document.getElementById('legend').style.display = 'none';
                 document.getElementById('future-legend').style.display = 'flex';
+                document.getElementById('future-action').style.display = 'inline-block';
+
 
 
             }
@@ -876,7 +882,7 @@ const future_popup = new mapboxgl.Popup({
         'source': 'indigenous-territories',
         'maxzoom': 10,
         'paint': {
-            'fill-color': ['get','color'],
+            'fill-color': ['get', 'color'],
             'fill-opacity': 0.2
         },
         'source-layer': 'indigenousTerritories-5pgtk6',
