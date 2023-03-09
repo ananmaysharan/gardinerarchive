@@ -520,7 +520,7 @@ map.on("load", async () => {
     }
 
 
-    // PRESENT MAP
+// PRESENT MAP
 
     map.addSource('route', {
         'type': 'vector',
@@ -547,6 +547,7 @@ map.on("load", async () => {
         }, 'photos'
     );
 
+    // BENTWAY ROUTE 
     map.addSource('bentway-route', {
         'type': 'vector',
         'url': 'mapbox://ananmay.60i50t9k'
@@ -570,6 +571,80 @@ map.on("load", async () => {
                 'line-opacity': 0.6
             },
         }
+    );
+
+    // GREEN SPACES
+
+    map.addSource('green-spaces', {
+        'type': 'vector',
+        'url': 'mapbox://ananmay.bmxlcq42'
+    });
+
+    map.addLayer({
+        'id': 'green-spaces',
+        'type': 'fill',
+        'source': 'green-spaces',
+        'layout': {
+            'visibility': 'none'
+        },
+        'paint': {
+            'fill-color': '#166E3A', // blue color fill
+            'fill-opacity': 0.8
+        },
+        'source-layer': 'green_spaces_present-06tkno',
+    });
+
+    // BUILDINGS
+
+    const layers = map.getStyle().layers;
+    const labelLayerId = layers.find(
+        (layer) => layer.type === 'symbol' && layer.layout['text-field']
+    ).id;
+
+    // The 'building' layer in the Mapbox Streets
+    // vector tileset contains building height data
+    // from OpenStreetMap.
+    map.addLayer(
+        {
+            'id': 'add-3d-buildings',
+            'source': 'composite',
+            'source-layer': 'building',
+            'filter': ['==', 'extrude', 'true'],
+            'type': 'fill-extrusion',
+            'layout':{
+            'visibility':'none'
+            },
+            'minzoom': 5,
+            'paint': {
+                'fill-extrusion-color': '#7d7d7d',
+
+                // Use an 'interpolate' expression to
+                // add a smooth transition effect to
+                // the buildings as the user zooms in.
+                'fill-extrusion-height': ['get', 'height'],
+                // [
+                //     'interpolate',
+                //     ['linear'],
+                //     ['zoom'],
+                //     10,
+                //     0,
+                //     10.05,
+                //     ['get', 'height']
+                // ],
+                'fill-extrusion-base': ['get', 'min_height'],
+                // [
+                //     'interpolate',
+                //     ['linear'],
+                //     ['zoom'],
+                //     10,
+                //     0,
+                //     10.05,
+                //     ['get', 'min_height']
+                // ],
+                'fill-extrusion-opacity': 0.6
+            }
+        },
+        labelLayerId
     );
 
     const bentway_geojson_url = await fetch(
@@ -649,10 +724,12 @@ map.on("load", async () => {
         return;
     }
     // Enumerate ids of the layers.
-    const PresentToggleableLayerIds = ['bentway'];
+    const PresentToggleableLayerIds = ['bentway', 'green-spaces', 'add-3d-buildings'];
 
     const PresentTagIdToTextContent = {
         'bentway': 'The Bentway',
+        'green-spaces':'Green Spaces',
+        'add-3d-buildings':'Buildings'
     };
 
 
@@ -694,6 +771,10 @@ map.on("load", async () => {
                 map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
                 this.className = 'active';
 
+                if (clickedLayer === 'add-3d-buildings') {
+                    map.easeTo({zoom:15, pitch:60})
+                }
+
             } else {
                 this.className = '';
                 if (clickedLayer != 'bentway') { // if it isn't the bentway layer, turn off vis and set map extent to gardiner
@@ -702,6 +783,7 @@ map.on("load", async () => {
                         'visibility',
                         'none'
                     );
+                    map.easeTo({zoom: 13, pitch:0})
                 } else {
                     map.fitBounds(bentwayBounds)
                 }
