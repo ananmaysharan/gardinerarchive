@@ -111,7 +111,7 @@ map.on("load", async () => {
     // adding shorelines
 
     const shoreline_geojson_url = await fetch(
-        'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/main/shorelines.geojson'
+        'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/main/geojsons/shorelines.geojson'
     );
 
     const shoreline_geojson_data = await shoreline_geojson_url.json();
@@ -219,11 +219,11 @@ map.on("load", async () => {
     // adding shoreline menu
 
     // If these layers were not added to the map, abort
-    if (!map.getLayer('1818') || !map.getLayer('1884') || !map.getLayer('1910') || !map.getLayer('2022')) {
+    if (!map.getLayer('1818') || !map.getLayer('1884') || !map.getLayer('1910')) {
         return;
     }
     // Enumerate ids of the layers.
-    const toggleableLayerIds = ['1818', '1884', '1910', '2022'];
+    const toggleableLayerIds = ['1818', '1884', '1910'];
 
 
     function zoomToLayerExtentShoreline(layerId) {
@@ -269,10 +269,7 @@ map.on("load", async () => {
             if (visibility === 'none') {
                 map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
                 this.className = 'active';
-
-                if (clickedLayer != '2022') {
                     zoomToLayerExtentShoreline(clickedLayer);
-                }
 
             } else {
                 this.className = '';
@@ -553,12 +550,13 @@ map.on("load", async () => {
         return;
     }
     // Enumerate ids of the layers.
-    const PresentToggleableLayerIds = ['bentway', 'green-spaces', 'add-3d-buildings'];
+    const PresentToggleableLayerIds = ['bentway', 'green-spaces', 'add-3d-buildings', '2022'];
 
     const PresentTagIdToTextContent = {
         'bentway': 'The Bentway',
         'green-spaces': 'Green Spaces',
-        'add-3d-buildings': 'Buildings'
+        'add-3d-buildings': 'Buildings',
+        '2022':'Shoreline'
     };
 
 
@@ -730,12 +728,38 @@ map.on("load", async () => {
         'id': 'exhibition-station',
         'type': 'symbol',
         'source': 'exhibition-station',
-        'minzoom':13,
         'layout': {
             'icon-image': 'pulsing-dot',
             'visibility':'none'
         }
         });
+    
+    //
+
+    map.addSource('ontario-line-route', {
+        'type': 'geojson',
+        'data': 'mapbox://thebentway.diurs5ta'
+    });
+
+    map.addLayer(
+        {
+            'id': 'ontario-line',
+            'name': 'Ontario Line',
+            'type': 'line',
+            'source': 'ontario-line-route',
+            'source-layer': 'ontario-line-7ea882',
+            'layout': {
+                'line-join': 'round',
+                'line-cap': 'round',
+                'visibility': 'none'
+            },
+            'paint': {
+                'line-color': '#1ea9e0',
+                'line-width': 5,
+                'line-opacity': 0.6
+            },
+        },'exhibition-station'
+    );
 
 
 
@@ -753,25 +777,33 @@ map.on("load", async () => {
                 map.setLayoutProperty('photos', 'visibility', 'visible'); // archival photos
                 map.setLayoutProperty('bentway', 'visibility', 'none'); // bentway
                 map.setLayoutProperty('exhibition-station', 'visibility', 'none'); // ex station ontario line
+                map.setLayoutProperty('ontario-line', 'visibility', 'none'); // ex station ontario line
                 document.getElementById('tagmenu').style.display = 'flex';
                 document.getElementById('menu').style.display = 'flex';
                 document.getElementById('present-menu').style.display = 'none';
+                document.getElementById('legend').style.display = 'none';
+
 
             } else if (radio.id === 'radio-2' && radio.checked) {
                 map.setLayoutProperty('bentway_photos', 'visibility', 'visible'); // bw
                 map.setLayoutProperty('photos', 'visibility', 'none'); // archival photos
                 map.setLayoutProperty('bentway', 'visibility', 'visible'); // bentway
                 map.setLayoutProperty('exhibition-station', 'visibility', 'none'); // ex station ontario line
+                map.setLayoutProperty('ontario-line', 'visibility', 'none'); // ex station ontario line
                 document.getElementById('present-menu').style.display = 'flex';
                 document.getElementById('present-menu').style.top = '10px'; // move layers menu to top
                 document.getElementById('tagmenu').style.display = 'none';
                 document.getElementById('menu').style.display = 'none';
+                document.getElementById('legend').style.display = 'flex';
 
 
             } else if (radio.id === 'radio-3' && radio.checked) {
                 map.setLayoutProperty('bentway_photos', 'visibility', 'none'); // bw
                 map.setLayoutProperty('photos', 'visibility', 'none'); // archival
                 map.setLayoutProperty('exhibition-station', 'visibility', 'visible'); // ex station ontario line
+                map.setLayoutProperty('ontario-line', 'visibility', 'visible'); // ex station ontario line
+                document.getElementById('legend').style.display = 'none';
+
             }
         });
     });
