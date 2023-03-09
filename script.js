@@ -812,6 +812,8 @@ map.on("load", async () => {
                 map.setLayoutProperty('photos', 'visibility', 'none'); // archival
                 map.setLayoutProperty('exhibition-station', 'visibility', 'visible'); // ex station ontario line
                 map.setLayoutProperty('ontario-line', 'visibility', 'visible'); // ex station ontario line
+                document.getElementById('tagmenu').style.display = 'none';
+                document.getElementById('menu').style.display = 'none';
                 document.getElementById('legend').style.display = 'none';
                 document.getElementById('future-legend').style.display = 'flex';
 
