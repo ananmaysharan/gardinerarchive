@@ -736,9 +736,15 @@ map.on("load", async () => {
     
     //
 
+    const ontarioline_geojson_url = await fetch(
+        'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/main/geojsons/ontario-line.geojson'
+    );
+
+    const ontarioline_geojson_data = await ontarioline_geojson_url.json();
+
     map.addSource('ontario-line-route', {
         'type': 'geojson',
-        'data': 'mapbox://thebentway.diurs5ta'
+        'data': ontarioline_geojson_data
     });
 
     map.addLayer(
@@ -747,7 +753,7 @@ map.on("load", async () => {
             'name': 'Ontario Line',
             'type': 'line',
             'source': 'ontario-line-route',
-            'source-layer': 'ontario-line-7ea882',
+            //'source-layer': 'ontario-line-7ea882',
             'layout': {
                 'line-join': 'round',
                 'line-cap': 'round',
@@ -782,6 +788,8 @@ map.on("load", async () => {
                 document.getElementById('menu').style.display = 'flex';
                 document.getElementById('present-menu').style.display = 'none';
                 document.getElementById('legend').style.display = 'none';
+                document.getElementById('future-legend').style.display = 'none';
+
 
 
             } else if (radio.id === 'radio-2' && radio.checked) {
@@ -795,6 +803,8 @@ map.on("load", async () => {
                 document.getElementById('tagmenu').style.display = 'none';
                 document.getElementById('menu').style.display = 'none';
                 document.getElementById('legend').style.display = 'flex';
+                document.getElementById('future-legend').style.display = 'none';
+
 
 
             } else if (radio.id === 'radio-3' && radio.checked) {
@@ -803,6 +813,8 @@ map.on("load", async () => {
                 map.setLayoutProperty('exhibition-station', 'visibility', 'visible'); // ex station ontario line
                 map.setLayoutProperty('ontario-line', 'visibility', 'visible'); // ex station ontario line
                 document.getElementById('legend').style.display = 'none';
+                document.getElementById('future-legend').style.display = 'flex';
+
 
             }
         });
