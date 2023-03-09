@@ -1,0 +1,89 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-03-02T20:02:52Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/664532805",
+        "bicycle": "designated",
+        "highway": "pedestrian",
+        "name": "The Bentway",
+        "source": "ground-level survey 2019-01; alignment approximate as area is hidden by overhead viaduct",
+        "tourism": "attraction"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.4096558,
+            43.6373565
+          ],
+          [
+            -79.409498,
+            43.6373414
+          ],
+          [
+            -79.4093201,
+            43.637332
+          ],
+          [
+            -79.4091193,
+            43.6373511
+          ],
+          [
+            -79.4090285,
+            43.6373729
+          ],
+          [
+            -79.4088749,
+            43.6374042
+          ],
+          [
+            -79.4086704,
+            43.6374768
+          ],
+          [
+            -79.40843,
+            43.6375252
+          ],
+          [
+            -79.4072928,
+            43.6375796
+          ],
+          [
+            -79.4070956,
+            43.6376252
+          ],
+          [
+            -79.4060061,
+            43.6377251
+          ],
+          [
+            -79.4057706,
+            43.6375903
+          ],
+          [
+            -79.4043329,
+            43.637731
+          ],
+          [
+            -79.4042364,
+            43.6378533
+          ],
+          [
+            -79.4041076,
+            43.6379067
+          ],
+          [
+            -79.4039256,
+            43.6380071
+          ]
+        ]
+      },
+      "id": "way/664532805"
+    }
+  ]
+}

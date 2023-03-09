@@ -2,7 +2,7 @@
 MAP SETUP
 --------------------------------------------------------------------*/
 
-mapboxgl.accessToken = "pk.eyJ1IjoiYW5hbm1heSIsImEiOiJjbDk0azVhbWMwMmNzM3dyNWpraW5pYXo3In0.ABTXYKit9qNDRvSBlFcalA";
+mapboxgl.accessToken = "pk.eyJ1IjoidGhlYmVudHdheSIsImEiOiJjbGYxZDF2YzEwNzYyM3lwamZpN2l5bTBvIn0.qbdgGsK7vFgXT89nqeWsOQ"; //bentway account token
 
 const bounds = [
     [-79.432709, 43.615221], // Southwest coordinates (long, lat)
@@ -12,7 +12,8 @@ const bounds = [
 // create map
 const map = new mapboxgl.Map({
     container: "map", // container ID
-    style: "mapbox://styles/ananmay/clb46qysm000l14kyvn8q1gjh", // style URL 
+    style: "mapbox://styles/mapbox/streets-v11",
+    //"mapbox://styles/ananmay/clb46qysm000l14kyvn8q1gjh", // style URL 
     center: [-79.38633, 43.64015], // starting center in [lng, lat]
     zoom: 13,
     // maxBounds: bounds // Set the map's geographical boundaries.
@@ -119,7 +120,7 @@ map.on("load", async () => {
 
     map.addSource('shoreline_overlay', {
         'type': 'vector',
-        'url': 'mapbox://ananmay.2wsktomu'
+        'url': 'mapbox://thebentway.0ay4buvn'
     });
 
     map.addLayer({
@@ -133,7 +134,7 @@ map.on("load", async () => {
             'fill-color': '#409cf7', // blue color fill
             'fill-opacity': 0.8
         },
-        'source-layer': 'shorelines_polygons-2znheh',
+        'source-layer': 'shorelines_polygons-35i1v2',
         filter: ["all", ["==", "year", 1818]]
     });
 
@@ -148,7 +149,7 @@ map.on("load", async () => {
             'fill-color': '#01468a', // blue color fill
             'fill-opacity': 0.8
         },
-        'source-layer': 'shorelines_polygons-2znheh',
+        'source-layer': 'shorelines_polygons-35i1v2',
         filter: ["all", ["==", "year", 1884]]
     });
 
@@ -163,7 +164,7 @@ map.on("load", async () => {
             'fill-color': '#00264d', // blue color fill
             'fill-opacity': 0.8
         },
-        'source-layer': 'shorelines_polygons-2znheh',
+        'source-layer': 'shorelines_polygons-35i1v2',
         filter: ["all", ["==", "year", 1910]]
     });
 
@@ -178,7 +179,7 @@ map.on("load", async () => {
             'fill-color': '#001429', // blue color fill
             'fill-opacity': 0.8
         },
-        'source-layer': 'shorelines_polygons-2znheh',
+        'source-layer': 'shorelines_polygons-35i1v2',
         filter: ["all", ["==", "year", 2022]]
     });
 
@@ -356,7 +357,7 @@ map.on("load", async () => {
 
     map.addSource('route', {
         'type': 'vector',
-        'url': 'mapbox://ananmay.50yld8cq'
+        'url': 'mapbox://thebentway.41ghap1r'
     });
 
     map.addLayer(
@@ -365,7 +366,7 @@ map.on("load", async () => {
             'name': 'Gardiner Expressway',
             'type': 'line',
             'source': 'route',
-            'source-layer': 'gardiner_route-7cuacv',
+            'source-layer': 'gardiner_route-1rrarv',
             'layout': {
                 'line-join': 'round',
                 'line-cap': 'round',
@@ -382,7 +383,7 @@ map.on("load", async () => {
     // bentway route
     map.addSource('bentway-route', {
         'type': 'vector',
-        'url': 'mapbox://ananmay.60i50t9k'
+        'url': 'mapbox://thebentway.494kqvks'
     });
 
     map.addLayer(
@@ -391,7 +392,7 @@ map.on("load", async () => {
             'name': 'The Bentway',
             'type': 'line',
             'source': 'bentway-route',
-            'source-layer': 'bentway_route-8lrltj',
+            'source-layer': 'bentway_route-3j87ns',
             'layout': {
                 'line-join': 'round',
                 'line-cap': 'round',
@@ -409,7 +410,7 @@ map.on("load", async () => {
 
     map.addSource('green-spaces', {
         'type': 'vector',
-        'url': 'mapbox://ananmay.bmxlcq42'
+        'url': 'mapbox://thebentway.7f6t42ng'
     });
 
     map.addLayer({
@@ -423,7 +424,7 @@ map.on("load", async () => {
             'fill-color': '#166E3A', // green color fill
             'fill-opacity': 0.8
         },
-        'source-layer': 'green_spaces_present-06tkno',
+        'source-layer': 'green_spaces_present-84lch6',
     });
 
     // 3d buildings
@@ -628,6 +629,115 @@ map.on("load", async () => {
     FUTURE MAP
     --------------------------------------------------------------------*/
 
+    // ADDING STATION
+
+    const size = 100;
+
+    // This implements `StyleImageInterface`
+    // to draw a pulsing dot icon on the map.
+    const pulsingDot = {
+        width: size,
+        height: size,
+        data: new Uint8Array(size * size * 4),
+
+        // When the layer is added to the map,
+        // get the rendering context for the map canvas.
+        onAdd: function () {
+            const canvas = document.createElement('canvas');
+            canvas.width = this.width;
+            canvas.height = this.height;
+            this.context = canvas.getContext('2d');
+        },
+
+        // Call once before every frame where the icon will be used.
+        render: function () {
+            const duration = 1000;
+            const t = (performance.now() % duration) / duration;
+
+            const radius = (size / 2) * 0.3;
+            const outerRadius = (size / 2) * 0.7 * t + radius;
+            const context = this.context;
+
+            // Draw the outer circle.
+            context.clearRect(0, 0, this.width, this.height);
+            context.beginPath();
+            context.arc(
+                this.width / 2,
+                this.height / 2,
+                outerRadius,
+                0,
+                Math.PI * 2
+            );
+            context.fillStyle = `rgba(156, 227, 255, ${1 - t})`;
+            context.fill();
+
+            // Draw the inner circle.
+            context.beginPath();
+            context.arc(
+                this.width / 2,
+                this.height / 2,
+                radius,
+                0,
+                Math.PI * 2
+            );
+            context.fillStyle = 'rgba(30, 168, 224, 1)';
+            context.strokeStyle = 'white';
+            context.lineWidth = 2 + 4 * (1 - t);
+            context.fill();
+            context.stroke();
+
+            // Update this image's data with data from the canvas.
+            this.data = context.getImageData(
+                0,
+                0,
+                this.width,
+                this.height
+            ).data;
+
+            // Continuously repaint the map, resulting
+            // in the smooth animation of the dot.
+            map.triggerRepaint();
+
+            // Return `true` to let the map know that the image was updated.
+            return true;
+        }
+    };
+
+    map.addImage('pulsing-dot', pulsingDot, { pixelRatio: 2 });
+
+    map.addSource('exhibition-station', {
+        'type': 'geojson',
+        'data': {
+            'type': 'FeatureCollection',
+            'features': [
+                {
+                    // feature for Ontario Line
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [
+                            -79.419203, 43.635915
+                        ]
+                    },
+                    'properties': {
+                        'title': 'Exhibhition Station'
+                    }
+                }
+            ]
+        }
+    });
+
+    map.addLayer({
+        'id': 'exhibition-station',
+        'type': 'symbol',
+        'source': 'exhibition-station',
+        'minzoom':13,
+        'layout': {
+            'icon-image': 'pulsing-dot',
+            'visibility':'none'
+        }
+        });
+
 
 
 
@@ -659,6 +769,7 @@ map.on("load", async () => {
             } else if (radio.id === 'radio-3' && radio.checked) {
                 map.setLayoutProperty('bentway_photos', 'visibility', 'none'); // bw
                 map.setLayoutProperty('photos', 'visibility', 'none'); // archival
+                map.setLayoutProperty('exhibition-station', 'visibility', 'visible'); // ex station ontario line
             }
         });
     });
