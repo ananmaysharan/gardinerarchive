@@ -717,7 +717,8 @@ map.on("load", async () => {
                         ]
                     },
                     'properties': {
-                        'title': 'Exhibhition Station'
+                        'title': 'Ontario Line Exhibhition Station',
+                        'description':"<p>Exhibition Station serves one of the most popular destinations for sports, concerts and trade shows in the country, not to mention family attractions like the CNE. The Ontario Line station at Exhibition will create a connection to the GO Transit rail network and bring the subway system closer to many homes and businesses in the growing and vibrant Liberty Village community.</p>"
                     }
                 }
             ]
@@ -734,7 +735,40 @@ map.on("load", async () => {
         }
         });
     
-    //
+    // popup
+
+    // Create a popup, but don't add it to the map yet.
+const future_popup = new mapboxgl.Popup({
+    closeButton: false,
+    closeOnClick: false
+    });
+     
+    map.on('mouseenter', 'exhibition-station', (e) => {
+    // Change the cursor style as a UI indicator.
+    map.getCanvas().style.cursor = 'pointer';
+     
+    // Copy coordinates array.
+    const coordinates = e.features[0].geometry.coordinates.slice();
+    const description = e.features[0].properties.description;
+    const title = e.features[0].properties.title;
+
+     
+    // Ensure that if the map is zoomed out such that multiple
+    // copies of the feature are visible, the popup appears
+    // over the copy being pointed to.
+    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+    }
+     
+    // Populate the popup and set its coordinates
+    // based on the feature found.
+    future_popup.setLngLat(coordinates).setHTML("<b>" + title + "</b>" + "<br>" + description).addTo(map);
+    });
+     
+    map.on('mouseleave', 'exhibition-station', () => {
+    map.getCanvas().style.cursor = '';
+    future_popup.remove();
+    });
 
     const ontarioline_geojson_url = await fetch(
         'https://raw.githubusercontent.com/ananmaysharan/gardinerarchive/main/geojsons/ontario-line.geojson'
@@ -810,6 +844,7 @@ map.on("load", async () => {
             } else if (radio.id === 'radio-3' && radio.checked) {
                 map.setLayoutProperty('bentway_photos', 'visibility', 'none'); // bw
                 map.setLayoutProperty('photos', 'visibility', 'none'); // archival
+                map.setLayoutProperty('bentway', 'visibility', 'visible'); // bentway
                 map.setLayoutProperty('exhibition-station', 'visibility', 'visible'); // ex station ontario line
                 map.setLayoutProperty('ontario-line', 'visibility', 'visible'); // ex station ontario line
                 document.getElementById('tagmenu').style.display = 'none';
