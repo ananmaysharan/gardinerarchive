@@ -12,8 +12,7 @@ const bounds = [
 // create map
 const map = new mapboxgl.Map({
     container: "map", // container ID
-    style: "mapbox://styles/mapbox/streets-v11",
-    //"mapbox://styles/ananmay/clb46qysm000l14kyvn8q1gjh", // style URL 
+    style: "mapbox://styles/thebentway/clf1fgyov008v01ns3szd1b9z",
     center: [-79.38633, 43.64015], // starting center in [lng, lat]
     zoom: 13,
     // maxBounds: bounds // Set the map's geographical boundaries.
@@ -753,6 +752,7 @@ map.on("load", async () => {
                 map.setLayoutProperty('bentway_photos', 'visibility', 'none'); // bw photos
                 map.setLayoutProperty('photos', 'visibility', 'visible'); // archival photos
                 map.setLayoutProperty('bentway', 'visibility', 'none'); // bentway
+                map.setLayoutProperty('exhibition-station', 'visibility', 'none'); // ex station ontario line
                 document.getElementById('tagmenu').style.display = 'flex';
                 document.getElementById('menu').style.display = 'flex';
                 document.getElementById('present-menu').style.display = 'none';
@@ -761,10 +761,12 @@ map.on("load", async () => {
                 map.setLayoutProperty('bentway_photos', 'visibility', 'visible'); // bw
                 map.setLayoutProperty('photos', 'visibility', 'none'); // archival photos
                 map.setLayoutProperty('bentway', 'visibility', 'visible'); // bentway
+                map.setLayoutProperty('exhibition-station', 'visibility', 'none'); // ex station ontario line
                 document.getElementById('present-menu').style.display = 'flex';
                 document.getElementById('present-menu').style.top = '10px'; // move layers menu to top
                 document.getElementById('tagmenu').style.display = 'none';
                 document.getElementById('menu').style.display = 'none';
+
 
             } else if (radio.id === 'radio-3' && radio.checked) {
                 map.setLayoutProperty('bentway_photos', 'visibility', 'none'); // bw
@@ -780,110 +782,31 @@ map.on("load", async () => {
 
     // adding Indigenous Territories
 
-    map.addSource('territory', {
+    map.addSource('indigenous-territories', {
         'type': 'vector',
-        'url': 'mapbox://talhav.1sok3t7w'
+        'url': 'mapbox://thebentway.33xedn2f'
     });
 
     // adding each territory by layer
 
-
     map.addLayer({
-        'id': 'Anishinabewaki',
+        'id': 'indigenous-territories',
         'type': 'fill',
-        'source': 'territory',
-        'maxzoom': 11,
+        'source': 'indigenous-territories',
+        'maxzoom': 10,
         'paint': {
-            'fill-color': '#FF8C00',
+            'fill-color': ['get','color'],
             'fill-opacity': 0.2
         },
-        'source-layer': 'territories-ctiw2m',
-        filter: ["all", ["==", "ID", 36372]]
+        'source-layer': 'indigenousTerritories-5pgtk6',
     }
     );
-
-    map.addLayer({
-        'id': 'Wendake-Nionwentsïo',
-        'type': 'fill',
-        'source': 'territory',
-        'maxzoom': 11,
-        'paint': {
-            'fill-color': '#FFE4E1',
-            'fill-opacity': 0.2
-        },
-        'source-layer': 'territories-ctiw2m',
-        filter: ["all", ["==", "ID", 35914]]
-    });
-
-    map.addLayer({
-        'id': 'Haudenosaunee',
-        'type': 'fill',
-        'source': 'territory',
-        'maxzoom': 11,
-        'paint': {
-            'fill-color': '#663399',
-            'fill-opacity': 0.2
-        },
-        'source-layer': 'territories-ctiw2m',
-        filter: ["all", ["==", "ID", 35819]]
-    });
-
-    map.addLayer({
-        'id': 'Petun',
-        'type': 'fill',
-        'source': 'territory',
-        'maxzoom': 11,
-        'paint': {
-            'fill-color': '#FF6347',
-            'fill-opacity': 0.2
-        },
-        'source-layer': 'territories-ctiw2m',
-        filter: ["all", ["==", "ID", 33900]]
-    });
-
-    map.addLayer({
-        'id': 'Attiwonderonk (Neutral)',
-        'type': 'fill',
-        'source': 'territory',
-        'maxzoom': 11,
-        'paint': {
-            'fill-color': '#40E0D0',
-            'fill-opacity': 0.2
-        },
-        'source-layer': 'territories-ctiw2m',
-        filter: ["all", ["==", "ID", 33899]]
-    });
-
-    map.addLayer({
-        'id': 'Mississaugas of the Credit',
-        'type': 'fill',
-        'source': 'territory',
-        'maxzoom': 11,
-        'paint': {
-            'fill-color': '#87CEFA',
-            'fill-opacity': 0.3
-        },
-        'source-layer': 'territories-ctiw2m',
-        filter: ["all", ["==", "ID", 33632]]
-
-    });
 
     // adding labels
 
     map.addSource('territory-labels', {
         type: 'vector',
-        url: 'mapbox://talhav.34dmv2iv'
-    });
-
-    map.addLayer({
-
-        'id': 'centroids',
-        'type': 'circle',
-        'source': 'territory-labels',
-        'source-layer': 'territorycentroid-bkit1i',
-        'layout': {
-            'visibility': 'none'
-        }
+        url: 'mapbox://thebentway.7w4kspg2'
     });
 
     map.addLayer({
@@ -891,16 +814,12 @@ map.on("load", async () => {
         'type': 'symbol',
         'source': 'territory-labels',
         'maxzoom': 11,
-        'source-layer': 'territorycentroid-bkit1i',
+        'source-layer': 'indigenousTerritories-labels-b0uafp',
         'layout': {
             'icon-image': 'custom-marker',
             // get the title name from the source's "title" property
             'text-field': ['get', 'Name'],
-            'text-font': [
-                'Open Sans Semibold',
-                'Arial Unicode MS Bold',
-            ],
-            'text-offset': [0, 1.25],
+            'text-font': ['Open Sans Regular'],
             'text-anchor': 'center',
         },
     });
