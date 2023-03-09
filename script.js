@@ -735,7 +735,7 @@ map.on("load", async () => {
         }
     });
 
-    // popup
+    // POPUP FOR EXHBI
 
     // Create a popup, but don't add it to the map yet.
     const future_popup = new mapboxgl.Popup({
